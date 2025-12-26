@@ -1,0 +1,4 @@
+# AnaheimCrowds ads.txt
+# Replace this line after AdSense provides your authorized seller entry.
+# Example format (do not use this example as-is):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

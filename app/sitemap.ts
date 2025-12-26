@@ -1,0 +1,22 @@
+import type { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://anaheimcrowds.com";
+
+  const routes = [
+    "",
+    "/best-times",
+    "/weekends-vs-weekdays",
+    "/holidays-seasonal",
+    "/faq",
+    "/contact",
+    "/privacy",
+  ];
+
+  return routes.map((path) => ({
+    url: `${base}${path}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: path === "" ? 1 : 0.6,
+  }));
+}
