@@ -4,11 +4,12 @@ import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Disneyland crowds (typical patterns, Anaheim) | AnaheimCrowds",
   description:
-    "Typical Disneyland Anaheim crowd patterns. Static reference only. Not affiliated with Disney.",
+    "Static reference for typical Disneyland Anaheim crowd patterns by season, weekdays/weekends, and holidays. Not live data. Not a forecast.",
   alternates: { canonical: "/" },
 };
+
 
 export default function HomePage() {
   return (
@@ -84,10 +85,12 @@ export default function HomePage() {
         </p>
         <div className="hr" />
         <div className="stack">
-          <Link href="/best-times">Go to: Best times to go</Link>
+          <Link href="/crowd-calendar">Go to: Crowd calendar (static reference)</Link>
+          <Link href="/best-times">Go to: Typical lighter vs heavier periods</Link>
           <Link href="/weekends-vs-weekdays">Go to: Weekends vs weekdays</Link>
-          <Link href="/holidays-seasonal">Go to: Holidays & seasons</Link>
+          <Link href="/holidays-seasonal">Go to: Holidays & seasonal patterns</Link>
         </div>
+
       </section>
 
       <section className="card stack">

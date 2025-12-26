@@ -1,25 +1,27 @@
+// app/best-times/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best times to go",
+  title: "Typical lighter vs heavier periods (Disneyland Anaheim) | AnaheimCrowds",
   description:
-    "Neutral guidance on typically lighter and heavier periods for Disneyland Anaheim crowds. Static reference only.",
+    "Static reference on typically lighter and heavier periods for Disneyland Anaheim crowds. Not live data.",
   alternates: { canonical: "/best-times" },
 };
 
-export default function BestTimesPage() {
+export default function TypicalLighterHeavierPage() {
   return (
     <div className="container stack-lg">
       <section className="card stack">
-        <h1 className="h1">Best times to go</h1>
+        <h1 className="h1">Typical lighter vs heavier periods</h1>
         <p className="p">
-          This page describes typical patterns. It is not a prediction.
+          This page describes typical patterns. It is not live data and not a forecast.
           Specific dates can behave differently.
         </p>
       </section>
 
       <section className="card stack">
-        <h2 className="h2">Typical lighter periods</h2>
+        <h2 className="h2">Typically lighter</h2>
         <ul className="list">
           <li>Mid-week days outside major school breaks.</li>
           <li>Weeks that are not near major U.S. holidays.</li>
@@ -31,7 +33,7 @@ export default function BestTimesPage() {
       </section>
 
       <section className="card stack">
-        <h2 className="h2">Typical heavier periods</h2>
+        <h2 className="h2">Typically heavier</h2>
         <ul className="list">
           <li>Weekends.</li>
           <li>School breaks and peak vacation windows.</li>
@@ -43,20 +45,27 @@ export default function BestTimesPage() {
       </section>
 
       <section className="card stack">
-        <h2 className="h2">A practical way to decide</h2>
+        <h2 className="h2">A practical way to read patterns</h2>
         <ul className="list">
           <li>Pick a season first.</li>
-          <li>Prefer weekdays if you can.</li>
-          <li>Avoid holiday-adjacent weekends when possible.</li>
+          <li>Prefer weekdays when possible.</li>
+          <li>Check holiday proximity.</li>
         </ul>
       </section>
 
       <section className="card stack">
-        <h2 className="h2">Optional planning link (text only)</h2>
-        <p className="p">
-          If you need tickets or reservations, use the official Disneyland site.
-          If you use third-party travel resources, confirm terms and dates carefully.
-        </p>
+        <h2 className="h2">Related pages</h2>
+        <ul className="list">
+          <li>
+            <Link href="/weekends-vs-weekdays">Weekends vs weekdays</Link>
+          </li>
+          <li>
+            <Link href="/holidays-seasonal">Holidays & seasonal patterns</Link>
+          </li>
+          <li>
+            <Link href="/crowd-calendar">Crowd calendar</Link>
+          </li>
+        </ul>
       </section>
     </div>
   );

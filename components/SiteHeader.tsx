@@ -1,11 +1,12 @@
 import Link from "next/link";
 
 const LINKS = [
-  { href: "/best-times", label: "Best times to go" },
+  { href: "/crowd-calendar", label: "Crowd calendar" },
+  { href: "/school-breaks-calendar", label: "SoCal school breaks" },
+  { href: "/what-busy-means", label: "What “busy” means" },
+  { href: "/best-times", label: "Lighter vs heavier periods" },
   { href: "/weekends-vs-weekdays", label: "Weekends vs weekdays" },
   { href: "/holidays-seasonal", label: "Holidays & seasons" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy / Disclaimer" },
 ] as const;
 
