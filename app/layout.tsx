@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -11,19 +11,25 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display",
+});
+
 const SITE = {
   name: "AnaheimCrowds",
   origin: "https://anaheimcrowds.com",
   description:
-    "AnaheimCrowds is an independent, static reference site that summarizes typical crowd patterns around Disneyland Resort in Anaheim. No live data. Not affiliated with Disney.",
+    "Expert Disneyland crowd analysis. We track Magic Key tiers, Anaheim convention schedules, and school calendars to help you navigate the park like a local.",
   contactEmail: "support@anaheimcrowds.com",
 } as const;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
-    default: `${SITE.name} — typical Disneyland crowd patterns (static reference)`,
-    template: `%s — ${SITE.name}`,
+    default: `Disneyland crowds (typical patterns, Anaheim) | ${SITE.name}`,
+    template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
   alternates: { canonical: "/" },
@@ -32,12 +38,12 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE.origin,
     siteName: SITE.name,
-    title: `${SITE.name} — typical crowd patterns (static reference)`,
+    title: `Disneyland Crowd Patterns & Strategy | ${SITE.name}`,
     description: SITE.description,
   },
   twitter: {
-    card: "summary",
-    title: `${SITE.name} — typical crowd patterns (static reference)`,
+    card: "summary_large_image",
+    title: `Disneyland Crowd Patterns & Strategy | ${SITE.name}`,
     description: SITE.description,
   },
 };
@@ -46,8 +52,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
   return (
-    <html lang="en" className={inter.variable}>
-      <body>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
+      <body className="min-h-screen flex flex-col font-sans antialiased bg-stone-50 text-slate-900">
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-L0VDH1T2KZ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-L0VDH1T2KZ');
+          `}
+        </Script>
+
         {adsenseClient ? (
           <Script
             async
@@ -57,11 +77,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         ) : null}
 
-        <div className="shell">
-          <SiteHeader />
-          <main className="main">{children}</main>
-          <SiteFooter contactEmail={SITE.contactEmail} />
-        </div>
+        <SiteHeader />
+
+        <main className="flex-1 w-full">{children}</main>
+
+        <SiteFooter contactEmail={SITE.contactEmail} />
       </body>
     </html>
   );

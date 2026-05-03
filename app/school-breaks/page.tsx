@@ -1,62 +1,43 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-
 
 export const metadata: Metadata = {
-  title: "School breaks and crowd patterns | AnaheimCrowds",
-  description:
-    "How school breaks typically affect Disneyland Anaheim crowds. Static reference only.",
-  alternates: { canonical: "/school-breaks" },
+  title: "School Break Impact 2026 | AnaheimCrowds",
+  description: "Why school calendars are one of the biggest drivers of Disneyland crowd pressure in 2026.",
 };
 
 export default function SchoolBreaksPage() {
   return (
-    <div className="container stack-lg">
-      <section className="card stack">
-        <h1 className="h1">School breaks and crowd patterns</h1>
-        <p className="p">
-          School schedules are a major driver of crowd variation.
-          Dates and impact vary by district and year.
+    <div className="max-w-4xl mx-auto px-4 py-12 space-y-10">
+      <div className="space-y-4">
+        <h1 className="font-display text-5xl text-slate-900">
+          School Break Impact
+        </h1>
+        <p className="text-lg text-slate-600 leading-relaxed">
+          The biggest crowd question is usually not the weather. It is how many families are out of school at the same time.
         </p>
-      </section>
+      </div>
 
-      <section className="card stack">
-        <h2 className="h2">Common break types</h2>
-        <ul className="list">
-          <li>Winter break.</li>
-          <li>Spring break.</li>
-          <li>Summer break.</li>
-          <li>Three-day weekends.</li>
-          <li>Year-round school calendars.</li>
-        </ul>
-      </section>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h2 className="font-bold text-slate-900 mb-2 uppercase text-sm tracking-widest text-rose-700">Late February risk</h2>
+          <p className="text-sm text-slate-600">
+            Late February can jump quickly when Presidents Day and ski-week style breaks overlap. That is one of the easiest times of year to underestimate.
+          </p>
+        </div>
+        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h2 className="font-bold text-slate-900 mb-2 uppercase text-sm tracking-widest text-rose-700">Mid-October risk</h2>
+          <p className="text-sm text-slate-600">
+            Mid-October can look ordinary on a local calendar and still get heavy because regional fall breaks push more families into the parks.
+          </p>
+        </div>
+      </div>
 
-      <section className="card stack">
-        <h2 className="h2">Why breaks matter</h2>
-        <ul className="list">
-          <li>More families are able to travel.</li>
-          <li>Weekday attendance rises.</li>
-          <li>Local and regional demand overlaps.</li>
-        </ul>
-      </section>
-
-      <section className="card stack">
-        <h2 className="h2">Related pages</h2>
-        <ul className="list">
-          <li>
-            <Link href="/school-breaks-calendar">
-            School breaks calendar (Southern California)
-            </Link>
-          </li>
-          <li>
-            <Link href="/crowd-calendar">Crowd calendar</Link>
-          </li>
-          <li>
-            <Link href="/what-busy-means">What “busy” means</Link>
-          </li>
-        </ul>
-      </section>
-
+      <div className="bg-slate-900 text-white p-8 rounded-3xl">
+        <h2 className="text-xl font-bold mb-4">What to take from this</h2>
+        <p className="text-slate-300 leading-relaxed">
+          A low-break date does not guarantee an easy day, and a high-break date does not guarantee disaster. But once enough districts are out at once, Disneyland stops behaving like a normal weekday park.
+        </p>
+      </div>
     </div>
   );
 }

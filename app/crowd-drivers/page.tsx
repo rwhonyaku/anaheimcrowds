@@ -1,98 +1,79 @@
-// app/crowd-drivers/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Crowd drivers (reference) | AnaheimCrowds",
-  description:
-    "Static reference on the common drivers that typically increase or decrease Disneyland Anaheim crowds. Not live data.",
+  title: "What Moves Disneyland Crowds in 2026 | AnaheimCrowds",
+  description: "A practical breakdown of the signals that shift Disneyland crowd pressure in 2026.",
   alternates: { canonical: "/crowd-drivers" },
 };
 
-const DRIVERS: Array<{
-  driver: string;
-  typicalEffect: string;
-  timeHorizon: string;
-  whatChangesFirst: string;
-  notes: string;
-}> = [
+const DRIVERS = [
   {
-    driver: "Weekend vs weekday",
-    typicalEffect: "Often raises demand on weekends",
-    timeHorizon: "Weekly pattern",
-    whatChangesFirst: "Walkways and headliner waits",
-    notes: "Impact is stronger during school breaks.",
+    driver: "School-break overlap",
+    effect: "The biggest all-day shift",
+    impact2026:
+      "When multiple districts are out at once, Disneyland stops behaving like a normal weekday park. That is the cleanest reason a Tuesday suddenly feels too full.",
+    indicator: "Weekday wait pressure from open to late afternoon",
   },
   {
-    driver: "Holiday proximity",
-    typicalEffect: "Often raises demand near major holidays",
-    timeHorizon: "Short window (days to a week)",
-    whatChangesFirst: "Arrivals, dining, headliner waits",
-    notes: "Adjacency (Fri–Mon) often matters more than the holiday itself.",
+    driver: "Magic Key access patterns",
+    effect: "Evening spikes",
+    impact2026:
+      "Some dates stay reasonable at lunch and tighten after work. That is usually a local access pattern, not a random surprise.",
+    indicator: "Heavier walkways and food lines after 5 PM",
   },
   {
-    driver: "School breaks",
-    typicalEffect: "Often raises weekday demand",
-    timeHorizon: "Seasonal / calendar-driven",
-    whatChangesFirst: "Midday congestion and dining capacity",
-    notes: "Dates vary by district and year.",
+    driver: "Ticket pricing signals",
+    effect: "Demand warning sign",
+    impact2026:
+      "Lower-priced dates are often worth a second look. Higher-priced Fridays and Saturdays are usually telling you the hard truth up front.",
+    indicator: "Tier jumps around weekends and holidays",
   },
   {
-    driver: "Weather",
-    typicalEffect: "Mixed",
-    timeHorizon: "Same-day / short window",
-    whatChangesFirst: "Perceived crowding and pacing",
-    notes: "The same attendance level can feel different by temperature or rain.",
-  },
-  {
-    driver: "Ride downtime / refurbishments",
-    typicalEffect: "Mixed (can concentrate crowds)",
-    timeHorizon: "Same-day to multi-week",
-    whatChangesFirst: "Wait times at remaining headliners",
-    notes: "Fewer available attractions can shift demand to other areas.",
-  },
-  {
-    driver: "Special events / seasonal entertainment",
-    typicalEffect: "Often raises interest in specific windows",
-    timeHorizon: "Short window to seasonal",
-    whatChangesFirst: "Evening flow and entertainment areas",
-    notes: "Effect can be localized by time and location.",
+    driver: "Seasonal event stacking",
+    effect: "Crowded in a different way",
+    impact2026:
+      "Halloween season, holiday runs, and event nights do not just add people. They also change how those people move through the park.",
+    indicator: "Full walkways, food lines, and slower evenings",
   },
 ];
 
 export default function CrowdDriversPage() {
   return (
-    <div className="container stack-lg">
-      <section className="card stack">
-        <h1 className="h1">Crowd drivers (reference)</h1>
-        <p className="p">
-          These are common factors that typically shift crowd patterns.
-          This page is static reference only. It is not live data and not a forecast.
+    <div className="max-w-5xl mx-auto px-4 space-y-10 py-12">
+      <section className="bg-sky-50 border-l-8 border-sky-800 p-8 rounded-r-2xl space-y-4">
+        <h1 className="font-display text-4xl text-slate-900">What actually moves Disneyland crowds</h1>
+        <p className="text-lg text-slate-700 leading-relaxed">
+          The old weekend-versus-weekday rule is not enough on its own. In 2026, crowd pressure comes from a few repeat signals, and the useful question is not "Is it a Tuesday?" but "What kind of Tuesday is it?"
         </p>
       </section>
 
-      <section className="card stack">
-        <h2 className="h2">Drivers table</h2>
-
-        <div className="tablewrap">
-          <table className="table">
+      <section className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm">
+        <div className="bg-slate-900 p-6">
+          <h2 className="text-xl font-bold text-white flex items-center gap-2">
+            <TrendingUp className="text-amber-300" /> Crowd Driver Matrix
+          </h2>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
             <thead>
-              <tr>
-                <th>Driver</th>
-                <th>Typical effect</th>
-                <th>Time horizon</th>
-                <th>What changes first</th>
-                <th>Notes</th>
+              <tr className="bg-slate-50 text-slate-500 uppercase text-xs font-black tracking-widest border-b border-slate-200">
+                <th className="p-6">Driver</th>
+                <th className="p-6">What it changes</th>
+                <th className="p-6">What you notice first</th>
               </tr>
             </thead>
-            <tbody>
-              {DRIVERS.map((d) => (
-                <tr key={d.driver}>
-                  <td>{d.driver}</td>
-                  <td>{d.typicalEffect}</td>
-                  <td>{d.timeHorizon}</td>
-                  <td>{d.whatChangesFirst}</td>
-                  <td>{d.notes}</td>
+            <tbody className="divide-y divide-slate-100">
+              {DRIVERS.map((driver) => (
+                <tr key={driver.driver} className="hover:bg-slate-50/50 transition-colors">
+                  <td className="p-6 font-bold text-slate-900">
+                    {driver.driver}
+                    <br />
+                    <span className="text-sky-800 text-xs">{driver.effect}</span>
+                  </td>
+                  <td className="p-6 text-sm text-slate-600 leading-relaxed">{driver.impact2026}</td>
+                  <td className="p-6 text-sm text-slate-500">{driver.indicator}</td>
                 </tr>
               ))}
             </tbody>
@@ -100,23 +81,11 @@ export default function CrowdDriversPage() {
         </div>
       </section>
 
-      <section className="card stack">
-        <h2 className="h2">Related pages</h2>
-        <ul className="list">
-          <li>
-            <Link href="/what-busy-means">What “busy” means</Link>
-          </li>
-          <li>
-            <Link href="/crowd-calendar">Crowd calendar</Link>
-          </li>
-          <li>
-            <Link href="/holidays-seasonal">Holidays & seasonal patterns</Link>
-          </li>
-          <li>
-            <Link href="/school-breaks">School breaks</Link>
-          </li>
-        </ul>
-      </section>
+      <div className="bg-slate-900 rounded-2xl p-1 text-center">
+        <Link href="/rope-drop" className="block p-4 text-white font-bold hover:text-amber-300 transition-colors">
+          See the 2026 rope drop guide &rarr;
+        </Link>
+      </div>
     </div>
   );
 }
