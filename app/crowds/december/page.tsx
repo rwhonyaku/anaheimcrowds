@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { MonthNavigation } from "@/components/MonthNavigation";
 import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -72,15 +73,34 @@ export default function DecemberCrowdsPage() {
             Late December is not just busy. It is sustained all-day demand from guests who stay in the park from open to close, which changes ride strategy, food timing, and even exit logistics.
           </p>
         </div>
+        <p className="text-slate-700 leading-relaxed">
+          December works best when you pair the{" "}
+          <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
+            calendar
+          </Link>{" "}
+          with a realistic rope drop and hotel plan. If you are debating a holiday trip, compare early December with{" "}
+          <Link href="/crowds/november" className="font-bold underline hover:text-blue-600">
+            November
+          </Link>{" "}
+          and the{" "}
+          <Link href="/best-times" className="font-bold underline hover:text-blue-600">
+            best-times guide
+          </Link>
+          .
+        </p>
       </section>
 
-      <section className="pt-8 border-t border-slate-100">
+      <section className="pt-8 border-t border-slate-100 space-y-6">
         <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/crowds/november" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">November Crowds</Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
+          <Link href="/articles/harbor-advantage" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Harbor Advantage</Link>
         </div>
+        <MonthNavigation currentMonth="december" />
       </section>
     </div>
   );

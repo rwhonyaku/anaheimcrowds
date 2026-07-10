@@ -18,13 +18,13 @@ const targets = [
   },
   {
     ride: "Indiana Jones Adventure",
-    call: "Strong second-wave play",
+    call: "Good second choice",
     reason:
-      "A smart pivot if you want a major headliner with less crowd compression than the obvious Tomorrowland rush.",
+      "A good pivot if you want a major ride without joining the first big Tomorrowland rush.",
   },
   {
     ride: "Rise of the Resistance",
-    call: "High upside, higher risk",
+    call: "Worth it, but riskier",
     reason:
       "Worth targeting only if operations are clean. If it opens late, pivot immediately and come back with Lightning Lane or a later return plan.",
   },
@@ -41,14 +41,16 @@ export default function DisneylandRopeDropStrategyPage() {
           Disneyland Rope Drop Strategy 2026
         </h1>
         <p className="text-lg text-slate-600">
-          Rope drop still matters in 2026 because the first 60 to 90 minutes are the cheapest time-savings you can buy. Your goal is simple: arrive early, start with a real headliner, and do not waste the morning on filler.
+          Rope drop still matters in 2026 because the first 60 to 90 minutes are usually the easiest part of
+          the day. Arrive early, start with a major ride, and do not spend the morning on lower-priority stuff.
         </p>
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-slate-50 p-8 space-y-4">
         <h2 className="text-2xl font-bold">Quick Verdict</h2>
         <p className="text-slate-700">
-          The best rope drop strategy in 2026 is to stay walkable if possible, clear Harbor security early, and hit one or two major attractions before standby waits fully wake up. Use the{" "}
+          The best rope drop strategy in 2026 is to stay walkable if possible, clear Harbor security early,
+          and hit one or two major attractions before standby waits jump. Use the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar
           </Link>{" "}
@@ -65,12 +67,18 @@ export default function DisneylandRopeDropStrategyPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">What Changed in 2026</h2>
         <p className="text-slate-700">
-          With hotel-exclusive early entry gone, the morning advantage is less about hotel branding and more about logistics. That makes Harbor Blvd proximity more valuable, especially for families who want a clean security path and a realistic shot at the first ride cycle.
+          With hotel-exclusive early entry gone, the morning is less about hotel branding and more about simple
+          logistics. That makes Harbor Blvd proximity more valuable, especially for families who want an easier
+          security path and a better shot at the first ride.
         </p>
         <p className="text-slate-700">
           If you are choosing where to stay, pair this page with the{" "}
           <Link href="/hotels" className="font-bold underline hover:text-blue-600">
             Harbor Blvd hotel guide
+          </Link>{" "}
+          and the{" "}
+          <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">
+            Harbor Blvd advantage
           </Link>{" "}
           before you book.
         </p>
@@ -94,9 +102,9 @@ export default function DisneylandRopeDropStrategyPage() {
       <section className="rounded-3xl border border-amber-200 bg-amber-50 p-8 space-y-4">
         <h2 className="text-2xl font-bold text-amber-900">Big Rope Drop Mistakes</h2>
         <ul className="list-disc ml-6 space-y-2 text-amber-900">
-          <li>Showing up early and then wasting the opening window on low-capacity filler rides.</li>
+          <li>Showing up early and then using the opening window on rides that can wait until later.</li>
           <li>Assuming Lightning Lane replaces rope drop on a busy day.</li>
-          <li>Sleeping on Harbor proximity when your whole plan depends on the morning.</li>
+          <li>Ignoring Harbor proximity when your whole plan depends on the morning.</li>
           <li>Trying to improvise your first hour after you are already inside the gates.</li>
         </ul>
       </section>
@@ -106,7 +114,17 @@ export default function DisneylandRopeDropStrategyPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">When Rope Drop Matters Most</h2>
         <p className="text-slate-700">
-          Rope drop matters on every date, but it matters most on <strong>June through October</strong>, holiday weeks, and any day your chosen rides tend to stack long waits by mid-morning. On slower dates it gives you breathing room. On busier dates it saves the trip.
+          Rope drop matters on every date, but it matters most from{" "}
+          <Link href="/crowds/june" className="font-bold underline hover:text-blue-600">
+            June
+          </Link>{" "}
+          through{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October
+          </Link>
+          ,
+          holiday weeks, and any day your chosen rides build long waits by mid-morning. On slower dates it
+          gives you more room. On busier dates it can decide how the whole day goes.
         </p>
         <p className="text-slate-700">
           If your date already looks rough on the{" "}
@@ -117,7 +135,7 @@ export default function DisneylandRopeDropStrategyPage() {
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best-times guide
           </Link>{" "}
-          is the faster way to decide whether you should move the trip instead of trying to out-execute a bad week.
+          is the faster way to decide whether you should move the trip instead of trying to force a bad week to work.
         </p>
         <p className="text-slate-700">
           For date-first planning, jump from this page to the{" "}

@@ -79,6 +79,17 @@ export default function HarborAdvantageArticle() {
           </Link>{" "}
           first. If your dates are busy, Harbor proximity matters even more because rope drop stops being optional.
         </p>
+        <p>
+          This matters most on heavy-demand weeks like{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October
+          </Link>{" "}
+          and{" "}
+          <Link href="/crowds/december" className="font-bold underline hover:text-blue-600">
+            late December
+          </Link>
+          , when a late start is much harder to recover from.
+        </p>
       </section>
 
       <section className="space-y-6">
@@ -122,7 +133,14 @@ export default function HarborAdvantageArticle() {
           >
             2026 rope drop strategy
           </Link>
-          .
+          . If you are planning midday hotel breaks on a packed day, the{" "}
+          <Link
+            href="/articles/disneyland-midday-break-strategy"
+            className="text-amber-700 font-semibold underline"
+          >
+            midday break guide
+          </Link>{" "}
+          is the natural follow-up.
         </p>
       </section>
     </article>

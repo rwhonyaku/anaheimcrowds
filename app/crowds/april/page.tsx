@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { MonthNavigation } from "@/components/MonthNavigation";
 import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -77,13 +78,18 @@ export default function AprilCrowdsPage() {
         </div>
       </section>
 
-      <section className="pt-8 border-t border-slate-100">
+      <section className="pt-8 border-t border-slate-100 space-y-6">
         <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/crowds/march" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">March Crowds</Link>
+          <Link href="/crowds/may" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">May Crowds</Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
+          <Link href="/articles/lightning-lane-reality" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lightning Lane Reality</Link>
         </div>
+        <MonthNavigation currentMonth="april" />
       </section>
     </div>
   );

@@ -7,7 +7,7 @@ import { format, parseISO } from "date-fns";
 export const metadata: Metadata = {
   title: "Disneyland Value Dates Strategy 2026 | AnaheimCrowds",
   description:
-    "How to use Disney's lower-priced 2026 dates as a crowd signal, plus the exact value-date windows that deserve a closer look.",
+    "How to use Disney's lower-priced 2026 dates as one clue about crowds, plus the value-date windows worth checking first.",
   alternates: { canonical: "/articles/value-strategy" },
 };
 
@@ -21,13 +21,14 @@ export default function ValueStrategyArticle() {
     <article className="max-w-4xl mx-auto px-4 py-10 space-y-12 text-slate-900 leading-relaxed">
       <section className="space-y-4">
         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">
-          Pricing Signal Guide
+          Pricing Guide
         </p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight">
           2026 Value Date Strategy
         </h1>
         <p className="text-lg text-slate-600">
-          Lower Disneyland ticket prices do not guarantee empty parks, but they are one of the clearest public demand signals Disney gives you. Value dates are where low-crowd planning usually starts.
+          Lower Disneyland ticket prices do not guarantee empty parks, but they are still one of the clearest
+          public clues Disney gives you. Value dates are a good place to start when you want better odds.
         </p>
         <p className="text-sm text-slate-400">
           Data reference date: {format(referenceDate, "MMMM dd, yyyy")}
@@ -45,7 +46,23 @@ export default function ValueStrategyArticle() {
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best-times guide
           </Link>
-          .
+          . The strongest clusters usually line up with the{" "}
+          <Link href="/crowds/january" className="font-bold underline hover:text-blue-600">
+            January
+          </Link>
+          ,{" "}
+          <Link href="/crowds/february" className="font-bold underline hover:text-blue-600">
+            February
+          </Link>
+          ,{" "}
+          <Link href="/crowds/may" className="font-bold underline hover:text-blue-600">
+            May
+          </Link>
+          , and{" "}
+          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
+            September
+          </Link>{" "}
+          crowd guides.
         </p>
       </section>
 
@@ -58,7 +75,7 @@ export default function ValueStrategyArticle() {
             <div key={date} className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
               <p className="text-sm text-slate-500">{format(parseISO(date), "EEEE")}</p>
               <p className="text-xl font-bold text-slate-900">{format(parseISO(date), "MMM dd")}</p>
-              <p className="text-green-600 font-semibold">Value signal date</p>
+              <p className="text-green-600 font-semibold">Value date</p>
             </div>
           ))}
         </div>
@@ -73,7 +90,7 @@ export default function ValueStrategyArticle() {
           <li>Clusters of value dates are often more useful than any one date by itself.</li>
         </ul>
         <p className="text-slate-700">
-          That is why the right workflow is to start with value signals, confirm the exact dates on the{" "}
+          That is why the better workflow is to start with value dates, confirm the exact dates on the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar
           </Link>
@@ -98,7 +115,11 @@ export default function ValueStrategyArticle() {
           <Link href="/articles/best-day-of-week-disneyland" className="font-bold underline hover:text-blue-600">
             best day of week page
           </Link>{" "}
-          is the right companion.
+          is the right companion. If a value date is only workable because you plan to start early and stay nearby, use the{" "}
+          <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">
+            Harbor Blvd advantage
+          </Link>{" "}
+          before choosing a hotel.
         </p>
       </section>
     </article>

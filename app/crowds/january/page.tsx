@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { MonthNavigation } from "@/components/MonthNavigation";
 import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -84,15 +85,30 @@ export default function JanuaryCrowdsPage() {
             </p>
           </div>
         </div>
+        <p className="text-slate-700 leading-relaxed">
+          If January is your target, compare it with{" "}
+          <Link href="/crowds/february" className="font-bold underline hover:text-blue-600">
+            February
+          </Link>{" "}
+          and the{" "}
+          <Link href="/best-times" className="font-bold underline hover:text-blue-600">
+            best-times guide
+          </Link>{" "}
+          before you lock the trip. January usually wins on crowd levels, but February can be easier if refurbishments are the bigger risk for your family.
+        </p>
       </section>
 
-      <section className="pt-8 border-t border-slate-100">
+      <section className="pt-8 border-t border-slate-100 space-y-6">
         <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/crowds/february" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">February Crowds</Link>
+          <Link href="/articles/least-crowded-days-disneyland" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Least Crowded Days</Link>
+          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Value Date Strategy</Link>
         </div>
+        <MonthNavigation currentMonth="january" />
       </section>
     </div>
   );

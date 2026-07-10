@@ -411,6 +411,13 @@ export default function OctoberCrowdsPage() {
             <Link href="/hotels" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
               Walkable hotels ranked (Harbor Blvd strategy)
             </Link>
+            <p className="mt-3 text-sm text-slate-700 leading-relaxed">
+              If rope drop matters on your dates, the{" "}
+              <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">
+                Harbor Blvd advantage
+              </Link>{" "}
+              explains why location changes the whole morning in October.
+            </p>
           </div>
         </div>
       </section>
@@ -517,6 +524,12 @@ export default function OctoberCrowdsPage() {
           <Link href="/articles/utah-trap" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             Utah Trap Article
           </Link>
+          <Link href="/articles/magic-key-crowd" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            Magic Key Evening Spike
+          </Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            Midday Break Strategy
+          </Link>
           <Link href="/hotels" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             Hotels Near Disneyland
           </Link>
@@ -528,6 +541,12 @@ export default function OctoberCrowdsPage() {
           </Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             Best Times to Visit
+          </Link>
+          <Link href="/crowds/september" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            September Crowds
+          </Link>
+          <Link href="/crowds/november" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            November Crowds
           </Link>
           <Link
             href="/school-breaks-calendar"

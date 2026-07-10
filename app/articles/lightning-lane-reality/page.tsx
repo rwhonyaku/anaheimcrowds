@@ -36,7 +36,19 @@ export default function LightningLaneRealityArticle() {
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best-times guide
           </Link>
-          . If you pick a rough date and then hope Lightning Lane will fix it, you are solving the wrong problem.
+          . If you pick a rough date like{" "}
+          <Link href="/crowds/july" className="font-bold underline hover:text-blue-600">
+            July
+          </Link>
+          ,{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October
+          </Link>
+          , or{" "}
+          <Link href="/crowds/december" className="font-bold underline hover:text-blue-600">
+            late December
+          </Link>{" "}
+          and then hope Lightning Lane will fix it, you are solving the wrong problem.
         </p>
       </section>
 
@@ -62,7 +74,7 @@ export default function LightningLaneRealityArticle() {
         </p>
         <p>
           If your date is busy, rope drop is the foundation and Lightning Lane is the support beam.
-          If you reverse that order, the day gets expensive fast.
+          If you reverse that order, the day gets expensive fast, especially if your hotel location makes the first hour harder.
         </p>
         <p>
           If you want the tactical version, read the{" "}
@@ -72,7 +84,11 @@ export default function LightningLaneRealityArticle() {
           >
             Disneyland rope drop strategy
           </Link>{" "}
-          next.
+          next, then check the{" "}
+          <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">
+            Harbor Blvd advantage
+          </Link>{" "}
+          if your morning depends on getting through security early.
         </p>
       </section>
 

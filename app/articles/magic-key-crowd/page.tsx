@@ -38,6 +38,17 @@ export default function MagicKeyEveningSpikeArticle() {
           </Link>{" "}
           to avoid the weeks where local spikes stack with heavier travel demand.
         </p>
+        <p>
+          This shows up a lot in{" "}
+          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
+            September
+          </Link>{" "}
+          and{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October
+          </Link>
+          , when decent mid-days can still turn into crowded evenings.
+        </p>
       </section>
 
       <AdSlot id="mk-evening-top" label="Magic Key Evening Top" />
@@ -77,6 +88,13 @@ export default function MagicKeyEveningSpikeArticle() {
         <p className="text-amber-900">
           Use the midday softness for rides. Eat earlier than feels natural. Protect one or two nighttime priorities and stop pretending the whole evening will stay efficient.
         </p>
+        <p className="text-amber-900">
+          On higher-score dates, pair that approach with the{" "}
+          <Link href="/articles/disneyland-midday-break-strategy" className="font-bold underline hover:text-slate-900">
+            midday break strategy
+          </Link>{" "}
+          so the evening spike does not wipe out the whole second half of the day.
+        </p>
       </section>
 
       <section className="space-y-6">
@@ -94,7 +112,7 @@ export default function MagicKeyEveningSpikeArticle() {
           <Link href="/articles/best-day-of-week-disneyland" className="font-bold underline hover:text-blue-600">
             best day of week guide
           </Link>{" "}
-          is the smarter next page.
+          as the smarter next page.
         </p>
       </section>
     </article>

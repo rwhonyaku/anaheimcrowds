@@ -126,6 +126,21 @@ export default function BestDayOfWeekDisneylandPage() {
           </Link>{" "}
           page is the better starting point.
         </p>
+        <p className="text-slate-700">
+          For month-level examples, compare the low-crowd weekday logic in{" "}
+          <Link href="/crowds/january" className="font-bold underline hover:text-blue-600">
+            January
+          </Link>
+          ,{" "}
+          <Link href="/crowds/may" className="font-bold underline hover:text-blue-600">
+            May
+          </Link>
+          , and{" "}
+          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
+            September
+          </Link>{" "}
+          against the weeks where a normal Tuesday stops helping.
+        </p>
       </section>
     </article>
   );

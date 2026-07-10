@@ -87,7 +87,11 @@ export default function UtahTrapArticle() {
           <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
             October crowd guide
           </Link>{" "}
-          for the week-by-week breakdown, and if you are still going during this window, make the hotel choice work for you by reading{" "}
+          for the week-by-week breakdown, and if you are still going during this window, make the hotel choice work for you by reading the{" "}
+          <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">
+            Harbor Blvd advantage
+          </Link>{" "}
+          and{" "}
           <Link href="/hotels" className="font-bold underline hover:text-blue-600">
             the Harbor hotel strategy page
           </Link>

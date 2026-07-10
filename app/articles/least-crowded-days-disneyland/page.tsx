@@ -6,7 +6,7 @@ import { VALUE_DATES } from "@/lib/school-data";
 export const metadata: Metadata = {
   title: "Least Crowded Days at Disneyland in 2026 | AnaheimCrowds",
   description:
-    "The least crowded days at Disneyland in 2026: exact low-pressure date windows, why they work, and which lookalike dates to avoid.",
+    "The least crowded days at Disneyland in 2026: exact lower-crowd date windows, why they work, and which similar dates to avoid.",
   alternates: { canonical: "/articles/least-crowded-days-disneyland" },
 };
 
@@ -15,7 +15,7 @@ const dateGroups = [
     label: "Mid-January reset",
     dates: VALUE_DATES.filter((date) => date.startsWith("2026-01")).slice(3, 11),
     takeaway:
-      "This is the cleanest school-is-back window of the year if you avoid the MLK holiday stack.",
+      "This is one of the best school-is-back windows of the year if you avoid the MLK weekend.",
   },
   {
     label: "Early February weekdays",
@@ -27,7 +27,7 @@ const dateGroups = [
     label: "Early May shoulder season",
     dates: VALUE_DATES.filter((date) => date.startsWith("2026-05")).slice(0, 4),
     takeaway:
-      "Early May is one of the best combinations of weather, lower pricing, and manageable weekday pressure.",
+      "Early May is one of the best combinations of weather, lower pricing, and manageable weekday crowds.",
   },
   {
     label: "Mid-September school-is-back window",
@@ -67,6 +67,25 @@ export default function LeastCrowdedDaysDisneylandPage() {
           </Link>{" "}
           guide before you book hotels.
         </p>
+        <p className="text-slate-700">
+          The matching month guides are{" "}
+          <Link href="/crowds/january" className="font-bold underline hover:text-blue-600">
+            January
+          </Link>
+          ,{" "}
+          <Link href="/crowds/february" className="font-bold underline hover:text-blue-600">
+            February
+          </Link>
+          ,{" "}
+          <Link href="/crowds/may" className="font-bold underline hover:text-blue-600">
+            May
+          </Link>
+          , and{" "}
+          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
+            September
+          </Link>
+          .
+        </p>
       </section>
 
       <AdSlot id="least-crowded-days-top" label="Least crowded days top" />
@@ -91,7 +110,7 @@ export default function LeastCrowdedDaysDisneylandPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">What These Days Have in Common</h2>
         <ul className="list-disc ml-6 space-y-2 text-slate-700">
-          <li>School is mostly in session across Southern California and nearby feeder markets.</li>
+          <li>School is mostly in session across Southern California and nearby travel markets.</li>
           <li>They sit outside major holiday weekends.</li>
           <li>Disney pricing usually signals lower expected demand.</li>
           <li>They are usually Tuesday through Thursday, not Monday and not Saturday.</li>
@@ -102,7 +121,18 @@ export default function LeastCrowdedDaysDisneylandPage() {
         <h2 className="text-2xl font-bold text-amber-900">Dates That Look Similar but Are Worse</h2>
         <p className="text-amber-900">
           The biggest mistakes are <strong>MLK weekend</strong>, <strong>Presidents Day weekend</strong>, the first half of{" "}
-          <strong>April</strong>, <strong>mid-to-late October</strong>, and <strong>late December</strong>. Those dates can sit near
+          <Link href="/crowds/april" className="font-bold underline hover:text-amber-950">
+            April
+          </Link>
+          ,{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-amber-950">
+            mid-to-late October
+          </Link>
+          , and{" "}
+          <Link href="/crowds/december" className="font-bold underline hover:text-amber-950">
+            late December
+          </Link>
+          . Those dates can sit near
           a strong low-crowd pocket on the calendar and still behave like a completely different trip.
         </p>
       </section>

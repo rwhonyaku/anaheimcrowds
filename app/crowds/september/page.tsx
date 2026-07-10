@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { MonthNavigation } from "@/components/MonthNavigation";
 import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -72,15 +73,31 @@ export default function SeptemberCrowdsPage() {
             Party nights, Labor Day spillover, and Friday evening locals can still break the pattern, so September rewards exact date picking more than broad month-level planning.
           </p>
         </div>
+        <p className="text-slate-700 leading-relaxed">
+          If you want Halloween atmosphere without full October demand, use the{" "}
+          <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
+            crowd calendar
+          </Link>{" "}
+          for exact dates, then compare September against{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October
+          </Link>{" "}
+          before you book.
+        </p>
       </section>
 
-      <section className="pt-8 border-t border-slate-100">
+      <section className="pt-8 border-t border-slate-100 space-y-6">
         <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/crowds/august" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">August Crowds</Link>
+          <Link href="/crowds/october" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">October Crowds</Link>
+          <Link href="/articles/magic-key-crowd" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Magic Key Evening Spike</Link>
+          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Value Date Strategy</Link>
         </div>
+        <MonthNavigation currentMonth="september" />
       </section>
     </div>
   );
