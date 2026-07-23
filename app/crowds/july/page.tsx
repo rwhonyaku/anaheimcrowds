@@ -22,6 +22,25 @@ export default function JulyCrowdsPage() {
         </p>
       </section>
 
+      <section className="bg-blue-50 border border-blue-200 rounded-2xl p-5 space-y-3">
+        <p className="text-xs font-black uppercase tracking-widest text-blue-700">July next steps</p>
+        <p className="text-sm text-slate-700 leading-relaxed">
+          If July is locked in, build the day around{" "}
+          <Link href="/articles/disneyland-rope-drop-strategy-2026" className="font-bold underline hover:text-blue-600">
+            rope drop
+          </Link>
+          , a realistic{" "}
+          <Link href="/articles/disneyland-midday-break-strategy" className="font-bold underline hover:text-blue-600">
+            midday break
+          </Link>
+          , and knowing when{" "}
+          <Link href="/articles/lightning-lane-reality" className="font-bold underline hover:text-blue-600">
+            Lightning Lane
+          </Link>{" "}
+          is worth paying for.
+        </p>
+      </section>
+
       <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">
         <div className="flex items-center gap-3 text-blue-600">
           <CalendarDays size={24} />

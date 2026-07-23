@@ -7,9 +7,9 @@ import { AlertTriangle, CalendarDays, Info, Zap, ExternalLink } from "lucide-rea
 const AS_OF_DATE = "February 19, 2026";
 
 export const metadata: Metadata = {
-  title: "Disneyland Crowds in October 2026 | AnaheimCrowds",
+  title: "Disneyland Crowds in October 2026: Halloween, Utah Break & Worst Weeks | AnaheimCrowds",
   description:
-    "Disneyland crowds in October 2026—week-by-week breakdown, the Utah fall break effect, Halloween event impact, ticket tier patterns, hotel price trends, and Lightning Lane sellout timing.",
+    "Disneyland crowds in October 2026: Halloween demand, Utah fall break, Oogie Boogie spillover, the worst weeks to avoid, and the best early-October dates.",
   alternates: { canonical: "/crowds/october" },
 };
 
@@ -36,9 +36,9 @@ export default function OctoberCrowdsPage() {
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
           <strong className="text-slate-900">Is Disneyland busy in October 2026?</strong>{" "}
           <span className="font-semibold">Yes.</span> Expect a month where “moderate” days are the exception, not the
-          rule. Your best odds are <strong>early-October weekdays</strong>. The hardest stretch is{" "}
-          <strong>mid-October through Halloween weekend</strong> (Halloween is{" "}
-          <strong>Saturday, October 31, 2026</strong>).
+          rule. Your best odds are <strong>early-October weekdays</strong>. The worst weeks are{" "}
+          <strong>mid-October through Halloween weekend</strong>, when Utah fall break, Halloween demand, and Oogie Boogie
+          spillover stack together. Halloween is <strong>Saturday, October 31, 2026</strong>.
         </div>
 
         <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>

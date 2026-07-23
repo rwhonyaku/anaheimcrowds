@@ -22,6 +22,25 @@ export default function SeptemberCrowdsPage() {
         </p>
       </section>
 
+      <section className="bg-blue-50 border border-blue-200 rounded-2xl p-5 space-y-3">
+        <p className="text-xs font-black uppercase tracking-widest text-blue-700">September next steps</p>
+        <p className="text-sm text-slate-700 leading-relaxed">
+          Use September when you want Halloween atmosphere without full October pressure. Compare it with{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October
+          </Link>
+          , watch for the{" "}
+          <Link href="/articles/magic-key-crowd" className="font-bold underline hover:text-blue-600">
+            Magic Key evening spike
+          </Link>
+          , and confirm exact dates on the{" "}
+          <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
+            crowd calendar
+          </Link>
+          .
+        </p>
+      </section>
+
       <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">
         <div className="flex items-center gap-3 text-blue-600">
           <CalendarDays size={24} />

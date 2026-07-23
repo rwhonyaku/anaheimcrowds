@@ -5,8 +5,9 @@ import { AlertTriangle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "2026 Disneyland Crowd Calendar | AnaheimCrowds",
-  description: "A data-driven 12-month forecast based on regional school data and historical patterns.",
+  title: "Disneyland Crowd Calendar 2026: Daily Crowd Scores | AnaheimCrowds",
+  description:
+    "Disneyland crowd calendar 2026 with daily 1-10 crowd scores, lower-crowd dates, busy weeks to avoid, and school-break demand signals.",
 };
 
 function getDaysInMonth(month: number) {
@@ -44,11 +45,11 @@ export default function CrowdCalendarPage() {
       <section className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-4">
           <h1 className="font-display text-5xl md:text-6xl text-slate-900 leading-none">
-            2026 Disneyland Crowd Calendar
+            Disneyland Crowd Calendar 2026
           </h1>
 
           <p className="text-slate-600 max-w-2xl font-medium leading-relaxed">
-            Every date gets a visible <strong>1-10 crowd score</strong> based on school-break overlap, seasonal pressure, weekends, and Disney demand signals.
+            This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd score</strong> based on school-break overlap, seasonal pressure, weekends, and Disney demand signals.
             Use the{" "}
             <Link href="/best-times" className="font-bold underline hover:text-sky-800">
               best times to visit Disneyland
@@ -171,7 +172,11 @@ export default function CrowdCalendarPage() {
             <Link href="/school-breaks-calendar" className="font-bold underline hover:text-sky-800">
               school-breaks calendar
             </Link>{" "}
-            before you book hotels or tickets.
+            before you book hotels or tickets. If the trip depends on rope drop, pair your dates with the{" "}
+            <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-sky-800">
+              Harbor Blvd hotel-location strategy
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -192,7 +197,11 @@ export default function CrowdCalendarPage() {
             <Link href="/crowds/july" className="text-amber-300 hover:underline">
               July crowd guide
             </Link>{" "}
-            so you understand what a "manageable" score actually feels like on the ground.
+            so you understand what a "manageable" score actually feels like on the ground. On packed dates, the{" "}
+            <Link href="/articles/disneyland-midday-break-strategy" className="text-amber-300 hover:underline">
+              midday break strategy
+            </Link>{" "}
+            becomes part of the plan, not an extra.
           </p>
         </div>
       </section>
