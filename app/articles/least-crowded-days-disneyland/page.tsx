@@ -4,9 +4,9 @@ import { AdSlot } from "@/components/AdSlot";
 import { VALUE_DATES } from "@/lib/school-data";
 
 export const metadata: Metadata = {
-  title: "Least Crowded Days at Disneyland in 2026 | AnaheimCrowds",
+  title: "Least Crowded Days at Disneyland in 2026: When It Is Least Busy | AnaheimCrowds",
   description:
-    "The least crowded days at Disneyland in 2026: exact lower-crowd date windows, why they work, and which similar dates to avoid.",
+    "When is Disneyland least crowded in 2026? See the least busy date windows, exact lower-crowd weekdays, why they work, and which similar dates to avoid.",
   alternates: { canonical: "/articles/least-crowded-days-disneyland" },
 };
 
@@ -48,15 +48,17 @@ export default function LeastCrowdedDaysDisneylandPage() {
           Least Crowded Days at Disneyland in 2026
         </h1>
         <p className="text-lg text-slate-600">
-          The least crowded Disneyland days in 2026 are mostly <strong>Tuesday through Thursday dates in mid-January,
-          early February, early May, and mid-September</strong>. If you want the safest exact-date starting points, this is the shortlist.
+          When is Disneyland least crowded in 2026? The least busy Disneyland days are mostly{" "}
+          <strong>Tuesday through Thursday dates in mid-January, early February, early May, and mid-September</strong>.
+          If you want the safest exact-date starting points, this is the shortlist.
         </p>
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-slate-50 p-8 space-y-4">
         <h2 className="text-2xl font-bold">Quick Verdict</h2>
         <p className="text-slate-700">
-          If you only want the answer, start with <strong>Jan 12-29</strong>, <strong>Feb 3-12</strong>,{" "}
+          If you only want the answer, Disneyland is least crowded on weekdays in these 2026 windows:{" "}
+          <strong>Jan 12-29</strong>, <strong>Feb 3-12</strong>,{" "}
           <strong>May 4-14</strong>, and <strong>Sep 14-24</strong>, then confirm the exact weekday on the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             2026 crowd calendar

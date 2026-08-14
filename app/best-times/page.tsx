@@ -74,6 +74,11 @@ export default function BestTimesPage() {
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             2026 crowd calendar
           </Link>
+          . If your main question is when Disneyland is least crowded or least busy, use the{" "}
+          <Link href="/articles/least-crowded-days-disneyland" className="font-bold underline hover:text-blue-600">
+            least crowded days guide
+          </Link>{" "}
+          for the tighter date shortlist
           .
         </div>
 

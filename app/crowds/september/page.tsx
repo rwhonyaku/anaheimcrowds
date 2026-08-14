@@ -5,8 +5,9 @@ import { MonthNavigation } from "@/components/MonthNavigation";
 import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Disneyland Crowds in September 2026 | AnaheimCrowds",
-  description: "How to balance the start of Halloween with low September crowds.",
+  title: "Disneyland September Crowd Calendar 2026 | Crowds, Best Dates",
+  description:
+    "Disneyland September crowd calendar 2026: crowds, best dates, Sep 14-24 weekdays, Halloween Time, Oogie Boogie spillover, and when to avoid weekends.",
   alternates: { canonical: "/crowds/september" },
 };
 

@@ -7,9 +7,9 @@ import { AlertTriangle, CalendarDays, Info, Zap, ExternalLink } from "lucide-rea
 const AS_OF_DATE = "February 19, 2026";
 
 export const metadata: Metadata = {
-  title: "Disneyland Crowds in October 2026: Halloween, Utah Break & Worst Weeks | AnaheimCrowds",
+  title: "Disneyland October Crowd Calendar 2026 | Halloween & Utah Break",
   description:
-    "Disneyland crowds in October 2026: Halloween demand, Utah fall break, Oogie Boogie spillover, the worst weeks to avoid, and the best early-October dates.",
+    "Disneyland October crowd calendar 2026: Halloween demand, Utah fall break, Oogie Boogie spillover, worst weeks to avoid, and best early-October dates.",
   alternates: { canonical: "/crowds/october" },
 };
 
