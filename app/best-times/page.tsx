@@ -551,6 +551,16 @@ export default function BestTimesPage() {
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6">
+            <h3 className="font-black text-lg">When is Disneyland least crowded or least busy?</h3>
+            <p className="text-slate-700 leading-relaxed mt-2">
+              Disneyland is usually least crowded on Tuesday through Thursday during school-is-in-session windows.
+              For 2026, the best time of year to start is <strong>Jan 12-Feb 12</strong>, then{" "}
+              <strong>May 4-14</strong> and <strong>Sep 14-24</strong>. Avoid holiday weekends, spring break,
+              late October, and late December if lower waits are the priority.
+            </p>
+          </div>
+
+          <div className="bg-white border border-slate-200 rounded-2xl p-6">
             <h3 className="font-black text-lg">Is Monday a good day to go to Disneyland in 2026?</h3>
             <p className="text-slate-700 leading-relaxed mt-2">
               Sometimes. A normal Monday can be better than the weekend, but Monday breaks down on holidays and during major

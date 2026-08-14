@@ -50,6 +50,7 @@ export default function CrowdCalendarPage() {
 
           <p className="text-slate-600 max-w-2xl font-medium leading-relaxed">
             This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd score</strong> based on school-break overlap, seasonal pressure, weekends, and Disney demand signals.
+            Use it as a <strong>Disneyland busy days calendar</strong> to spot the roughest weeks before you choose tickets or hotels.
             Use the{" "}
             <Link href="/best-times" className="font-bold underline hover:text-sky-800">
               best times to visit Disneyland

@@ -25,6 +25,8 @@ export default function SeptemberCrowdsPage() {
       <section className="bg-blue-50 border border-blue-200 rounded-2xl p-5 space-y-3">
         <p className="text-xs font-black uppercase tracking-widest text-blue-700">September next steps</p>
         <p className="text-sm text-slate-700 leading-relaxed">
+          Disneyland crowd calendar September 2026 shortcut: the best dates are <strong>Sep 14-24 weekdays</strong>,
+          especially Tuesday and Wednesday.{" "}
           Use September when you want Halloween atmosphere without full October pressure. Compare it with{" "}
           <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
             October

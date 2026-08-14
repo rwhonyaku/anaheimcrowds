@@ -39,6 +39,9 @@ export default function OctoberCrowdsPage() {
           rule. Your best odds are <strong>early-October weekdays</strong>. The worst weeks are{" "}
           <strong>mid-October through Halloween weekend</strong>, when Utah fall break, Halloween demand, and Oogie Boogie
           spillover stack together. Halloween is <strong>Saturday, October 31, 2026</strong>.
+          <br />
+          <strong className="text-slate-900">How busy is Disneyland in October?</strong> Very busy after mid-month;
+          treat October like a peak-season month, not a quiet fall window.
         </div>
 
         <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
