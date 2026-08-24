@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ShieldCheck, GraduationCap, Ticket, Hotel, Zap } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Methodology | AnaheimCrowds",
-  description: "How AnaheimCrowds weighs school breaks, ticket pricing, convention weeks, and weekday patterns in its 2026 forecasts.",
+  description: "How AnaheimCrowds uses school breaks, ticket pricing, convention weeks, and weekday behavior in its 2026 forecasts.",
 };
 
 export default function MethodologyPage() {
@@ -15,7 +16,8 @@ export default function MethodologyPage() {
           Methodology
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          Most crowd calendars lean too hard on old attendance patterns. AnaheimCrowds starts with that history, but puts more weight on the signals that actually move Disneyland dates in 2026.
+          Most crowd calendars lean too hard on old attendance history. AnaheimCrowds still uses that history,
+          but gives more weight to the things that actually move Disneyland dates in 2026.
         </p>
       </section>
 
@@ -27,9 +29,11 @@ export default function MethodologyPage() {
             <GraduationCap size={32} />
           </div>
           <div className="space-y-2">
-            <h2 className="text-2xl font-black uppercase italic tracking-tight">School breaks come first</h2>
+            <h2 className="text-2xl font-black uppercase italic tracking-tight">School breaks matter most</h2>
             <p className="text-slate-600 leading-relaxed">
-              School calendars are the biggest driver in the model. We track major districts across Southern California and nearby feeder markets because Disneyland weekday pressure changes fast when families are out of school at the same time.
+              School calendars are the biggest driver in the model. We track major districts across Southern
+              California and nearby travel markets because Disneyland weekdays change fast when families are out
+              of school at the same time.
             </p>
           </div>
         </div>
@@ -41,7 +45,9 @@ export default function MethodologyPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Disney pricing is a useful clue</h2>
             <p className="text-slate-600 leading-relaxed">
-              Ticket tiers are not perfect, but they are one of the clearest public demand signals Disney gives you. Lower-priced dates usually deserve a second look. Higher-priced weekends and holiday dates usually confirm what the calendar is already warning you about.
+              Ticket tiers are not perfect, but they are one of the clearest public clues Disney gives you.
+              Lower-priced dates are often worth checking. Higher-priced weekends and holiday dates usually
+              confirm what the calendar is already telling you.
             </p>
           </div>
         </div>
@@ -53,7 +59,9 @@ export default function MethodologyPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Anaheim convention weeks still matter</h2>
             <p className="text-slate-600 leading-relaxed">
-              Convention traffic does not always flood the parks, but it can tighten hotels, restaurants, and the general feel around Harbor. That matters most when a date is already borderline and a convention week removes the little bit of breathing room it had.
+              Convention traffic does not always flood the parks, but it can tighten hotels, restaurants, and
+              the area around Harbor. That matters most when a date already looks borderline and a convention
+              week makes it less forgiving.
             </p>
           </div>
         </div>
@@ -63,9 +71,11 @@ export default function MethodologyPage() {
             <Zap size={32} />
           </div>
           <div className="space-y-2">
-            <h2 className="text-2xl font-black uppercase italic tracking-tight">Weekday patterns still need context</h2>
+            <h2 className="text-2xl font-black uppercase italic tracking-tight">Weekdays still need context</h2>
             <p className="text-slate-600 leading-relaxed">
-              A Tuesday is not automatically good, and a Monday is not automatically bad. We treat weekday patterns as a supporting signal, not the whole answer, because the week itself matters more than the label on the calendar.
+              A Tuesday is not automatically good, and a Monday is not automatically bad. We use weekday
+              behavior as supporting context, not the whole answer, because the week itself matters more than
+              the label on the calendar.
             </p>
           </div>
         </div>
@@ -77,8 +87,13 @@ export default function MethodologyPage() {
           <h2 className="text-3xl font-black uppercase italic">How to read the forecast</h2>
         </div>
         <p className="text-sky-100 leading-relaxed text-lg">
-          The forecast is meant to help you make better date decisions, not promise a perfect park day. Ride downtime, weather, and event noise can always change the feel of a trip. The goal is better odds and fewer bad surprises.
+          The forecast is meant to help you make better date decisions, not promise a perfect park day. Ride
+          downtime, weather, and event noise can always change the feel of a trip. The point is better odds and
+          fewer bad surprises.
         </p>
+        <Link href="/forecast-updates" className="inline-block font-bold text-white underline hover:text-sky-100">
+          See recent forecast updates
+        </Link>
       </section>
     </div>
   );

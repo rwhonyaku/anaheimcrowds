@@ -113,6 +113,41 @@ export default function BestTimesPage() {
         </div>
 
         <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
+        <p className="text-sm text-slate-500">
+          Source and forecast changes are tracked in{" "}
+          <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
+            Forecast Updates
+          </Link>
+          .
+        </p>
+      </section>
+
+      <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-8 text-white shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/crowds.jpg')] bg-cover bg-center opacity-35" />
+        <div className="absolute inset-0 bg-slate-950/65" />
+        <div className="relative grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end">
+          <div className="space-y-3">
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-amber-300">
+              Start with dates
+            </p>
+            <h2 className="text-2xl md:text-3xl font-black tracking-tight">
+              Pick the week before you plan the day.
+            </h2>
+            <p className="max-w-xl text-sm leading-relaxed text-slate-100">
+              A better week gives rope drop, dining breaks, and afternoon plans more room to work. Use this guide for the shortlist,
+              then compare exact dates on the calendar.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
+            <div className="grid grid-cols-3 gap-2 text-center text-xs font-bold">
+              {["Jan 12-30", "May 4-14", "Sep 14-24"].map((window) => (
+                <div key={window} className="rounded-xl bg-white/90 px-3 py-3 text-slate-900">
+                  {window}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       <AdSlot id="best-times-top" label="Top Guide Ad" />

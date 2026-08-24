@@ -533,7 +533,7 @@ export default function OctoberCrowdsPage() {
 
       <AdSlot id="october-bottom" label="October page bottom" />
 
-      {/* Deep dives + month nav */}
+      {/* Related planning pages */}
       <section className="pt-8 border-t border-slate-100 space-y-6">
         <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">More planning help</p>
 

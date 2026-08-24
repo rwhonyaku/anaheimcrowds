@@ -13,6 +13,7 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
     { href: "/crowd-calendar", label: "2026 Crowd Calendar" },
     { href: "/best-times", label: "Best Times (2026)" },
     { href: "/school-breaks-calendar", label: "School Break Calendar" },
+    { href: "/forecast-updates", label: "Forecast Updates" },
     { href: "/hotels", label: "Hotels Walking Distance" },
   ];
 

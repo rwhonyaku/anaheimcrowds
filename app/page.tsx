@@ -1,44 +1,40 @@
 import Link from "next/link";
 import { CrowdScanner } from "@/components/CrowdScanner";
 import { AdSlot } from "@/components/AdSlot";
-import { MoveRight, CalendarDays, Hotel, Map } from "lucide-react";
+import { MoveRight, CalendarDays, Hotel, Map, Search, Clock3 } from "lucide-react";
 
-const schoolBreakBars = [
-  "bg-emerald-300/60",
-  "bg-emerald-400/60",
-  "bg-amber-300/60",
-  "bg-amber-400/60",
-  "bg-rose-400/60",
-  "bg-rose-500/60",
-  "bg-amber-400/60",
-  "bg-emerald-400/60",
-  "bg-emerald-300/60",
+const sampleCalendarDays = [
+  { day: "Mon", date: "14", score: 3, color: "bg-emerald-100 text-emerald-800 border-emerald-200" },
+  { day: "Tue", date: "15", score: 3, color: "bg-emerald-100 text-emerald-800 border-emerald-200" },
+  { day: "Wed", date: "16", score: 4, color: "bg-emerald-100 text-emerald-800 border-emerald-200" },
+  { day: "Thu", date: "17", score: 5, color: "bg-amber-100 text-amber-800 border-amber-200" },
+  { day: "Fri", date: "18", score: 7, color: "bg-amber-100 text-amber-800 border-amber-200" },
+  { day: "Sat", date: "19", score: 8, color: "bg-rose-100 text-rose-800 border-rose-200" },
+  { day: "Sun", date: "20", score: 7, color: "bg-amber-100 text-amber-800 border-amber-200" },
 ];
 
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-16 pb-20">
-      <section className="relative overflow-hidden px-4 pt-10 md:pt-16">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(180,83,9,0.12),_transparent_35%),linear-gradient(180deg,rgba(255,255,255,0.65),rgba(245,245,244,0.95))]" />
-        <div className="absolute inset-x-0 top-0 h-full opacity-40 [background-image:linear-gradient(rgba(148,163,184,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.18)_1px,transparent_1px)] [background-size:28px_28px]" />
+      <section className="relative overflow-hidden px-4 pt-8 md:pt-12">
+        <div className="absolute inset-0 bg-[url('/images/entrance.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-stone-50/90" />
+        <div className="absolute inset-x-0 top-0 h-full opacity-45 [background-image:linear-gradient(rgba(148,163,184,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.18)_1px,transparent_1px)] [background-size:28px_28px]" />
 
         <div className="relative max-w-6xl mx-auto">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div className="space-y-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-white/80 text-sky-800 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-stone-200 shadow-sm">
-                <CalendarDays size={14} /> Disneyland crowd calendar
+                <CalendarDays size={14} /> Disneyland crowd calendar 2026
               </div>
 
               <div className="space-y-5">
-                <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.9]">
-                  Pick the right week.
-                  <br />
-                  Skip the wrong crowd.
+                <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+                  Disneyland crowd calendar and date estimator
                 </h1>
                 <p className="text-xl text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  We track the things that actually change Disneyland crowds: school breaks, holiday weeks,
-                  Magic Key blockouts, and hotel location. We want to help you pick better dates before
-                  the trip gets expensive.
+                  Check a 2026 Disneyland date, compare 1-10 crowd scores, and see which weeks are easier before
+                  you book tickets or a hotel near the parks.
                 </p>
               </div>
 
@@ -47,30 +43,75 @@ export default function HomePage() {
                   href="/crowd-calendar"
                   className="bg-amber-700 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-tight hover:bg-slate-900 transition-all flex items-center gap-2"
                 >
-                  View Forecast <MoveRight size={20} />
+                  View Crowd Calendar <MoveRight size={20} />
                 </Link>
                 <Link
                   href="/best-times"
                   className="bg-white text-slate-900 px-8 py-4 rounded-2xl font-black uppercase tracking-tight border border-stone-300 hover:border-amber-700 hover:text-amber-700 transition-all"
                 >
-                  Best Times
+                  Best Dates
                 </Link>
+              </div>
+
+              <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0 text-left">
+                <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Scores</p>
+                  <p className="mt-1 text-2xl font-black text-slate-900">1-10</p>
+                </div>
+                <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best window</p>
+                  <p className="mt-1 text-lg font-black text-slate-900">Sep 14-24</p>
+                </div>
+                <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Updated</p>
+                  <p className="mt-1 text-lg font-black text-slate-900">2026</p>
+                </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="rounded-[2.5rem] border border-stone-200 bg-white/90 p-6 md:p-8 shadow-2xl shadow-stone-900/10 backdrop-blur-sm">
-                <div className="mb-6">
-                  <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500 mb-3">
-                    2026 monthly forecast
-                  </p>
-                  <div className="grid grid-cols-9 gap-2">
-                    {schoolBreakBars.map((bar, index) => (
-                      <div key={index} className={`h-12 rounded-2xl ${bar}`} />
-                    ))}
+              <div className="rounded-[2.5rem] border border-stone-200 bg-white/95 p-5 md:p-7 shadow-2xl shadow-stone-900/15 backdrop-blur-sm">
+                <div className="grid gap-5">
+                  <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-5">
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">
+                          Example week
+                        </p>
+                        <h2 className="mt-1 text-2xl font-black text-slate-900">
+                          September 2026 crowd scores
+                        </h2>
+                      </div>
+                      <div className="rounded-2xl bg-sky-800 px-3 py-2 text-xs font-black uppercase tracking-widest text-white">
+                        Anaheim
+                      </div>
+                    </div>
+
+                    <div className="mt-5 grid grid-cols-7 gap-2">
+                      {sampleCalendarDays.map((day) => (
+                        <div
+                          key={`${day.day}-${day.date}`}
+                          className={`min-h-20 rounded-2xl border p-2 text-center ${day.color}`}
+                        >
+                          <p className="text-[10px] font-black uppercase tracking-widest opacity-75">{day.day}</p>
+                          <p className="mt-1 text-sm font-bold">{day.date}</p>
+                          <p className="mt-1 text-2xl font-black">{day.score}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="mt-4 grid gap-2 text-sm text-slate-700 md:grid-cols-2">
+                      <p className="flex items-center gap-2">
+                        <Search size={16} className="text-sky-800" /> Search any 2026 date
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <Clock3 size={16} className="text-amber-700" /> Plan mornings around the score
+                      </p>
+                    </div>
                   </div>
+
+                  <CrowdScanner />
                 </div>
-                <CrowdScanner />
               </div>
             </div>
           </div>

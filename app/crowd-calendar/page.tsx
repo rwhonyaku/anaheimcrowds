@@ -58,6 +58,13 @@ export default function CrowdCalendarPage() {
             </Link>{" "}
             page to narrow the window, then use this calendar to choose the exact dates.
           </p>
+          <p className="text-sm text-slate-500 leading-relaxed max-w-2xl">
+            Major source changes are tracked on the{" "}
+            <Link href="/forecast-updates" className="font-bold underline hover:text-sky-800">
+              forecast updates
+            </Link>{" "}
+            page.
+          </p>
         </div>
 
         <div className="bg-white border border-stone-200 p-4 rounded-2xl flex gap-6 shadow-sm">
@@ -223,6 +230,8 @@ export default function CrowdCalendarPage() {
       </section>
 
       <section className="bg-slate-900 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/crowds.jpg')] bg-cover bg-center opacity-25" />
+        <div className="absolute inset-0 bg-slate-950/70" />
         <div className="relative z-10 space-y-6">
           <div className="flex items-center gap-2 text-amber-300 font-black text-xs uppercase tracking-widest">
             <AlertTriangle size={16} /> What the score does not tell you

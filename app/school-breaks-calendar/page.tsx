@@ -1,12 +1,38 @@
 import type { Metadata } from "next";
 import { SOCAL_2025_2026, UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
-import { Map, AlertCircle, CalendarDays, Users, Zap } from "lucide-react";
+import { Map, AlertCircle, CalendarDays, Users, Zap, ExternalLink } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "School Break Calendar | AnaheimCrowds",
-  description: "Identifying the 2026 windows where regional travel demand creates peak park crowds.",
+  description: "2026 Disneyland school break calendar with regional travel windows, Utah fall break dates, and source notes.",
 };
+
+const AS_OF_DATE = "August 24, 2026";
+
+const sourceLinks = [
+  {
+    label: "Davis School District calendar page",
+    href: "https://www.davis.k12.ut.us/documents/parent-information/school-year-calendar/26371133",
+  },
+  {
+    label: "Canyons School District calendars",
+    href: "https://www.canyonsdistrict.org/calendars/employee-calendars/2026-2027/",
+  },
+  {
+    label: "Alpine School District calendars",
+    href: "https://www.alpineschools.org/page/district-calendars",
+  },
+  {
+    label: "Jordan School District calendars",
+    href: "https://planning.jordandistrict.org/calendars/",
+  },
+  {
+    label: "Granite 2026-27 calendar reference",
+    href: "https://schools-calendar.com/school-calendar/ut/granite-school-district/",
+  },
+];
 
 export default function PeakDemandPage() {
   return (
@@ -16,8 +42,9 @@ export default function PeakDemandPage() {
           School Break <span className="text-sky-800">Calendar</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-2xl">
-          Disneyland does not get busy by accident. These are the school-break windows and travel overlaps that turn an ordinary weekday into a much harder park day.
+          Disneyland does not get busy by accident. These are the 2026 school-break windows and travel overlaps that turn an ordinary weekday into a much harder park day.
         </p>
+        <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
       </section>
 
       <AdSlot id="school-break-calendar-top" label="School Break Calendar Top Ad" />
@@ -42,6 +69,23 @@ export default function PeakDemandPage() {
           <h3 className="font-bold text-sm uppercase mb-2">What to do with it</h3>
           <p className="text-xs text-slate-500 leading-relaxed italic">
             Use this page to rule out bad windows first, then move to the calendar for exact date picking.
+          </p>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-8 text-white shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/crowds.jpg')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-slate-950/70" />
+        <div className="relative max-w-2xl space-y-3">
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-amber-300">
+            Why school calendars matter
+          </p>
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight">
+            Break weeks change how the whole day feels.
+          </h2>
+          <p className="text-sm leading-relaxed text-slate-100">
+            When nearby districts and fly-in markets line up, the park can stay busy from late morning through closing.
+            That is why this page feeds into the daily crowd calendar instead of standing alone.
           </p>
         </div>
       </section>
@@ -124,6 +168,47 @@ export default function PeakDemandPage() {
         <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed">
           If your dates land inside a high-impact window, assume the day will need a tighter morning plan and less margin for wasted time. Rule out the worst windows here, then move to the crowd calendar for exact dates.
         </p>
+        <div className="flex flex-wrap justify-center gap-4 text-sm font-bold">
+          <Link href="/crowd-calendar" className="text-amber-300 hover:underline">
+            2026 Crowd Calendar
+          </Link>
+          <Link href="/best-times" className="text-amber-300 hover:underline">
+            Best Times
+          </Link>
+          <Link href="/forecast-updates" className="text-amber-300 hover:underline">
+            Forecast Updates
+          </Link>
+        </div>
+      </section>
+
+      <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm space-y-4">
+        <h2 className="text-2xl font-black uppercase italic">How This Page Is Sourced</h2>
+        <p className="text-slate-700 leading-relaxed">
+          The calendar combines Southern California school-break timing with nearby travel markets that regularly affect Disneyland,
+          especially Utah in October. For the latest source changes, see the{" "}
+          <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
+            forecast updates
+          </Link>{" "}
+          page. For the scoring logic behind the daily calendar, see{" "}
+          <Link href="/methodology" className="font-bold underline hover:text-blue-600">
+            methodology
+          </Link>
+          .
+        </p>
+        <ul className="grid gap-2 text-sm">
+          {sourceLinks.map((source) => (
+            <li key={source.href}>
+              <a
+                href={source.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-bold underline hover:text-blue-600"
+              >
+                {source.label} <ExternalLink size={14} />
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

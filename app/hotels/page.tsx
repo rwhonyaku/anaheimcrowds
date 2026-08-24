@@ -111,25 +111,46 @@ export default function HotelRankingsPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-10 space-y-12 text-slate-900">
       {/* Header */}
-      <section className="space-y-4">
-        <div className="flex items-center gap-2 text-blue-600 font-bold uppercase tracking-widest text-xs">
-          <MapPin size={14} /> Disneyland Hotels Walking Distance (2026)
+      <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-10 text-white shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/entrance.jpg')] bg-cover bg-center opacity-35" />
+        <div className="absolute inset-0 bg-slate-950/70" />
+        <div className="relative space-y-4">
+          <div className="flex items-center gap-2 text-amber-300 font-bold uppercase tracking-widest text-xs">
+            <MapPin size={14} /> Disneyland Hotels Walking Distance (2026)
+          </div>
+
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white">
+            Disneyland Hotels{" "}
+            <span className="text-amber-300 italic">Walking Distance</span>{" "}
+            Ranked (Harbor Blvd)
+          </h1>
+
+          <p className="max-w-2xl text-lg text-slate-100 leading-relaxed">
+            If you’re searching “closest hotels to Disneyland entrance,” ignore the mileage. Around Disneyland,
+            <strong> the only number that matters is walk time to the turnstiles</strong>.
+            This page ranks Harbor Blvd hotels by how fast you can get from the lobby to The Esplanade.
+          </p>
+
+          <p className="text-sm text-slate-300">Last updated: {AS_OF_DATE}</p>
+
+          <div className="grid gap-3 md:grid-cols-3">
+            <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
+              <p className="text-xs font-black uppercase tracking-widest text-amber-200">Fastest group</p>
+              <p className="mt-1 text-2xl font-black">Under 5 min</p>
+            </div>
+            <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
+              <p className="text-xs font-black uppercase tracking-widest text-amber-200">Best route</p>
+              <p className="mt-1 text-2xl font-black">Harbor side</p>
+            </div>
+            <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
+              <p className="text-xs font-black uppercase tracking-widest text-amber-200">Use case</p>
+              <p className="mt-1 text-2xl font-black">Rope drop</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900">
-          Disneyland Hotels{" "}
-          <span className="text-blue-600 italic">Walking Distance</span>{" "}
-          Ranked (Harbor Blvd)
-        </h1>
-
-        <p className="text-lg text-slate-600 leading-relaxed">
-          If you’re searching “closest hotels to Disneyland entrance,” ignore the mileage. Around Disneyland,
-          <strong> the only number that matters is walk time to the turnstiles</strong>.
-          This page ranks Harbor Blvd hotels by how fast you can get from the lobby to The Esplanade.
-        </p>
-
-        <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
-
+      <section className="space-y-4">
         <div className="p-6 bg-amber-50 border-l-4 border-amber-400 rounded-r-2xl shadow-sm space-y-2">
           <p className="text-lg font-bold text-amber-900 leading-tight">
             “0.3 miles” can still be a bad hotel choice if the route forces a detour or hits the wrong choke points.

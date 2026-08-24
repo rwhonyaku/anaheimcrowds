@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/best-times", file: "app/best-times/page.tsx", priority: 0.95, changeFrequency: "weekly" },
     { path: "/hotels", file: "app/hotels/page.tsx", priority: 0.9, changeFrequency: "monthly" },
     { path: "/school-breaks-calendar", file: "app/school-breaks-calendar/page.tsx", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/forecast-updates", file: "app/forecast-updates/page.tsx", priority: 0.65, changeFrequency: "weekly" },
 
     { path: "/crowds/january", file: "app/crowds/january/page.tsx", priority: 0.8, changeFrequency: "monthly" },
     { path: "/crowds/february", file: "app/crowds/february/page.tsx", priority: 0.8, changeFrequency: "monthly" },
