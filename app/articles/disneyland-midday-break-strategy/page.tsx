@@ -26,7 +26,7 @@ export default function DisneylandMiddayBreakStrategyPage() {
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-slate-50 p-8 space-y-4">
-        <h2 className="text-2xl font-bold">Quick Verdict</h2>
+        <h2 className="text-2xl font-bold">Short answer</h2>
         <p className="text-slate-700">
           Use a midday break on high-crowd days when your score on the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">

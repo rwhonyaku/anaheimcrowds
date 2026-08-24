@@ -10,28 +10,28 @@ function getScannerCopy(score: number, date: string) {
   if (score <= 4) {
     return {
       status: "good" as const,
-      text: "This is one of the lighter dates on the calendar. That does not mean empty, but it does mean you have room to make normal mistakes and still have a good day.",
+      text: "This is one of the lighter dates on the calendar. It will not be empty, but it should be easier than most days if you start on time.",
       strategy:
         month >= 5 && month <= 8
-          ? "Even on a lighter summer date, use the first 90 minutes well. The score is soft for the season, not soft in an absolute sense."
-          : "Start with one true headliner, then let the day breathe a little. You do not need panic-mode rope drop, but you should still use the morning on purpose.",
+          ? "Even on a lighter summer day, use the morning well. Summer still gets busy later, so do your biggest rides early."
+          : "Start with your biggest ride first, then use the morning for the rest of your priority list. You do not need to rush all day, but you should still use the early hours well.",
     };
   }
 
   if (score <= 7) {
     return {
       status: "warning" as const,
-      text: "This is a workable date, not a free pass. Expect real waits, but a day you can still control if you do not waste the morning.",
+      text: "This date is manageable, but it is not an easy day. Expect real waits, especially if you get a late start.",
       strategy:
-        "Treat the first 90 minutes like your advantage window. Do the high-demand rides first and leave lower-capacity filler or shows for later.",
+        "Use the first 90 minutes for your biggest rides. Save shows, shopping, and lower-priority attractions for later in the day.",
     };
   }
 
   return {
     status: "bad" as const,
-    text: "This is a hard date. The park will feel tighter, waits will stack earlier, and a casual start will cost you more than usual.",
+    text: "This is a crowded date. Lines will build earlier than usual, and the park will feel busier for most of the day.",
     strategy:
-      "If this date is locked in, get through security early, narrow the priority list before you enter, and assume the afternoon will be slower and more crowded than you want.",
+      "If you have to go on this date, get there early, decide on your top priorities before you enter, and expect the afternoon to be the busiest part of the day.",
   };
 }
 
@@ -63,13 +63,14 @@ export function CrowdScanner() {
     <div className="space-y-8">
       <div className="text-center space-y-3">
         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">
-          Start Here
+          Check a Date
         </p>
         <h2 className="font-display text-4xl md:text-5xl text-slate-900 leading-tight">
           Check your date before you build the trip around it
         </h2>
         <p className="text-slate-600 text-base md:text-lg font-medium max-w-2xl mx-auto">
-          Enter a date and see the same 1-10 forecast logic the calendar uses, plus the practical version of what that score means.
+          Enter a date and see the same 1-10 score used on the calendar, plus a plain-English read on what
+          that day is likely to feel like.
         </p>
       </div>
 
@@ -127,13 +128,13 @@ export function CrowdScanner() {
             </div>
 
             <div>
-              <p className="text-slate-900 font-black uppercase italic text-sm mb-1">What this day feels like</p>
+              <p className="text-slate-900 font-black uppercase italic text-sm mb-1">What to expect</p>
               <p className="text-slate-700 font-medium leading-relaxed">{result.text}</p>
             </div>
 
             <div className="pt-4 border-t border-slate-200/60">
               <p className="text-slate-900 font-black uppercase italic text-sm mb-1 flex items-center gap-2">
-                <Zap size={14} className="text-amber-700" /> What to do about it
+                <Zap size={14} className="text-amber-700" /> How to plan for it
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">{result.strategy}</p>
             </div>

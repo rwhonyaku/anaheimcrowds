@@ -30,7 +30,7 @@ export default function UtahTrapArticle() {
       </section>
 
       <section className="bg-slate-50 border border-slate-200 rounded-3xl p-8 space-y-4">
-        <h2 className="text-2xl font-bold">Quick Verdict</h2>
+        <h2 className="text-2xl font-bold">Short answer</h2>
         <p>
           If your trip lands in mid-October, do not let a Tuesday fool you. This is one of the easiest windows on the calendar to misread.
           Check the{" "}

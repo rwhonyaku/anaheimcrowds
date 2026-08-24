@@ -24,7 +24,7 @@ export default function SeptemberCrowdsPage() {
       </section>
 
       <section className="bg-blue-50 border border-blue-200 rounded-2xl p-5 space-y-3">
-        <p className="text-xs font-black uppercase tracking-widest text-blue-700">September next steps</p>
+        <p className="text-xs font-black uppercase tracking-widest text-blue-700">Plan September</p>
         <p className="text-sm text-slate-700 leading-relaxed">
           Disneyland crowd calendar September 2026 shortcut: the best dates are <strong>Sep 14-24 weekdays</strong>,
           especially Tuesday and Wednesday.{" "}
@@ -47,7 +47,7 @@ export default function SeptemberCrowdsPage() {
       <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">
         <div className="flex items-center gap-3 text-blue-600">
           <CalendarDays size={24} />
-          <h2 className="text-2xl font-black uppercase italic">September Demand Drivers</h2>
+          <h2 className="text-2xl font-black uppercase italic">What affects September crowds</h2>
         </div>
         <ul className="grid md:grid-cols-2 gap-6">
           <li className="space-y-1">
@@ -109,7 +109,7 @@ export default function SeptemberCrowdsPage() {
       </section>
 
       <section className="pt-8 border-t border-slate-100 space-y-6">
-        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
+        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">More planning help</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>

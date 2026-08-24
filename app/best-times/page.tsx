@@ -359,7 +359,7 @@ export default function BestTimesPage() {
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <Sun className="text-amber-600" />
-          <h2 className="text-3xl font-black italic uppercase">The Monday Pattern (And When It Breaks)</h2>
+          <h2 className="text-3xl font-black italic uppercase">When Mondays work</h2>
         </div>
 
         <p className="text-slate-700 leading-relaxed">

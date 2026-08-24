@@ -25,7 +25,7 @@ export default function AugustCrowdsPage() {
       <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">
         <div className="flex items-center gap-3 text-blue-600">
           <CalendarDays size={24} />
-          <h2 className="text-2xl font-black uppercase italic">August Demand Drivers</h2>
+          <h2 className="text-2xl font-black uppercase italic">What affects August crowds</h2>
         </div>
         <ul className="grid md:grid-cols-2 gap-6">
           <li className="space-y-1">
@@ -75,7 +75,7 @@ export default function AugustCrowdsPage() {
       </section>
 
       <section className="pt-8 border-t border-slate-100 space-y-6">
-        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
+        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">More planning help</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>

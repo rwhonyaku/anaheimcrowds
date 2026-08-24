@@ -23,7 +23,7 @@ export default function JulyCrowdsPage() {
       </section>
 
       <section className="bg-blue-50 border border-blue-200 rounded-2xl p-5 space-y-3">
-        <p className="text-xs font-black uppercase tracking-widest text-blue-700">July next steps</p>
+        <p className="text-xs font-black uppercase tracking-widest text-blue-700">Plan July</p>
         <p className="text-sm text-slate-700 leading-relaxed">
           If July is locked in, build the day around{" "}
           <Link href="/articles/disneyland-rope-drop-strategy-2026" className="font-bold underline hover:text-blue-600">
@@ -44,7 +44,7 @@ export default function JulyCrowdsPage() {
       <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">
         <div className="flex items-center gap-3 text-blue-600">
           <CalendarDays size={24} />
-          <h2 className="text-2xl font-black uppercase italic">July Demand Drivers</h2>
+          <h2 className="text-2xl font-black uppercase italic">What affects July crowds</h2>
         </div>
         <ul className="grid md:grid-cols-2 gap-6">
           <li className="space-y-1">
@@ -95,7 +95,7 @@ export default function JulyCrowdsPage() {
       </section>
 
       <section className="pt-8 border-t border-slate-100 space-y-6">
-        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Deep Dives</p>
+        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-6">More planning help</p>
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>

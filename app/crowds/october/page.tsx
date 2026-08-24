@@ -351,7 +351,7 @@ export default function OctoberCrowdsPage() {
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <Info className="text-blue-600" />
-          <h2 className="text-2xl font-black uppercase italic tracking-tight">Ticket Tier Patterns</h2>
+          <h2 className="text-2xl font-black uppercase italic tracking-tight">Ticket tiers</h2>
         </div>
 
         <p className="text-slate-700 leading-relaxed">
@@ -459,7 +459,7 @@ export default function OctoberCrowdsPage() {
           </ul>
 
           <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
-            <strong className="text-slate-900">The October pattern:</strong> The month is busy enough that “we’ll just
+            <strong className="text-slate-900">In October:</strong> The month is busy enough that “we’ll just
             see how it goes” usually turns into “we did half of what we wanted.”
           </div>
         </div>
@@ -521,7 +521,7 @@ export default function OctoberCrowdsPage() {
 
       {/* Deep dives + month nav */}
       <section className="pt-8 border-t border-slate-100 space-y-6">
-        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Internal Links</p>
+        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">More planning help</p>
 
         <div className="flex flex-wrap gap-4">
           <Link href="/articles/utah-trap" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">

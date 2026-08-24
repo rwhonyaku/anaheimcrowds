@@ -25,7 +25,7 @@ export default function MagicKeyEveningSpikeArticle() {
       </section>
 
       <section className="bg-slate-50 border border-slate-200 rounded-3xl p-8 space-y-4">
-        <h2 className="text-2xl font-bold">Quick Verdict</h2>
+        <h2 className="text-2xl font-bold">Short answer</h2>
         <p>
           If your plan depends on "the evening will calm down," you can get punished fast.
           Check the{" "}
@@ -65,7 +65,7 @@ export default function MagicKeyEveningSpikeArticle() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="font-semibold">Friendly blockout patterns</h3>
+          <h3 className="font-semibold">Passholder access</h3>
           <p className="text-slate-600">
             Some dates invite a bigger evening wave because more key tiers can get in at once.
             When that lines up with a decent weather day or nighttime entertainment, the park tightens fast.

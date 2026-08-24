@@ -250,7 +250,7 @@ export default function HotelRankingsPage() {
         <h2 className="text-3xl font-black flex items-center gap-2">
           The Elite Three{" "}
           <span className="text-sm font-normal text-slate-400 block ml-2">
-            Sub-5 Minute Club
+            Closest walks
           </span>
         </h2>
 

@@ -93,7 +93,7 @@ export default function HarborAdvantageArticle() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-bold">The Sub-5 Minute Edge</h2>
+        <h2 className="text-2xl font-bold">The closest Harbor hotels</h2>
 
         {[kingOfProximity, runnerUp].map((hotel) => (
           <div key={hotel.name} className="border rounded-2xl p-6 bg-white">

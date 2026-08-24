@@ -3,7 +3,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { Ghost, TreePine, Heart, PartyPopper, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Seasonal Patterns 2026 | AnaheimCrowds",
+  title: "Seasonal crowds 2026 | AnaheimCrowds",
   description: "How seasonal events and holiday periods change the feel of Disneyland across the year.",
 };
 
@@ -12,7 +12,7 @@ export default function HolidaysPage() {
     <div className="max-w-4xl mx-auto px-4 py-12 space-y-16 text-slate-900">
       <section className="space-y-4">
         <h1 className="font-display text-5xl md:text-6xl text-slate-900 leading-none">
-          Seasonal Patterns
+          Seasonal crowds
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
           Seasons at Disneyland change more than the decorations. They shift crowd shape, park energy, and how much patience a day will require.

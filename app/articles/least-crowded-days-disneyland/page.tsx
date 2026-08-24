@@ -42,7 +42,7 @@ export default function LeastCrowdedDaysDisneylandPage() {
     <article className="max-w-4xl mx-auto px-4 py-10 space-y-12 text-slate-900 leading-relaxed">
       <section className="space-y-4">
         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">
-          2026 Search Intent Guide
+          Planning guide
         </p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight">
           Least Crowded Days at Disneyland in 2026
@@ -55,7 +55,7 @@ export default function LeastCrowdedDaysDisneylandPage() {
       </section>
 
       <section className="rounded-3xl border border-slate-200 bg-slate-50 p-8 space-y-4">
-        <h2 className="text-2xl font-bold">Quick Verdict</h2>
+        <h2 className="text-2xl font-bold">Short answer</h2>
         <p className="text-slate-700">
           If you only want the answer, Disneyland is least crowded on weekdays in these 2026 windows:{" "}
           <strong>Jan 12-29</strong>, <strong>Feb 3-12</strong>,{" "}

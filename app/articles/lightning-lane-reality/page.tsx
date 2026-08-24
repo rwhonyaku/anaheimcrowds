@@ -25,7 +25,7 @@ export default function LightningLaneRealityArticle() {
       </section>
 
       <section className="bg-slate-50 border border-slate-200 rounded-3xl p-8 space-y-4">
-        <h2 className="text-2xl font-bold">Quick Verdict</h2>
+        <h2 className="text-2xl font-bold">Short answer</h2>
         <p>
           Lightning Lane helps. It does not rescue a bad morning.
           If you are choosing dates, start with the{" "}

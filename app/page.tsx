@@ -26,7 +26,7 @@ export default function HomePage() {
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="space-y-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-white/80 text-sky-800 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-stone-200 shadow-sm">
-                <CalendarDays size={14} /> 2026 Disneyland Forecast
+                <CalendarDays size={14} /> Disneyland crowd calendar
               </div>
 
               <div className="space-y-5">
@@ -36,7 +36,9 @@ export default function HomePage() {
                   Skip the wrong crowd.
                 </h1>
                 <p className="text-xl text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  We track the dates that actually move Disneyland crowds: school breaks, Magic Key pressure, holiday stacking, and the hotel patterns that make a "good" trip easier to execute.
+                  We track the things that actually change Disneyland crowds: school breaks, holiday weeks,
+                  Magic Key blockouts, and hotel location. We want to help you pick better dates before
+                  the trip gets expensive.
                 </p>
               </div>
 
@@ -60,7 +62,7 @@ export default function HomePage() {
               <div className="rounded-[2.5rem] border border-stone-200 bg-white/90 p-6 md:p-8 shadow-2xl shadow-stone-900/10 backdrop-blur-sm">
                 <div className="mb-6">
                   <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500 mb-3">
-                    Sample Crowd Pressure
+                    2026 monthly forecast
                   </p>
                   <div className="grid grid-cols-9 gap-2">
                     {heatmapBars.map((bar, index) => (
@@ -85,12 +87,13 @@ export default function HomePage() {
           <div className="bg-sky-50 w-12 h-12 rounded-2xl flex items-center justify-center text-sky-800 group-hover:bg-sky-800 group-hover:text-white transition-colors">
             <CalendarDays size={24} />
           </div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">Concrete signal</p>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">Ticket prices</p>
           <h3 className="font-display text-3xl text-slate-900 leading-tight">
-            Ticket tiers that tip off soft days
+            Lower-priced days are often the better bet
           </h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            We use Disney's own pricing signals to spot which weekdays are actually worth a second look and which "cheap-looking" dates are traps.
+            Disney pricing is not perfect, but it usually tells you which weekdays are worth a closer look and
+            which "cheap" dates are still likely to be annoying.
           </p>
         </Link>
 
@@ -101,12 +104,13 @@ export default function HomePage() {
           <div className="bg-amber-50 w-12 h-12 rounded-2xl flex items-center justify-center text-amber-700 group-hover:bg-amber-700 group-hover:text-white transition-colors">
             <Map size={24} />
           </div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">Named pattern</p>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">School breaks</p>
           <h3 className="font-display text-3xl text-slate-900 leading-tight">
-            School-break overlap that turns Tuesday into Saturday
+            Out-of-state breaks can wreck an otherwise normal week
           </h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            Local calendars are not enough. We watch the feeder markets that quietly push Disneyland from manageable to clogged.
+            Local calendars are not enough. We track the outside school breaks that can make a plain Tuesday feel
+            much busier than people expect.
           </p>
         </Link>
 
@@ -117,12 +121,13 @@ export default function HomePage() {
           <div className="bg-white/10 w-12 h-12 rounded-2xl flex items-center justify-center text-amber-400">
             <Hotel size={24} />
           </div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Specific edge</p>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Hotels</p>
           <h3 className="font-display text-3xl text-white leading-tight">
-            Harbor hotels that save 10 to 15 minutes at rope drop
+            The right Harbor hotel can save your morning
           </h3>
           <p className="text-sm text-slate-300 leading-relaxed">
-            Not every "close" hotel is close in practice. We rank the walks that actually help you win the morning.
+            Not every "close" hotel is actually convenient. We focus on the walks that make rope drop easier
+            and Disney hotels that are worth paying extra for.
           </p>
         </Link>
       </section>
