@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Target } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tactical Definitions | AnaheimCrowds",
+  title: "Disneyland Planning Glossary | AnaheimCrowds",
   description: "A working glossary for AnaheimCrowds terms and Disneyland planning language in 2026.",
   alternates: { canonical: "/definitions" },
 };
@@ -17,8 +17,8 @@ const TERMS = [
     definition: "The point in the day when too much attraction capacity is going to Lightning Lane returns and standby stops moving well.",
   },
   {
-    term: "Tier 0 Trap",
-    definition: "A low-priced date that still feels crowded because locals, expiring offers, or event pressure fill the park anyway.",
+    term: "Tier 0 Surprise",
+    definition: "A low-priced date that still feels crowded because locals, expiring offers, or events fill the park anyway.",
   },
   {
     term: "Single Rider Split",
@@ -30,7 +30,7 @@ export default function DefinitionsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 space-y-8 py-12">
       <h1 className="font-display text-5xl text-slate-900">
-        Tactical <span className="text-sky-800">Glossary</span>
+        Disneyland Planning <span className="text-sky-800">Glossary</span>
       </h1>
 
       <div className="grid grid-cols-1 gap-4">
@@ -49,7 +49,7 @@ export default function DefinitionsPage() {
         <div>
           <h2 className="text-lg font-bold">Why terminology still matters</h2>
           <p className="text-sm text-slate-500">
-            A lot of Disneyland advice gets fuzzy because people use the same words for different things. The point of this glossary is clarity, not insider cosplay.
+            A lot of Disneyland advice gets fuzzy because people use the same words for different things. The point of this glossary is clarity.
           </p>
         </div>
       </section>

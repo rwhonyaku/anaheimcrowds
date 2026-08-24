@@ -18,7 +18,7 @@ export default function JanuaryCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">January 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          January is the ultimate "reset" month. Once the first week of the new year clears out, the park enters its quietest window.
+          January is one of the best reset months. Once the first week of the new year clears out, the park enters one of its quietest windows.
         </p>
       </section>
 
@@ -56,7 +56,7 @@ export default function JanuaryCrowdsPage() {
           <p className="text-sm text-slate-600 italic">Historically the lightest crowd density of the entire year, provided you avoid holiday weekends.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">Martin Luther King Jr. Day</p>
           <p className="text-sm text-slate-400 italic">This 3-day weekend acts as a magnet for locals, turning a quiet month into a temporary "Level 9" event.</p>
         </div>
@@ -103,7 +103,7 @@ export default function JanuaryCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/february" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">February Crowds</Link>
           <Link href="/articles/least-crowded-days-disneyland" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Least Crowded Days</Link>
           <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Value Date Strategy</Link>

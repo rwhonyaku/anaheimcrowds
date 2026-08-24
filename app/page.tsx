@@ -3,7 +3,7 @@ import { CrowdScanner } from "@/components/CrowdScanner";
 import { AdSlot } from "@/components/AdSlot";
 import { MoveRight, CalendarDays, Hotel, Map } from "lucide-react";
 
-const heatmapBars = [
+const schoolBreakBars = [
   "bg-emerald-300/60",
   "bg-emerald-400/60",
   "bg-amber-300/60",
@@ -65,7 +65,7 @@ export default function HomePage() {
                     2026 monthly forecast
                   </p>
                   <div className="grid grid-cols-9 gap-2">
-                    {heatmapBars.map((bar, index) => (
+                    {schoolBreakBars.map((bar, index) => (
                       <div key={index} className={`h-12 rounded-2xl ${bar}`} />
                     ))}
                   </div>

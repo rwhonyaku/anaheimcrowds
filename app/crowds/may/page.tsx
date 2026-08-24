@@ -56,7 +56,7 @@ export default function MayCrowdsPage() {
           <p className="text-sm text-slate-600 italic">This is the definitive "Sweet Spot" for 2026. Minimal lines and perfect weather.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">Memorial Day Weekend</p>
           <p className="text-sm text-slate-400 italic">The weekend that officially launches the summer season. Demand hits its first major peak here.</p>
         </div>
@@ -65,7 +65,7 @@ export default function MayCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">Why Early May Is So Strong</h2>
         <p className="text-slate-700 leading-relaxed">
-          Early May is one of the best blends of weather, school-in-session behavior, and lower weekday pressure. If you want a high-upside trip without January's refurbishment risk, this is the cleanest target.
+          Early May is one of the best blends of weather, school-in-session weekdays, and lighter crowds. If you want a strong trip without January's refurbishment risk, this is the cleanest target.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
@@ -86,7 +86,7 @@ export default function MayCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/april" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">April Crowds</Link>
           <Link href="/crowds/june" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">June Crowds</Link>
           <Link href="/articles/least-crowded-days-disneyland" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Least Crowded Days</Link>

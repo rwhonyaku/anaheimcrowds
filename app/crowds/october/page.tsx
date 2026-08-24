@@ -3,8 +3,9 @@ import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { MonthNavigation } from "@/components/MonthNavigation";
 import { AlertTriangle, CalendarDays, Info, Zap, ExternalLink } from "lucide-react";
+import { UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
 
-const AS_OF_DATE = "February 19, 2026";
+const AS_OF_DATE = "August 24, 2026";
 
 export const metadata: Metadata = {
   title: "Disneyland October Crowd Calendar 2026 | Halloween & Utah Break",
@@ -134,7 +135,7 @@ export default function OctoberCrowdsPage() {
         </div>
 
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
-          <strong className="text-slate-900">Quick call:</strong> If your calendar is flexible, aim for{" "}
+          <strong className="text-slate-900">Best bet:</strong> If your calendar is flexible, aim for{" "}
           <strong>Tue–Thu, Oct 6–8</strong>. If you’re choosing between mid-month and late-month, mid-month is crowded
           because of breaks; late-month is crowded because of Halloween energy. Pick your poison—but go in with a plan.
         </div>
@@ -180,10 +181,10 @@ export default function OctoberCrowdsPage() {
             </p>
             <div className="pt-2">
               <Link
-                href="/articles/utah-trap"
+                href="/articles/utah-october-effect"
                 className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 hover:text-blue-600 underline"
               >
-                Read the deep dive: Utah October Effect
+                Read the Utah October guide
               </Link>
             </div>
           </div>
@@ -193,7 +194,7 @@ export default function OctoberCrowdsPage() {
             <p className="text-lg font-bold">Oct 19–31</p>
             <p className="text-slate-700 leading-relaxed">
               Late October is peak Halloween behavior. You get more “special trip” energy—people who planned this
-              specifically for the season. Add weekend locals and you get a pattern that’s common in 2026: mornings
+              specifically for the season. Add weekend locals and you get a common October problem in 2026: mornings
               start busy, afternoons swell, and evenings stay packed instead of easing off.
             </p>
             <p className="text-slate-700 leading-relaxed">
@@ -215,29 +216,42 @@ export default function OctoberCrowdsPage() {
 
         <p className="text-slate-700 leading-relaxed">
           The “Utah effect” is real, but the important nuance is this: the dates vary by district. Utah families still
-          travel during mid-October fall recess windows, and Disneyland is a popular target. When those travel days
-          overlap with other Western fall breaks, crowd levels don’t just rise—they stay elevated across multiple
-          weekdays.
+          travel during October fall recess windows, and Disneyland is a popular target. When those travel days
+          overlap with other Western fall breaks, crowd levels stay elevated across multiple weekdays.
         </p>
 
         <div className="bg-slate-50 border border-slate-200 rounded-[2rem] p-7 space-y-4">
           <p className="text-slate-800 leading-relaxed">
-            For 2025–2026, Utah district calendars show many fall recess windows in mid-to-late October (commonly a
-            Thu–Fri pair). Use the official sources below to verify the districts you care about and to spot the
-            overlap weeks.
+            For the 2026-27 school year, several large Utah districts put no-school days in the Oct 14-23 stretch.
+            The first wave is Oct 15-16; Jordan lands later, Oct 20-23.
           </p>
 
-          <ul className="space-y-3 text-sm">
-            <li>
-              <a
-                href="https://schools.utah.gov/schoolcalendars/2526DistrictCalendar.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 font-bold text-slate-900 hover:text-blue-600 underline"
+          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            {UTAH_FALL_BREAK_2026.map((row) => (
+              <div
+                key={row.district}
+                className="grid gap-2 border-b border-slate-100 p-4 last:border-b-0 md:grid-cols-[1.2fr_0.7fr_1.7fr]"
               >
-                Utah State Board of Education — 2025–2026 District Calendar (PDF) <ExternalLink size={14} />
-              </a>
-            </li>
+                <p className="font-bold text-slate-900">{row.district}</p>
+                <p className="font-semibold text-sky-800">{row.dates}</p>
+                <p className="text-sm text-slate-600">{row.notes}</p>
+              </div>
+            ))}
+          </div>
+
+          <ul className="space-y-3 text-sm">
+            {UTAH_FALL_BREAK_2026.map((source) => (
+              <li key={source.sourceUrl}>
+                <a
+                  href={source.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-bold text-slate-900 hover:text-blue-600 underline"
+                >
+                  {source.sourceLabel} <ExternalLink size={14} />
+                </a>
+              </li>
+            ))}
             <li>
               <a
                 href="https://myuea.org/professional-excellence/conferences-events/events"
@@ -252,7 +266,7 @@ export default function OctoberCrowdsPage() {
 
           <div className="bg-white border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
             <strong className="text-slate-900">What this means for your trip:</strong> If you are trying to “thread the
-            needle,” avoid <strong>Oct 12–18</strong> unless you can rope drop, use Lightning Lane well, and accept that
+            needle,” be careful with <strong>Oct 14-23</strong> unless you can rope drop, use Lightning Lane well, and accept that
             mid-week lines may look like weekend lines.
           </div>
         </div>
@@ -347,7 +361,7 @@ export default function OctoberCrowdsPage() {
         </div>
       </section>
 
-      {/* Ticket tier patterns (required) */}
+      {/* Ticket tier notes */}
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <Info className="text-blue-600" />
@@ -357,7 +371,7 @@ export default function OctoberCrowdsPage() {
         <p className="text-slate-700 leading-relaxed">
           Disneyland’s ticket pricing tends to “tell on” demand. When October dates jump tiers, it’s usually because
           Disney expects higher attendance. You don’t have to obsess over the exact tier number to use this. You just
-          need to notice the pattern: early October weekdays are usually the best deal, while weekends and late October
+          need to notice the split: early October weekdays are usually the best deal, while weekends and late October
           carry the premium.
         </p>
 
@@ -496,7 +510,7 @@ export default function OctoberCrowdsPage() {
             <p className="text-xs font-black uppercase tracking-widest text-blue-300">Hard mode</p>
             <p className="font-bold text-white text-lg">Oct 12–18 and Oct 26–31</p>
             <p className="text-slate-300 leading-relaxed">
-              These stretches punish late starts. If you’re going anyway, plan rope drop, pick a walkable hotel, and
+              These stretches make late starts harder. If you’re going anyway, plan rope drop, pick a walkable hotel, and
               decide ahead of time which 5–7 rides matter most to you.
             </p>
             <Link href="/hotels" className="text-sm font-bold text-white hover:text-blue-300 underline">
@@ -511,8 +525,8 @@ export default function OctoberCrowdsPage() {
             The Utah fall break effect is the most common reason people get blindsided by October weekdays. If your trip
             overlaps mid-month, read this before you commit to dates.
           </p>
-          <Link href="/articles/utah-trap" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-            Utah Trap deep dive (what to avoid + what still works)
+          <Link href="/articles/utah-october-effect" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            Utah October guide (what to avoid + what still works)
           </Link>
         </div>
       </section>
@@ -524,8 +538,8 @@ export default function OctoberCrowdsPage() {
         <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">More planning help</p>
 
         <div className="flex flex-wrap gap-4">
-          <Link href="/articles/utah-trap" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-            Utah Trap Article
+          <Link href="/articles/utah-october-effect" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            Utah October Effect
           </Link>
           <Link href="/articles/magic-key-crowd" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             Magic Key Evening Spike
@@ -555,7 +569,7 @@ export default function OctoberCrowdsPage() {
             href="/school-breaks-calendar"
             className="text-sm font-bold text-slate-900 hover:text-blue-600 underline"
           >
-            School Break Heatmap
+            School Break Calendar
           </Link>
         </div>
 

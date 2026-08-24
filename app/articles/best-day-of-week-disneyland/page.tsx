@@ -20,19 +20,19 @@ const weekdayRows = [
     day: "Wednesday",
     verdict: "Best balance day",
     detail:
-      "Wednesday is often the safest all-around pick if you want lighter waits without the pressure of a one-day-only plan.",
+      "Wednesday is often the safest all-around pick if you want lighter waits without betting everything on one narrow window.",
   },
   {
     day: "Thursday",
     verdict: "Best late-week option",
     detail:
-      "Thursday is usually still strong, but crowd pressure can start rising later in the day as the weekend approaches.",
+      "Thursday is usually still strong, but crowds can start rising later in the day as the weekend approaches.",
   },
   {
     day: "Monday",
     verdict: "Conditional only",
     detail:
-      "Monday can work, but it breaks down on holiday Mondays, after-school-break travel days, and local long-weekend patterns.",
+      "Monday can work, but it gets worse on holiday Mondays, after-school-break travel days, and local long weekends.",
   },
   {
     day: "Saturday",

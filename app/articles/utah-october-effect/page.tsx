@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { AdSlot } from "@/components/AdSlot";
-import { SOCAL_2025_2026 } from "@/lib/school-data";
+import { SOCAL_2025_2026, UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Disneyland Utah October Effect 2026 | AnaheimCrowds",
   description:
     "Why Utah fall break makes mid-October at Disneyland busier in 2026, plus the dates most likely to get hit and how to plan around them.",
-  alternates: { canonical: "/articles/utah-trap" },
+  alternates: { canonical: "/articles/utah-october-effect" },
 };
 
-const AS_OF_DATE = "February 18, 2026";
+const AS_OF_DATE = "August 24, 2026";
 
-export default function UtahTrapArticle() {
+export default function UtahOctoberEffectArticle() {
   const utahBreak = SOCAL_2025_2026.find((b) =>
     b.breakType.toLowerCase().includes("utah")
   );
@@ -50,20 +50,35 @@ export default function UtahTrapArticle() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">What Happens in October</h2>
         <p>
-          The Utah Education Association convention and district fall recesses create a travel window that punches above its weight.
+          Large Utah district fall recesses create a travel window that punches above its weight.
           People who only check Southern California school calendars miss it. Then they show up on a Wednesday and wonder why the park feels like a Saturday.
         </p>
 
         {utahBreak ? (
           <div className="bg-slate-900 text-white p-6 rounded-2xl">
             <p className="font-semibold">
-              2026 travel-impact window: {utahBreak.startDate} to {utahBreak.endDate}
+              2026 travel window to watch: {utahBreak.startDate} to {utahBreak.endDate}
             </p>
             <p className="text-slate-300 mt-2">
-              This is where mid-week hotel demand and all-day wait pressure usually jump fastest.
+              This is where mid-week hotels tighten and waits usually jump fastest.
             </p>
           </div>
         ) : null}
+
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+          <div className="grid gap-0">
+            {UTAH_FALL_BREAK_2026.map((row) => (
+              <div
+                key={row.district}
+                className="grid gap-2 border-b border-slate-100 p-4 last:border-b-0 md:grid-cols-[1.2fr_0.8fr_1.8fr]"
+              >
+                <p className="font-bold text-slate-900">{row.district}</p>
+                <p className="font-semibold text-slate-700">{row.dates}</p>
+                <p className="text-sm text-slate-600">{row.notes}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="space-y-4">
@@ -80,7 +95,7 @@ export default function UtahTrapArticle() {
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Planning Guidance</h2>
         <p>
-          The cleanest move is simple: go earlier in October if you can. If you cannot, stop pretending the trip will behave like a normal shoulder-season weekday.
+          The cleanest move is simple: go earlier in October if you can. If you cannot, plan the trip like a busier school-break week instead of a normal shoulder-season weekday.
         </p>
         <p>
           Use the{" "}
@@ -102,29 +117,21 @@ export default function UtahTrapArticle() {
       <section className="bg-white border border-slate-200 rounded-2xl p-6 space-y-3">
         <h3 className="text-lg font-bold">Source Reference</h3>
         <p className="text-slate-600 text-sm">
-          Utah's October school break lines up with the Utah Education Association convention and district fall recess schedules.
+          Utah's October school break timing comes from published district calendar pages and district calendar references.
         </p>
         <ul className="list-disc ml-6 text-slate-700 space-y-2 text-sm">
-          <li>
-            <a
-              href="https://myuea.org/professional-excellence/conferences-events/events"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-semibold hover:text-blue-600"
-            >
-              Utah Education Association official events page
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://schools.utah.gov/schoolcalendars/2526DistrictCalendar.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-semibold hover:text-blue-600"
-            >
-              Utah State Board of Education 2025-2026 district calendar
-            </a>
-          </li>
+          {UTAH_FALL_BREAK_2026.map((source) => (
+            <li key={source.sourceUrl}>
+              <a
+                href={source.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-semibold hover:text-blue-600"
+              >
+                {source.sourceLabel}
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
     </article>

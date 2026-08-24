@@ -30,7 +30,7 @@ export default function FaqPage() {
         <QA q="Is this live wait time data?" a="No. Live wait times are already in the official Disneyland app. AnaheimCrowds is for choosing dates, setting expectations, and making a better plan before you walk into the park." />
         <QA q="Can you guarantee a low-crowd day?" a="No. Weather, ride breakdowns, and unplanned events can change the feel of any day. The point of the forecast is not certainty. It is better odds." />
         <QA q="Why does rope drop still matter in 2026?" a="Because the first hour is still the cheapest time-savings window in the park. Paid line-skipping helps, but it does not replace a good date and a strong start." />
-        <QA q="Are you affiliated with Disney?" a="No. AnaheimCrowds is an independent planning site built for people who want a clearer read on dates, crowd patterns, and trip tradeoffs." />
+        <QA q="Are you affiliated with Disney?" a="No. AnaheimCrowds is an independent planning site built for people who want a clearer read on dates, crowd behavior, and trip tradeoffs." />
       </div>
     </div>
   );

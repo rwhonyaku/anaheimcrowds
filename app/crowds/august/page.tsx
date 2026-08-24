@@ -56,7 +56,7 @@ export default function AugustCrowdsPage() {
           <p className="text-sm text-slate-600 italic">This is the best "Value window" of the year. Low crowds and full operating hours.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">The 2 PM Meltdown</p>
           <p className="text-sm text-slate-400 italic">High temps and long lines make the early afternoon brutal. Head back to the hotel for a swim.</p>
         </div>
@@ -65,7 +65,7 @@ export default function AugustCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">Why Late August Matters</h2>
         <p className="text-slate-700 leading-relaxed">
-          Once more districts return to school, late August can soften faster than people expect. It is still summer, but weekday pressure usually drops enough to make rope drop gains stick longer.
+          Once more districts return to school, late August can soften faster than people expect. It is still summer, but weekdays usually improve enough to make rope drop gains last longer.
         </p>
         <p className="text-slate-700 leading-relaxed">
           Best August target: <strong>Aug 17-27 weekdays</strong>. Use the{" "}
@@ -79,7 +79,7 @@ export default function AugustCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/july" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">July Crowds</Link>
           <Link href="/crowds/september" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">September Crowds</Link>
           <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>

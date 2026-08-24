@@ -56,7 +56,7 @@ export default function AprilCrowdsPage() {
           <p className="text-sm text-slate-600 italic">Once schools return to class after April 15th, Tuesday and Wednesday become the month's sweet spot.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">The "Holiday" Saturday</p>
           <p className="text-sm text-slate-400 italic">April weekends are dominated by out-of-state travelers staying for long holiday blocks.</p>
         </div>
@@ -83,7 +83,7 @@ export default function AprilCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/march" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">March Crowds</Link>
           <Link href="/crowds/may" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">May Crowds</Link>
           <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>

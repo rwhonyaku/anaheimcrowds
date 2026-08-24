@@ -3,11 +3,12 @@ import { getCrowdEstimate } from "@/lib/crowd-engine";
 import { AdSlot } from "@/components/AdSlot";
 import { AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { CrowdScanner } from "@/components/CrowdScanner";
 
 export const metadata: Metadata = {
-  title: "Disneyland Crowd Calendar 2026: Daily Crowd Scores | AnaheimCrowds",
+  title: "Disneyland Crowd Calendar 2026 | Anaheim Daily Crowd Scores",
   description:
-    "Disneyland crowd calendar 2026 with daily 1-10 crowd scores, lower-crowd dates, busy weeks to avoid, and school-break demand signals.",
+    "Disneyland crowd calendar 2026 for Anaheim trip planning, with daily 1-10 crowd scores, lower-crowd dates, busy weeks to avoid, and school-break overlap.",
 };
 
 function getDaysInMonth(month: number) {
@@ -49,7 +50,7 @@ export default function CrowdCalendarPage() {
           </h1>
 
           <p className="text-slate-600 max-w-2xl font-medium leading-relaxed">
-            This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd score</strong> based on school-break overlap, seasonal pressure, weekends, and Disney demand signals.
+            This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd score</strong> for Anaheim trip planning, based on school-break overlap, season, weekends, and Disney pricing.
             Use it as a <strong>Disneyland busy days calendar</strong> to spot the roughest weeks before you choose tickets or hotels.
             Use the{" "}
             <Link href="/best-times" className="font-bold underline hover:text-sky-800">
@@ -61,7 +62,7 @@ export default function CrowdCalendarPage() {
 
         <div className="bg-white border border-stone-200 p-4 rounded-2xl flex gap-6 shadow-sm">
           <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-emerald-700">
-            <div className="w-3 h-3 bg-emerald-500 rounded-full" /> 1-4 Lower pressure
+            <div className="w-3 h-3 bg-emerald-500 rounded-full" /> 1-4 Lower crowds
           </div>
           <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-amber-700">
             <div className="w-3 h-3 bg-amber-500 rounded-full" /> 5-7 Busy
@@ -73,6 +74,10 @@ export default function CrowdCalendarPage() {
       </section>
 
       <AdSlot id="calendar-top" label="High Visibility Placement" />
+
+      <section className="rounded-[2.5rem] border border-slate-200 bg-slate-50 p-6 md:p-8">
+        <CrowdScanner />
+      </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {MONTHS.map((monthName, monthIndex) => {
@@ -142,7 +147,7 @@ export default function CrowdCalendarPage() {
           </h2>
           <p className="text-sm leading-relaxed text-slate-700">
             The strongest stretches are <strong>Jan 12-30</strong>, <strong>Feb 3-12</strong>, <strong>May 4-14</strong>, and{" "}
-            <strong>Sep 14-24</strong>. These are the weeks where the calendar, school patterns, and pricing signals line up.
+            <strong>Sep 14-24</strong>. These are the weeks where school calendars, weekday timing, and pricing point the same way.
           </p>
         </div>
 
@@ -178,6 +183,41 @@ export default function CrowdCalendarPage() {
               Harbor Blvd hotel-location strategy
             </Link>
             .
+          </p>
+        </div>
+      </section>
+
+      <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm space-y-3">
+        <h2 className="text-xl font-black uppercase italic text-slate-900">
+          Disneyland Anaheim Crowd Calendar Notes
+        </h2>
+        <p className="text-sm leading-relaxed text-slate-700">
+          Search results often mix Disneyland in Anaheim with Disney World in Florida. This page is only for the Anaheim parks:
+          Disneyland Park and Disney California Adventure. For a month-by-month view, start with{" "}
+          <Link href="/crowds/september" className="font-bold underline hover:text-sky-800">
+            September crowds
+          </Link>{" "}
+          and{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-sky-800">
+            October crowds
+          </Link>
+          , because those are the fall pages getting the most search impressions.
+        </p>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-2">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-lg font-black text-slate-900">Is this a Disneyland crowd calendar for Anaheim?</h2>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            Yes. This calendar is for Disneyland Resort in Anaheim, California, including Disneyland Park and Disney California Adventure.
+            It is not a Disney World crowd calendar.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-lg font-black text-slate-900">How should I use the 1-10 score?</h2>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            Use the score to choose between dates, not to promise an empty park. A lower score usually means the morning is easier,
+            while an 8-10 means you should plan rope drop, meals, and breaks before you arrive.
           </p>
         </div>
       </section>

@@ -6,7 +6,7 @@ import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Disneyland Crowds in December 2026 | AnaheimCrowds",
-  description: "Tactical advice for surviving the densest month of the year at Disneyland.",
+  description: "How to plan around December crowds, holiday weeks, and the busiest dates at Disneyland.",
   alternates: { canonical: "/crowds/december" },
 };
 
@@ -18,7 +18,7 @@ export default function DecemberCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">December 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          December is the ultimate "High Demand" month. It is magical, but it requires a military-grade plan to navigate.
+          December is one of Disneyland's busiest months. The holiday atmosphere is great, but the dates near Christmas and New Year's need a tighter plan.
         </p>
       </section>
 
@@ -56,16 +56,16 @@ export default function DecemberCrowdsPage() {
           <p className="text-sm text-slate-600 italic">This is the only window where you can enjoy the decorations without shoulder-to-shoulder walkways.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch the exit</h3>
           <p className="font-bold text-white leading-tight">The Late Night Exit</p>
           <p className="text-sm text-slate-400 italic">Expect a 45-minute wait just to get onto a parking lot shuttle after the late-night fireworks.</p>
         </div>
       </div>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-black uppercase italic">The Only Clean December Answer</h2>
+        <h2 className="text-2xl font-black uppercase italic">The Best December Bet</h2>
         <p className="text-slate-700 leading-relaxed">
-          If you want the holiday overlays without peak-season punishment, early December weekdays are the only clean answer. The atmosphere is there, but the full tourist surge has not peaked yet.
+          If you want the holiday overlays without the worst late-December crowds, early December weekdays are the best bet. The atmosphere is there, but the full tourist rush has not peaked yet.
         </p>
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <p className="font-bold text-slate-900">Best December target: Dec 1-10 weekdays.</p>
@@ -95,7 +95,7 @@ export default function DecemberCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/november" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">November Crowds</Link>
           <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
           <Link href="/articles/harbor-advantage" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Harbor Advantage</Link>

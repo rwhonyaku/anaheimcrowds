@@ -12,15 +12,15 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
   const planningLinks = [
     { href: "/crowd-calendar", label: "2026 Crowd Calendar" },
     { href: "/best-times", label: "Best Times (2026)" },
-    { href: "/school-breaks-calendar", label: "School Break Heatmap" },
+    { href: "/school-breaks-calendar", label: "School Break Calendar" },
     { href: "/hotels", label: "Hotels Walking Distance" },
   ];
 
   const powerArticles = [
     { href: "/articles/lightning-lane-reality", label: "Lightning Lane Reality (2026)" },
-    { href: "/articles/harbor-advantage", label: "Harbor Blvd Advantage" },
-    { href: "/articles/utah-trap", label: "The October Utah Trap" },
-    { href: "/articles/value-strategy", label: "2026 Value Date Playbook" },
+    { href: "/articles/harbor-advantage", label: "Why Harbor Blvd Works" },
+    { href: "/articles/utah-october-effect", label: "Utah October Effect" },
+    { href: "/articles/value-strategy", label: "2026 Value Dates" },
     { href: "/articles/magic-key-crowd", label: "Magic Key Evening Spike" },
   ];
 
@@ -30,18 +30,16 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
         <AdSlot id="ad-footer" label="Footer Placement" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8 border-t border-slate-200">
-          {/* About */}
           <div className="space-y-4">
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
               About AnaheimCrowds
             </p>
             <p className="text-[13px] text-slate-500 leading-relaxed font-medium">
               Independent 2026 planning resource focused on school calendars,
-              pricing tiers, and hotel proximity patterns.
+              ticket pricing, and hotel walking distance.
             </p>
           </div>
 
-          {/* Planning Tools */}
           <div className="space-y-4">
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
               Planning Tools
@@ -59,10 +57,9 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
             </nav>
           </div>
 
-          {/* Intelligence */}
           <div className="space-y-4">
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-              Intelligence
+              Guides
             </p>
             <nav className="flex flex-col gap-2">
               {powerArticles.map((art) => (
@@ -110,7 +107,6 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
           </div>
         </div>
 
-        {/* Monthly Grid */}
         <div className="pt-8 border-t border-slate-200 space-y-4">
           <p className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">
             2026 Monthly Crowd Forecasts
@@ -131,6 +127,9 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
         <div className="text-center pt-8 border-t border-slate-100">
           <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">
             © {new Date().getFullYear()} AnaheimCrowds · Not affiliated with The Walt Disney Co.
+          </p>
+          <p className="mt-2 text-[10px] text-slate-400">
+            Contact: {contactEmail}
           </p>
         </div>
       </div>

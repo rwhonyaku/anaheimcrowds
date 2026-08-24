@@ -4,7 +4,7 @@ export type HotelProperty = {
   walkTimeMinutes: number;
   tier: "Value" | "Moderate" | "Deluxe";
   bestFor: string;
-  trap: string; // The "Advocate's Warning" copy
+  caution: string; // The "Advocate's Warning" copy
   affiliateLink: string;
   priceRange: string; // e.g., "$$$"
 };
@@ -20,7 +20,7 @@ export const HARBOR_HOTELS: HotelProperty[] = [
     walkTimeMinutes: 2,
     tier: "Moderate",
     bestFor: "The absolute closest room to the crosswalk. No long waits.",
-    trap: "High price-to-amenity ratio. You pay for the feet, not the sheets.",
+    caution: "High price-to-amenity ratio. You pay for the feet, not the sheets.",
     affiliateLink: "/links/bw-park-place",
     priceRange: "$$$"
   },
@@ -30,7 +30,7 @@ export const HARBOR_HOTELS: HotelProperty[] = [
     walkTimeMinutes: 3,
     tier: "Moderate",
     bestFor: "Perfect for multi-generational groups needing mid-day breaks.",
-    trap: "Elevator capacity is low; if you're on the 3rd floor, take the stairs at 7:00 AM.",
+    caution: "Elevator capacity is low; if you're on the 3rd floor, take the stairs at 7:00 AM.",
     affiliateLink: "/links/tropicana",
     priceRange: "$$"
   },
@@ -40,7 +40,7 @@ export const HARBOR_HOTELS: HotelProperty[] = [
     walkTimeMinutes: 3,
     tier: "Moderate",
     bestFor: "Superior breakfast value compared to immediate neighbors.",
-    trap: "Extremely limited parking; late arrivals will be forced into valet-only.",
+    caution: "Extremely limited parking; late arrivals will be forced into valet-only.",
     affiliateLink: "/links/park-vue",
     priceRange: "$$"
   },
@@ -50,7 +50,7 @@ export const HARBOR_HOTELS: HotelProperty[] = [
     walkTimeMinutes: 7,
     tier: "Deluxe",
     bestFor: "Families with kids who want the best on-site waterpark.",
-    trap: "Strictly valet parking only (~$50/night) and often sells out 6 months early.",
+    caution: "Strictly valet parking only (~$50/night) and often sells out 6 months early.",
     affiliateLink: "/links/courtyard-marriott",
     priceRange: "$$$$"
   },
@@ -60,7 +60,7 @@ export const HARBOR_HOTELS: HotelProperty[] = [
     walkTimeMinutes: 8,
     tier: "Moderate",
     bestFor: "Marriott Bonvoy members and families who want reliable consistency.",
-    trap: "The themed rooms are just stickers on the wall; don't overpay for them.",
+    caution: "The themed rooms are just stickers on the wall; don't overpay for them.",
     affiliateLink: "/links/fairfield",
     priceRange: "$$$"
   },
@@ -70,7 +70,7 @@ export const HARBOR_HOTELS: HotelProperty[] = [
     walkTimeMinutes: 12,
     tier: "Value",
     bestFor: "Themed castle vibes for kids on a strict budget.",
-    trap: "The walk feels twice as long on the way back at midnight. No breakfast.",
+    caution: "The walk feels twice as long on the way back at midnight. No breakfast.",
     affiliateLink: "/links/castle-inn",
     priceRange: "$"
   }

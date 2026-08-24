@@ -114,7 +114,7 @@ export default function LeastCrowdedDaysDisneylandPage() {
         <ul className="list-disc ml-6 space-y-2 text-slate-700">
           <li>School is mostly in session across Southern California and nearby travel markets.</li>
           <li>They sit outside major holiday weekends.</li>
-          <li>Disney pricing usually signals lower expected demand.</li>
+          <li>Disney pricing is usually lower on dates Disney expects to be calmer.</li>
           <li>They are usually Tuesday through Thursday, not Monday and not Saturday.</li>
         </ul>
       </section>

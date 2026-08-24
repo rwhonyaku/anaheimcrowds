@@ -6,7 +6,7 @@ import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Disneyland Crowds in July 2026 | AnaheimCrowds",
-  description: "Tactical advice for navigating the busiest and hottest month at Disneyland.",
+  description: "How to plan around the busiest and hottest month at Disneyland.",
   alternates: { canonical: "/crowds/july" },
 };
 
@@ -18,7 +18,7 @@ export default function JulyCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">July 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          July is about survival. It is the peak of the tourist season, where high out-of-state volume meets intense SoCal heat.
+          July is one of the hardest months at Disneyland. It is peak tourist season, and the heat makes the busy parts of the day feel even harder.
         </p>
       </section>
 
@@ -52,7 +52,7 @@ export default function JulyCrowdsPage() {
               <Zap size={16} className="text-blue-500" /> July 4th Peak
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              A guaranteed capacity event. If you aren't in the park by 11 AM, you may not get in at all.
+              One of the most crowded holiday periods of the summer. Arrive early if this is your park day.
             </p>
           </li>
           <li className="space-y-1">
@@ -75,7 +75,7 @@ export default function JulyCrowdsPage() {
           <p className="text-sm text-slate-600 italic">Rope-drop on Sundays is the only way to beat the heat and the crowds before the tourist wave arrives.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch lunch timing</h3>
           <p className="font-bold text-white leading-tight">Mobile Order Gridlock</p>
           <p className="text-sm text-slate-400 italic">In July, "Tier 1" restaurants sell out of lunch slots by 10:30 AM. Order early or don't eat at noon.</p>
         </div>
@@ -84,7 +84,7 @@ export default function JulyCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">What a Good July Day Actually Means</h2>
         <p className="text-slate-700 leading-relaxed">
-          July rarely gives you a true low-crowd experience. Your real goal is not finding an empty day. It is finding the least punishing weekday and treating rope drop as mandatory.
+          July rarely gives you a true low-crowd experience. Your real goal is not finding an empty day. It is finding the most manageable weekday and treating rope drop as mandatory.
         </p>
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <p className="font-bold text-slate-900">Best July target: Jul 7-9.</p>
@@ -99,7 +99,7 @@ export default function JulyCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/june" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">June Crowds</Link>
           <Link href="/crowds/august" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">August Crowds</Link>
           <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>

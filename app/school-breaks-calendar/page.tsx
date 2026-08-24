@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { SOCAL_2025_2026 } from "@/lib/school-data";
+import { SOCAL_2025_2026, UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
 import { Map, AlertCircle, CalendarDays, Users, Zap } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
-  title: "Peak Demand Heatmap | AnaheimCrowds",
+  title: "School Break Calendar | AnaheimCrowds",
   description: "Identifying the 2026 windows where regional travel demand creates peak park crowds.",
 };
 
@@ -13,14 +13,14 @@ export default function PeakDemandPage() {
     <div className="max-w-4xl mx-auto px-4 py-12 space-y-16 text-slate-900">
       <section className="space-y-4 text-center md:text-left">
         <h1 className="font-display text-5xl md:text-6xl text-slate-900 leading-none">
-          Peak Demand <span className="text-sky-800">Heatmap</span>
+          School Break <span className="text-sky-800">Calendar</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-2xl">
           Disneyland does not get busy by accident. These are the school-break windows and travel overlaps that turn an ordinary weekday into a much harder park day.
         </p>
       </section>
 
-      <AdSlot id="heatmap-top" label="Heatmap Top Ad" />
+      <AdSlot id="school-break-calendar-top" label="School Break Calendar Top Ad" />
 
       <section className="grid md:grid-cols-3 gap-6">
         <div className="p-6 bg-slate-50 rounded-[2rem] border border-slate-100">
@@ -83,24 +83,36 @@ export default function PeakDemandPage() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-slate-50">
-                  <div className="space-y-1">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Los Angeles</p>
-                    <p className="text-sm font-bold text-slate-700">{breakPeriod.la}</p>
+                {breakPeriod.breakType.includes("Utah") ? (
+                  <div className="grid gap-3 pt-6 border-t border-slate-50">
+                    {UTAH_FALL_BREAK_2026.map((row) => (
+                      <div key={row.district} className="grid gap-1 md:grid-cols-[1.2fr_0.7fr_1.8fr]">
+                        <p className="text-sm font-bold text-slate-800">{row.district}</p>
+                        <p className="text-sm font-bold text-sky-800">{row.dates}</p>
+                        <p className="text-xs text-slate-500 leading-relaxed">{row.notes}</p>
+                      </div>
+                    ))}
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Orange Co.</p>
-                    <p className="text-sm font-bold text-slate-700">{breakPeriod.oc}</p>
+                ) : (
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-slate-50">
+                    <div className="space-y-1">
+                      <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Los Angeles</p>
+                      <p className="text-sm font-bold text-slate-700">{breakPeriod.la}</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Orange Co.</p>
+                      <p className="text-sm font-bold text-slate-700">{breakPeriod.oc}</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">San Diego</p>
+                      <p className="text-sm font-bold text-slate-700">{breakPeriod.sd}</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Inland Empire</p>
+                      <p className="text-sm font-bold text-slate-700">{breakPeriod.ie}</p>
+                    </div>
                   </div>
-                  <div className="space-y-1">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">San Diego</p>
-                    <p className="text-sm font-bold text-slate-700">{breakPeriod.sd}</p>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Inland Empire</p>
-                    <p className="text-sm font-bold text-slate-700">{breakPeriod.ie}</p>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           ))}

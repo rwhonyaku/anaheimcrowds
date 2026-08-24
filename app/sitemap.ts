@@ -47,11 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     { path: "/articles/least-crowded-days-disneyland", file: "app/articles/least-crowded-days-disneyland/page.tsx", priority: 0.75, changeFrequency: "monthly" },
     { path: "/articles/best-day-of-week-disneyland", file: "app/articles/best-day-of-week-disneyland/page.tsx", priority: 0.75, changeFrequency: "monthly" },
+    { path: "/articles/disneyland-midday-break-strategy", file: "app/articles/disneyland-midday-break-strategy/page.tsx", priority: 0.72, changeFrequency: "monthly" },
     { path: "/articles/disneyland-rope-drop-strategy-2026", file: "app/articles/disneyland-rope-drop-strategy-2026/page.tsx", priority: 0.75, changeFrequency: "monthly" },
     { path: "/articles/harbor-advantage", file: "app/articles/harbor-advantage/page.tsx", priority: 0.7, changeFrequency: "monthly" },
     { path: "/articles/lightning-lane-reality", file: "app/articles/lightning-lane-reality/page.tsx", priority: 0.7, changeFrequency: "monthly" },
     { path: "/articles/magic-key-crowd", file: "app/articles/magic-key-crowd/page.tsx", priority: 0.7, changeFrequency: "monthly" },
-    { path: "/articles/utah-trap", file: "app/articles/utah-trap/page.tsx", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/articles/utah-october-effect", file: "app/articles/utah-october-effect/page.tsx", priority: 0.7, changeFrequency: "monthly" },
     { path: "/articles/value-strategy", file: "app/articles/value-strategy/page.tsx", priority: 0.7, changeFrequency: "monthly" },
 
     { path: "/about", file: "app/about/page.tsx", priority: 0.3, changeFrequency: "yearly" },

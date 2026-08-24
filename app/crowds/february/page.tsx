@@ -56,7 +56,7 @@ export default function FebruaryCrowdsPage() {
           <p className="text-sm text-slate-600 italic">The post-January lull continues into early Feb, making for excellent walk-on wait times.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">Valentine's Day Crowds</p>
           <p className="text-sm text-slate-400 italic">Evening dining reservations vanish weeks in advance. If you aren't doing a "Date Night," avoid the parks after 5 PM.</p>
         </div>
@@ -84,7 +84,7 @@ export default function FebruaryCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/january" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">January Crowds</Link>
           <Link href="/crowds/march" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">March Crowds</Link>
           <Link href="/articles/least-crowded-days-disneyland" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Least Crowded Days</Link>

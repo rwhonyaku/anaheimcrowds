@@ -49,7 +49,7 @@ export default function DisneylandMiddayBreakStrategyPage() {
           <li>You started early and already got your top rides done.</li>
           <li>The afternoon is likely to be the slowest, hottest, or most crowded part of the day.</li>
           <li>Your hotel is walkable enough that leaving does not turn into a second commute.</li>
-          <li>You plan to come back for nighttime entertainment or lower-pressure evening rides.</li>
+          <li>You plan to come back for nighttime entertainment or easier evening rides.</li>
         </ul>
         <p className="text-slate-700">
           This is most useful on{" "}

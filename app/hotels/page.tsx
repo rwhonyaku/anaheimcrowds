@@ -75,7 +75,7 @@ function HotelCard({
             <strong className="text-red-600 text-xs uppercase tracking-widest block">
               Watch out for
             </strong>
-            <p className="text-slate-600 text-sm italic">{hotel.trap}</p>
+            <p className="text-slate-600 text-sm italic">{hotel.caution}</p>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@ export default function HotelRankingsPage() {
         </div>
       </section>
 
-      {/* Quick answers (SEO + buyer intent) */}
+      {/* Quick answers */}
       <section className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">
         <div className="flex items-center gap-3 text-blue-600">
           <Info size={22} />
@@ -368,7 +368,7 @@ export default function HotelRankingsPage() {
 
       <AdSlot id="ad-hotels-bottom" label="Hotels Bottom" />
 
-      {/* Katella Trap */}
+      {/* Katella note */}
       <section className="bg-red-50 border border-red-100 p-8 rounded-3xl space-y-4">
         <h3 className="text-xl font-bold text-red-900 flex items-center gap-2">
           <AlertTriangle className="text-red-600" /> The “Looks Close on the Map” Problem (Katella)
@@ -396,7 +396,7 @@ export default function HotelRankingsPage() {
             Best Times to Visit →
           </Link>
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-            School Break Heatmap →
+            School Break Calendar →
           </Link>
           <Link href="/articles/harbor-advantage" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             Harbor Blvd Advantage (why this works) →

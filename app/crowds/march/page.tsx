@@ -6,7 +6,7 @@ import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Disneyland Crowds in March 2026 | AnaheimCrowds",
-  description: "How to survive the first wave of Spring Break at Disneyland in March.",
+  description: "How to plan around the first wave of spring break at Disneyland in March.",
   alternates: { canonical: "/crowds/march" },
 };
 
@@ -53,10 +53,10 @@ export default function MarchCrowdsPage() {
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
           <h3 className="font-black uppercase italic text-slate-400 text-xs tracking-widest">When to go</h3>
           <p className="font-bold text-slate-900 leading-tight">The First Tuesday of March</p>
-          <p className="text-sm text-slate-600 italic">Often the last "quiet" weekday before the mid-month Spring Break chaos officially takes hold.</p>
+          <p className="text-sm text-slate-600 italic">Often the last quieter weekday before mid-month spring break travel builds.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">Spring Break Peak</p>
           <p className="text-sm text-slate-400 italic">If you visit during the last week of March, Genie+ is non-negotiable for "E-Ticket" attractions.</p>
         </div>
@@ -91,7 +91,7 @@ export default function MarchCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/february" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">February Crowds</Link>
           <Link href="/crowds/april" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">April Crowds</Link>
           <Link href="/articles/lightning-lane-reality" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lightning Lane Reality</Link>

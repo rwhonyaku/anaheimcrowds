@@ -56,7 +56,7 @@ export default function JuneCrowdsPage() {
           <p className="text-sm text-slate-600 italic">Paradoxically, Sundays can feel more open in June because many local passholders are blocked out.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">The 3 PM Heat Peak</p>
           <p className="text-sm text-slate-400 italic">June heat drives everyone to the water rides. Expect Splash and Pirates to hit peak waits by noon.</p>
         </div>
@@ -81,7 +81,7 @@ export default function JuneCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/may" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">May Crowds</Link>
           <Link href="/crowds/july" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">July Crowds</Link>
           <Link href="/articles/disneyland-rope-drop-strategy-2026" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Rope Drop Strategy</Link>

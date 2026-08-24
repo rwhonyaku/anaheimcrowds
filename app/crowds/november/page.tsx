@@ -56,7 +56,7 @@ export default function NovemberCrowdsPage() {
           <p className="text-sm text-slate-600 italic">The "Post-Halloween Lull" is one of the year's best windows for low crowd density.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">D3 Weekend / Events</p>
           <p className="text-sm text-slate-400 italic">Occasional Disney-run races or events in November can turn a quiet weekend into a nightmare.</p>
         </div>
@@ -79,7 +79,7 @@ export default function NovemberCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/october" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">October Crowds</Link>
           <Link href="/crowds/december" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">December Crowds</Link>
           <Link href="/articles/magic-key-crowd" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Magic Key Evening Spike</Link>

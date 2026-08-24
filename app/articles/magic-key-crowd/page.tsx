@@ -27,7 +27,7 @@ export default function MagicKeyEveningSpikeArticle() {
       <section className="bg-slate-50 border border-slate-200 rounded-3xl p-8 space-y-4">
         <h2 className="text-2xl font-bold">Short answer</h2>
         <p>
-          If your plan depends on "the evening will calm down," you can get punished fast.
+          If your plan depends on "the evening will calm down," Friday can surprise you.
           Check the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar

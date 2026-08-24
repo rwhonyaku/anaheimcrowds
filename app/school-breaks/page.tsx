@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "School Break Impact 2026 | AnaheimCrowds",
-  description: "Why school calendars are one of the biggest drivers of Disneyland crowd pressure in 2026.",
+  description: "Why school calendars are one of the biggest reasons Disneyland dates get crowded in 2026.",
 };
 
 export default function SchoolBreaksPage() {

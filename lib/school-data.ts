@@ -11,6 +11,14 @@ export type SchoolBreak = {
   endDate: string;
 };
 
+export type UtahFallBreakDistrict = {
+  district: string;
+  dates: string;
+  notes: string;
+  sourceLabel: string;
+  sourceUrl: string;
+};
+
 export type Convention = {
   name: string;
   start: string; // YYYY-MM-DD
@@ -77,16 +85,54 @@ export const SOCAL_2025_2026: SchoolBreak[] = [
     ie: "Jun 4 – Aug 3",
   },
   {
-    breakType: "Utah Fall Break Window (Travel Impact)",
-    dateRange: "Mid-October (varies by district)",
-    startDate: "2026-10-15",
-    endDate: "2026-10-18",
+    breakType: "Utah Fall Break Window",
+    dateRange: "Oct 14-23",
+    startDate: "2026-10-14",
+    endDate: "2026-10-23",
     coverage: "Medium",
-    notes: "Many Utah districts cluster fall recess in mid-October.",
+    notes: "Large Utah districts cluster no-school days from Oct 14-23, with the first wave Oct 15-16 and Jordan later on Oct 20-23.",
     la: "N/A",
     oc: "N/A",
     sd: "N/A",
     ie: "N/A",
+  },
+];
+
+export const UTAH_FALL_BREAK_2026: UtahFallBreakDistrict[] = [
+  {
+    district: "Davis School District",
+    dates: "Oct 15-16",
+    notes: "Students are also out Oct 14 for professional development; classes resume Oct 19.",
+    sourceLabel: "Davis School District calendar page",
+    sourceUrl: "https://www.davis.k12.ut.us/documents/parent-information/school-year-calendar/26371133",
+  },
+  {
+    district: "Canyons School District",
+    dates: "Oct 15-16",
+    notes: "District K-12 calendar lists Fall Recess on Oct 15 and Oct 16.",
+    sourceLabel: "Canyons School District 2026-2027 calendars",
+    sourceUrl: "https://www.canyonsdistrict.org/calendars/employee-calendars/2026-2027/",
+  },
+  {
+    district: "Granite School District",
+    dates: "Oct 15-16",
+    notes: "Fall Break is Oct 15-16, with additional student recess days shown Oct 19-20.",
+    sourceLabel: "Granite 2026-27 calendar reference",
+    sourceUrl: "https://schools-calendar.com/school-calendar/ut/granite-school-district/",
+  },
+  {
+    district: "Alpine School District",
+    dates: "Oct 15-16",
+    notes: "Fall Break is Oct 15-16; Oct 19 is a staff workday before students return.",
+    sourceLabel: "Alpine School District calendars",
+    sourceUrl: "https://www.alpineschools.org/page/district-calendars",
+  },
+  {
+    district: "Jordan School District",
+    dates: "Oct 20-23",
+    notes: "Students are also out Oct 19 for grade transmittal, creating a longer late-October break.",
+    sourceLabel: "Jordan School District calendars",
+    sourceUrl: "https://planning.jordandistrict.org/calendars/",
   },
 ];
 

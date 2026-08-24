@@ -19,7 +19,7 @@ export default function SeptemberCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">September 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          September is the "Golden Month" for locals. The return to school creates beautiful mid-week lulls, even with Halloween decorations up.
+          September is one of the better Disneyland months if you can go mid-week after Labor Day. School is back in session, but Halloween decorations are already up.
         </p>
       </section>
 
@@ -28,7 +28,7 @@ export default function SeptemberCrowdsPage() {
         <p className="text-sm text-slate-700 leading-relaxed">
           Disneyland crowd calendar September 2026 shortcut: the best dates are <strong>Sep 14-24 weekdays</strong>,
           especially Tuesday and Wednesday.{" "}
-          Use September when you want Halloween atmosphere without full October pressure. Compare it with{" "}
+          Use September when you want Halloween atmosphere without the heavier October crowds. Compare it with{" "}
           <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
             October
           </Link>
@@ -75,12 +75,12 @@ export default function SeptemberCrowdsPage() {
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
           <h3 className="font-black uppercase italic text-slate-400 text-xs tracking-widest">When to go</h3>
           <p className="font-bold text-slate-900 leading-tight">Tuesdays & Wednesdays</p>
-          <p className="text-sm text-slate-600 italic">Hands down the best time to visit if you want to see Halloween decor without the October chaos.</p>
+          <p className="text-sm text-slate-600 italic">The best time to visit if you want to see Halloween decor before October gets heavier.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
-          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Where the Day Gets Away From You</h3>
+          <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch the evening</h3>
           <p className="font-bold text-white leading-tight">The 6 PM Spillover</p>
-          <p className="text-sm text-slate-400 italic">If there is a party at California Adventure, Disneyland Park will be gridlocked by dinner time.</p>
+          <p className="text-sm text-slate-400 italic">If there is a party at California Adventure, Disneyland Park can feel crowded by dinner time.</p>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export default function SeptemberCrowdsPage() {
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <p className="font-bold text-slate-900">Best September target: Sep 14-24 weekdays.</p>
           <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-            Party nights, Labor Day spillover, and Friday evening locals can still break the pattern, so September rewards exact date picking more than broad month-level planning.
+            Party nights, Labor Day spillover, and Friday evening locals can still make the park feel crowded, so exact date picking matters more than the month average.
           </p>
         </div>
         <p className="text-slate-700 leading-relaxed">
@@ -113,7 +113,7 @@ export default function SeptemberCrowdsPage() {
         <div className="flex flex-wrap gap-4">
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">2026 Forecast</Link>
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
-          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Heatmap</Link>
+          <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/august" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">August Crowds</Link>
           <Link href="/crowds/october" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">October Crowds</Link>
           <Link href="/articles/magic-key-crowd" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Magic Key Evening Spike</Link>
