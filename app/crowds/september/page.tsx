@@ -42,6 +42,31 @@ export default function SeptemberCrowdsPage() {
           </Link>
           .
         </p>
+        <p className="text-sm text-slate-700 leading-relaxed">
+          If you are comparing the whole year, September is one of the{" "}
+          <Link href="/best-times" className="font-bold underline hover:text-blue-600">
+            best times to visit Disneyland in 2026
+          </Link>
+          , mainly because the best September weekdays land after Labor Day and before October gets crowded.
+        </p>
+      </section>
+
+      <section className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-3">
+        <h2 className="text-2xl font-black text-slate-900">
+          Is September a good time to visit Disneyland in 2026?
+        </h2>
+        <p className="text-slate-700 leading-relaxed">
+          Yes, especially after Labor Day. For lower crowds, the best September 2026 dates are{" "}
+          <strong>Tuesday through Thursday from Sep 14-24</strong>. Weekends are harder because Halloween Time brings
+          local visits, photos, seasonal food, and party-night movement between the parks.
+        </p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          For a broader shortlist, compare September with January, February, and May on the{" "}
+          <Link href="/best-times" className="font-bold underline hover:text-blue-600">
+            best times to visit Disneyland
+          </Link>{" "}
+          page.
+        </p>
       </section>
 
       <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-6">

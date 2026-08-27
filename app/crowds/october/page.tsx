@@ -45,6 +45,25 @@ export default function OctoberCrowdsPage() {
           treat October like a peak-season month, not a quiet fall window.
         </div>
 
+        <div className="bg-white border border-amber-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed shadow-sm">
+          <h2 className="text-xl font-black text-slate-900">
+            Is Disneyland busy on October 24 or October 28, 2026?
+          </h2>
+          <p className="mt-2">
+            Yes. <strong>October 24</strong> is a Saturday during Halloween season, so plan for a heavy day.
+            <strong> October 28</strong> is a Wednesday, but it still sits inside the final Halloween week, when demand
+            is usually high even outside the weekend.
+          </p>
+          <p className="mt-2">
+            If you want Halloween decor with a better chance of a manageable day, compare those dates against{" "}
+            <strong>Oct 6-8</strong> and the full-year shortlist on{" "}
+            <Link href="/best-times" className="font-bold underline hover:text-blue-600">
+              best times to visit Disneyland in 2026
+            </Link>
+            .
+          </p>
+        </div>
+
         <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
       </section>
 

@@ -185,6 +185,28 @@ export default function BestTimesPage() {
         </div>
       </section>
 
+      <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm space-y-3">
+        <h2 className="text-2xl font-black text-slate-900">
+          Best time to go to Disneyland in 2026
+        </h2>
+        <p className="text-slate-700 leading-relaxed">
+          If you want one answer, start with <strong>Jan 12-Feb 12</strong>. If you want warmer weather or Halloween
+          decor, compare <strong>May 4-14</strong> with <strong>Sep 14-24</strong>. September is usually the better fall
+          choice if your goal is lower crowds.
+        </p>
+        <p className="text-sm text-slate-600 leading-relaxed">
+          For fall trips, read the month pages before choosing dates:{" "}
+          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
+            September 2026 crowds
+          </Link>{" "}
+          is the softer Halloween-season option, while{" "}
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October 2026 crowds
+          </Link>{" "}
+          gets much harder after mid-month.
+        </p>
+      </section>
+
       {/* Best Windows in 2026 */}
       <section id="best-windows-2026" className="space-y-8 scroll-mt-24">
         <div className="flex items-center gap-3">
