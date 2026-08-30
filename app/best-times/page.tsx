@@ -40,6 +40,24 @@ export default function BestTimesPage() {
           lower crowds because school is mostly in session, fewer people are traveling for holidays, and Disney pricing is usually lower.
         </p>
 
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-slate-800 shadow-sm">
+          <h2 className="text-xl font-black text-slate-900">
+            Best time to go to Disneyland in 2026
+          </h2>
+          <p className="mt-2 leading-relaxed">
+            The best overall time to go to Disneyland in 2026 is <strong>Jan 12-Feb 12</strong>, especially Tuesday
+            through Thursday. If you want warmer weather, use <strong>May 4-14</strong>. If you want Halloween decor
+            with lower crowds than October, use <strong>Sep 14-24</strong>.
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+            Once you have a week in mind, compare exact dates on the{" "}
+            <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
+              Disneyland crowd calendar 2026
+            </Link>
+            .
+          </p>
+        </div>
+
         <div className="grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-green-200 bg-green-50 p-5">
             <p className="text-xs font-black uppercase tracking-widest text-green-700">Best overall time</p>
@@ -185,26 +203,32 @@ export default function BestTimesPage() {
         </div>
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm space-y-3">
-        <h2 className="text-2xl font-black text-slate-900">
-          Best time to go to Disneyland in 2026
-        </h2>
-        <p className="text-slate-700 leading-relaxed">
-          If you want one answer, start with <strong>Jan 12-Feb 12</strong>. If you want warmer weather or Halloween
-          decor, compare <strong>May 4-14</strong> with <strong>Sep 14-24</strong>. September is usually the better fall
-          choice if your goal is lower crowds.
-        </p>
-        <p className="text-sm text-slate-600 leading-relaxed">
-          For fall trips, read the month pages before choosing dates:{" "}
-          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
-            September 2026 crowds
-          </Link>{" "}
-          is the softer Halloween-season option, while{" "}
-          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
-            October 2026 crowds
-          </Link>{" "}
-          gets much harder after mid-month.
-        </p>
+      <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm space-y-4">
+        <div className="space-y-2">
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">
+            Choose your month
+          </p>
+          <h2 className="text-2xl font-black text-slate-900">
+            Compare the strongest 2026 crowd windows
+          </h2>
+          <p className="text-sm leading-relaxed text-slate-600">
+            These month pages give more detail once you know the season you want.
+          </p>
+        </div>
+        <div className="grid gap-3 md:grid-cols-3">
+          <Link href="/crowds/january" className="rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">
+            <span className="block text-sm font-black text-slate-900">January</span>
+            <span className="mt-1 block text-xs leading-relaxed text-slate-600">Best overall lower-crowd start.</span>
+          </Link>
+          <Link href="/crowds/september" className="rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">
+            <span className="block text-sm font-black text-slate-900">September</span>
+            <span className="mt-1 block text-xs leading-relaxed text-slate-600">Best fall pick before October gets harder.</span>
+          </Link>
+          <Link href="/crowds/october" className="rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">
+            <span className="block text-sm font-black text-slate-900">October</span>
+            <span className="mt-1 block text-xs leading-relaxed text-slate-600">Halloween crowds and dates to avoid.</span>
+          </Link>
+        </div>
       </section>
 
       {/* Best Windows in 2026 */}

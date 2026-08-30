@@ -82,6 +82,27 @@ export default function CrowdCalendarPage() {
 
       <AdSlot id="calendar-top" label="High Visibility Placement" />
 
+      <section className="rounded-2xl border border-blue-200 bg-blue-50 p-6 shadow-sm">
+        <h2 className="text-2xl font-black text-slate-900">
+          Disneyland crowd calendar 2026
+        </h2>
+        <p className="mt-2 text-slate-700 leading-relaxed">
+          This is a 2026 Disneyland crowd calendar for Anaheim, California. Use the daily scores to compare dates,
+          then check the month guides for the reason behind each busy stretch.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3 text-sm">
+          <Link href="/crowds/september" className="font-bold underline hover:text-blue-600">
+            September 2026 crowds
+          </Link>
+          <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
+            October 2026 crowds
+          </Link>
+          <Link href="/best-times" className="font-bold underline hover:text-blue-600">
+            Best times to visit Disneyland
+          </Link>
+        </div>
+      </section>
+
       <section className="rounded-[2.5rem] border border-slate-200 bg-slate-50 p-6 md:p-8">
         <CrowdScanner />
       </section>
