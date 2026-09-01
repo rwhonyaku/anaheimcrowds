@@ -34,7 +34,7 @@ export default function SeptemberCrowdsPage() {
           </Link>
           , watch for the{" "}
           <Link href="/articles/magic-key-crowd" className="font-bold underline hover:text-blue-600">
-            Magic Key evening spike
+            Magic Key evening crowds
           </Link>
           , and confirm exact dates on the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
@@ -61,7 +61,7 @@ export default function SeptemberCrowdsPage() {
           local visits, photos, seasonal food, and party-night movement between the parks.
         </p>
         <p className="text-sm text-slate-600 leading-relaxed">
-          For a broader shortlist, compare September with January, February, and May on the{" "}
+          For more good date options, compare September with January, February, and May on the{" "}
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best times to visit Disneyland
           </Link>{" "}

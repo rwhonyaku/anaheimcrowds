@@ -57,7 +57,7 @@ export default function CrowdEstimator() {
               <AlertCircle className="text-blue-500 shrink-0" size={18} />
               <p className="text-xs text-blue-800 leading-relaxed font-medium">
                 {result.score >= 8 
-                  ? "This date looks crowded. If you go, get there early and keep your priority list short." 
+                  ? "This date looks crowded. If you go, get there early and keep your must-do list short." 
                   : "This date looks easier. You still want an early start, but the day should be easier to handle."}
               </p>
             </div>

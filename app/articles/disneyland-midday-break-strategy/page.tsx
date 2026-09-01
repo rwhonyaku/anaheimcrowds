@@ -115,7 +115,7 @@ export default function DisneylandMiddayBreakStrategyPage() {
             <p className="text-xs font-black uppercase tracking-widest text-slate-400">Step 1</p>
             <p className="mt-2 font-bold text-slate-900">Use the morning well</p>
             <p className="mt-2 text-sm text-slate-600">
-              Get your priority rides done first. A break only works if the important part of the day is already behind you.
+              Get your must-do rides done first. A break only works if the important part of the day is already behind you.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">

@@ -6,7 +6,7 @@ import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Disneyland Crowds in June 2026 | AnaheimCrowds",
-  description: "Navigating the start of summer and Grad Nite surges at Disneyland in June.",
+  description: "How the start of summer and Grad Nite dates affect Disneyland crowds in June.",
   alternates: { canonical: "/crowds/june" },
 };
 
@@ -18,7 +18,7 @@ export default function JuneCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">June 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          June is the official kickoff of the Summer Marathon. It's about heat management and navigating graduation spikes.
+          June is when summer crowds start to arrive. Heat, school schedules, and Grad Nite dates matter more than usual.
         </p>
       </section>
 
@@ -30,7 +30,7 @@ export default function JuneCrowdsPage() {
         <ul className="grid md:grid-cols-2 gap-6">
           <li className="space-y-1">
             <p className="font-bold text-slate-900 flex items-center gap-2">
-              <Zap size={16} className="text-blue-500" /> Grad Nite Shifts
+              <Zap size={16} className="text-blue-500" /> Grad Nite Dates
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
               DCA often closes early for high school graduation parties, pushing thousands of guests into Disneyland Park after dark.
@@ -38,10 +38,10 @@ export default function JuneCrowdsPage() {
           </li>
           <li className="space-y-1">
             <p className="font-bold text-slate-900 flex items-center gap-2">
-              <AlertTriangle size={16} className="text-amber-500" /> Regional Release
+              <AlertTriangle size={16} className="text-amber-500" /> Schools Let Out
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              As local schools let out for the summer, the park baseline density increases by 30-40%.
+              As local schools let out for the summer, the park gets noticeably busier.
             </p>
           </li>
         </ul>
@@ -53,7 +53,7 @@ export default function JuneCrowdsPage() {
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
           <h3 className="font-black uppercase italic text-slate-400 text-xs tracking-widest">When to go</h3>
           <p className="font-bold text-slate-900 leading-tight">Mid-Week Sundays</p>
-          <p className="text-sm text-slate-600 italic">Paradoxically, Sundays can feel more open in June because many local passholders are blocked out.</p>
+          <p className="text-sm text-slate-600 italic">Sundays can feel more open in June because many local passholders are blocked out.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
           <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
@@ -65,12 +65,12 @@ export default function JuneCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">June Is About Timing, Not Hope</h2>
         <p className="text-slate-700 leading-relaxed">
-          The first few weekdays of June are your last realistic shot at a calmer summer-style trip. Once more districts finish school, the entire baseline rises and the easy mornings disappear.
+          The first few weekdays of June are your last realistic shot at a calmer summer-style trip. Once more districts finish school, the easy mornings start to disappear.
         </p>
         <p className="text-slate-700 leading-relaxed">
           Best June target: <strong>Jun 1-4</strong>. After that, use the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">crowd calendar</Link>{" "}
-          for exact-date triage and the{" "}
+          for exact-date planning and the{" "}
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">best-times guide</Link>{" "}
           if you are considering a different month entirely.
         </p>

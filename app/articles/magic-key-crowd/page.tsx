@@ -93,7 +93,7 @@ export default function MagicKeyEveningSpikeArticle() {
           <Link href="/articles/disneyland-midday-break-strategy" className="font-bold underline hover:text-slate-900">
             midday break guide
           </Link>{" "}
-          so the evening spike does not wipe out the whole second half of the day.
+          so the busier evening does not wipe out the whole second half of the day.
         </p>
       </section>
 

@@ -57,7 +57,7 @@ export default function LightningLaneRealityArticle() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">What Lightning Lane Actually Does</h2>
         <ul className="list-disc ml-6 space-y-3 text-slate-700">
-          <li>Protects a few priority rides from the worst standby spikes.</li>
+          <li>Protects a few must-do rides from the worst standby waits.</li>
           <li>Buys back some of the time you lose once the park is fully awake.</li>
           <li>Gets more valuable as the day gets sloppier.</li>
         </ul>

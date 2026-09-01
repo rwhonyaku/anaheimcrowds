@@ -42,7 +42,7 @@ export default function DisneylandRopeDropStrategyPage() {
         </h1>
         <p className="text-lg text-slate-600">
           Rope drop still matters in 2026 because the first 60 to 90 minutes are usually the easiest part of
-          the day. Arrive early, start with a major ride, and do not spend the morning on lower-priority stuff.
+          the day. Arrive early, start with a major ride, and do not spend the morning on less important attractions.
         </p>
       </section>
 
@@ -144,7 +144,7 @@ export default function DisneylandRopeDropStrategyPage() {
           </Link>{" "}
           and the{" "}
           <Link href="/articles/least-crowded-days-disneyland" className="font-bold underline hover:text-blue-600">
-            least crowded days shortlist
+            least crowded days guide
           </Link>
           .
         </p>

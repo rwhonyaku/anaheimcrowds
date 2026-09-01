@@ -270,7 +270,7 @@ export default function CrowdCalendarPage() {
           </h2>
 
           <p className="text-slate-300 leading-relaxed max-w-2xl">
-            Summer carries a heavier baseline: longer hours, slower walkways, and a park that stays full later into the night.
+            Summer feels heavier all day: longer hours, slower walkways, and a park that stays full later into the night.
             If you are looking at summer dates, pair this calendar with the{" "}
             <Link href="/crowds/july" className="text-amber-300 hover:underline">
               July crowd guide

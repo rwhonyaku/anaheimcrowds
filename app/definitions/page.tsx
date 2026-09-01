@@ -13,8 +13,8 @@ const TERMS = [
     definition: "The open space between Disneyland and DCA. Where you stand here before open still shapes the first part of your morning.",
   },
   {
-    term: "Multi-Pass Saturation",
-    definition: "The point in the day when too much attraction capacity is going to Lightning Lane returns and standby stops moving well.",
+    term: "Multi-Pass Slowdown",
+    definition: "The point in the day when Lightning Lane return times are taking up so much ride space that standby lines stop moving well.",
   },
   {
     term: "Tier 0 Surprise",
@@ -22,7 +22,7 @@ const TERMS = [
   },
   {
     term: "Single Rider Split",
-    definition: "The practical trade where your group separates for speed on a ride that rewards it.",
+    definition: "A choice where your group splits up to move faster on a ride with a single rider line.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function DefinitionsPage() {
           <Target size={32} />
         </div>
         <div>
-          <h2 className="text-lg font-bold">Why terminology still matters</h2>
+          <h2 className="text-lg font-bold">Why clear wording matters</h2>
           <p className="text-sm text-slate-500">
             A lot of Disneyland advice gets fuzzy because people use the same words for different things. The point of this glossary is clarity.
           </p>

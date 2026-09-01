@@ -50,7 +50,7 @@ export default function LeastCrowdedDaysDisneylandPage() {
         <p className="text-lg text-slate-600">
           When is Disneyland least crowded in 2026? The least busy Disneyland days are mostly{" "}
           <strong>Tuesday through Thursday dates in mid-January, early February, early May, and mid-September</strong>.
-          If you want the safest exact-date starting points, this is the shortlist.
+          If you want the safest exact-date starting points, start here.
         </p>
       </section>
 
@@ -144,7 +144,7 @@ export default function LeastCrowdedDaysDisneylandPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">How to Use This Page</h2>
         <p className="text-slate-700">
-          Use this shortlist to find the date family you want, then move to the{" "}
+          Use this guide to find the date range you want, then move to the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar
           </Link>{" "}

@@ -18,7 +18,7 @@ const DRIVERS = [
   },
   {
     driver: "Magic Key access",
-    effect: "Evening spikes",
+    effect: "Busier evenings",
     impact2026:
       "Some dates stay reasonable at lunch and get much busier after work. That is usually local traffic, not a random surprise.",
     indicator: "Heavier walkways and food lines after 5 PM",

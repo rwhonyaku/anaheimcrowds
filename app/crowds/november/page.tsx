@@ -41,7 +41,7 @@ export default function NovemberCrowdsPage() {
               <AlertTriangle size={16} className="text-amber-500" /> Thanksgiving Peak
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              The entire week of Thanksgiving is a capacity risk. Expect long waits across the board.
+              The entire week of Thanksgiving is busy. Expect long waits across the board.
             </p>
           </li>
         </ul>
@@ -53,17 +53,17 @@ export default function NovemberCrowdsPage() {
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
           <h3 className="font-black uppercase italic text-slate-400 text-xs tracking-widest">When to go</h3>
           <p className="font-bold text-slate-900 leading-tight">The First Week of November</p>
-          <p className="text-sm text-slate-600 italic">The "Post-Halloween Lull" is one of the year's best windows for low crowd density.</p>
+          <p className="text-sm text-slate-600 italic">The first week after Halloween is one of the year's better windows for lighter crowds.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
           <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
           <p className="font-bold text-white leading-tight">D3 Weekend / Events</p>
-          <p className="text-sm text-slate-400 italic">Occasional Disney-run races or events in November can turn a quiet weekend into a nightmare.</p>
+          <p className="text-sm text-slate-400 italic">Some Disney-run races or events in November can make a quiet weekend much busier.</p>
         </div>
       </div>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-black uppercase italic">November's Real Sweet Spot</h2>
+        <h2 className="text-2xl font-black uppercase italic">November's Best Window</h2>
         <p className="text-slate-700 leading-relaxed">
           Early November is one of the better backup windows after October if you still want holiday atmosphere without Thanksgiving-level crowds. Mid-week dates are the clear winners.
         </p>

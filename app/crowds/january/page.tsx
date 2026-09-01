@@ -75,7 +75,7 @@ export default function JanuaryCrowdsPage() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-slate-900">Best January target</h3>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-              <strong>Jan 12-29 weekdays.</strong> This is the cleanest post-holiday window if your priority is shorter waits over full ride availability.
+              <strong>Jan 12-29 weekdays.</strong> This is the cleanest post-holiday window if shorter waits matter more than full ride availability.
             </p>
           </div>
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">

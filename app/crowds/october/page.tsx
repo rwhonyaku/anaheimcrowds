@@ -56,7 +56,7 @@ export default function OctoberCrowdsPage() {
           </p>
           <p className="mt-2">
             If you want Halloween decor with a better chance of an easier day, compare those dates against{" "}
-            <strong>Oct 6-8</strong> and the full-year shortlist on{" "}
+            <strong>Oct 6-8</strong> and the full-year date guide on{" "}
             <Link href="/best-times" className="font-bold underline hover:text-blue-600">
               best times to visit Disneyland in 2026
             </Link>
@@ -113,7 +113,7 @@ export default function OctoberCrowdsPage() {
                   <span className="font-semibold">Busy</span> (weekends heavy)
                 </td>
                 <td className="py-4 pr-4 text-slate-600">
-                  Early fall breaks begin overlapping. Weekend locals add an evening spike.
+                  Early fall breaks begin overlapping. Weekend locals make evenings busier.
                 </td>
               </tr>
 
@@ -218,7 +218,7 @@ export default function OctoberCrowdsPage() {
             </p>
             <p className="text-slate-700 leading-relaxed">
               In 2026, Halloween lands on a Saturday. That tends to turn the final week into a steady climb, with the
-              sharpest spike on Friday night and Saturday.
+              sharpest jump on Friday night and Saturday.
             </p>
           </div>
         </div>

@@ -16,7 +16,7 @@ import { EditorialImage } from "@/components/EditorialImage";
 export const metadata: Metadata = {
   title: "Best Times to Visit Disneyland in 2026: Lowest-Crowd Dates | AnaheimCrowds",
   description:
-    "Best times to visit Disneyland in 2026: Jan 12-Feb 12, May 4-14, and Sep 14-24 are the strongest lower-crowd date windows.",
+    "Best times to visit Disneyland in 2026: Jan 12-Feb 12, May 4-14, and Sep 14-24 are the best lower-crowd date windows.",
   alternates: { canonical: "/best-times" },
 };
 
@@ -24,130 +24,102 @@ const AS_OF_DATE = "August 24, 2026";
 
 export default function BestTimesPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 space-y-16 text-slate-900">
-      {/* Editorial Header */}
-      <section className="space-y-5">
-        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">
-          2026 Planning Pillar
-        </p>
+    <div className="max-w-6xl mx-auto px-4 py-12 space-y-16 text-slate-900">
+      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-50 p-6 md:p-10 shadow-sm">
+        <div className="absolute inset-x-0 top-0 h-full opacity-45 [background-image:linear-gradient(rgba(148,163,184,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.18)_1px,transparent_1px)] [background-size:28px_28px]" />
+        <div className="relative grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
+              <CalendarCheck size={14} /> Disneyland 2026 date guide
+            </div>
 
-        <h1 className="text-4xl md:text-6xl font-black tracking-tighter italic uppercase">
-          Best Times to Visit Disneyland <span className="text-blue-600 italic">in 2026</span>
-        </h1>
+            <div className="space-y-4">
+              <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+                Best times to visit Disneyland in 2026
+              </h1>
+              <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-700">
+                Start with <strong>Jan 12-Feb 12</strong>, <strong>May 4-14</strong>, or{" "}
+                <strong>Sep 14-24</strong>. Those windows usually mean fewer school breaks, easier weekdays,
+                and lower Disney ticket prices.
+              </p>
+            </div>
 
-        <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          The best times to visit Disneyland in 2026 are <strong>Jan 12-Feb 12</strong>,{" "}
-          <strong>May 4-14</strong>, and <strong>Sep 14-24</strong>. Those windows give you the best shot at
-          lower crowds because school is mostly in session, fewer people are traveling for holidays, and Disney pricing is usually lower.
-        </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/crowd-calendar"
+                className="rounded-2xl bg-amber-700 px-8 py-4 font-black uppercase tracking-tight text-white transition-all hover:bg-slate-900"
+              >
+                Check Exact Dates
+              </Link>
+              <Link
+                href="/articles/least-crowded-days-disneyland"
+                className="rounded-2xl border border-stone-300 bg-white px-8 py-4 font-black uppercase tracking-tight text-slate-900 transition-all hover:border-amber-700 hover:text-amber-700"
+              >
+                Least Crowded Days
+              </Link>
+            </div>
 
-        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-slate-800 shadow-sm">
-          <h2 className="text-xl font-black text-slate-900">
-            Best time to go to Disneyland in 2026
-          </h2>
-          <p className="mt-2 leading-relaxed">
-            The best overall time to go to Disneyland in 2026 is <strong>Jan 12-Feb 12</strong>, especially Tuesday
-            through Thursday. If you want warmer weather, use <strong>May 4-14</strong>. If you want Halloween decor
-            with lower crowds than October, use <strong>Sep 14-24</strong>.
-          </p>
-          <p className="mt-2 text-sm leading-relaxed text-slate-700">
-            Once you have a week in mind, compare exact dates on the{" "}
-            <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
-              Disneyland crowd calendar 2026
-            </Link>
-            .
-          </p>
-        </div>
-
-        <EditorialImage
-          src="/images/scnic.jpg"
-          alt="Small World and a topiary at Disneyland on a clear day"
-          caption="Small World area at Disneyland. Photo: AnaheimCrowds."
-          priority
-          imageClassName="aspect-[16/9] object-cover"
-        />
-
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-green-200 bg-green-50 p-5">
-            <p className="text-xs font-black uppercase tracking-widest text-green-700">Best overall time</p>
-            <p className="mt-2 text-lg font-bold text-slate-900">Mid-January through early February</p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              If you want the highest success rate, target weekday trips from <strong>Jan 12 to Feb 12, 2026</strong>.
-            </p>
+            <div className="grid gap-3 sm:grid-cols-3">
+              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best overall</p>
+                <p className="mt-1 text-lg font-black text-slate-900">Jan 12-Feb 12</p>
+              </div>
+              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best weather</p>
+                <p className="mt-1 text-lg font-black text-slate-900">May 4-14</p>
+              </div>
+              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best fall pick</p>
+                <p className="mt-1 text-lg font-black text-slate-900">Sep 14-24</p>
+              </div>
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-blue-200 bg-blue-50 p-5">
-            <p className="text-xs font-black uppercase tracking-widest text-blue-700">Best low-crowd window</p>
-            <p className="mt-2 text-lg font-bold text-slate-900">May 4-14 and Sep 14-24</p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              These are two of the best shoulder-season weekday windows if you want lighter parks without as much January ride-closure risk.
-            </p>
+          <div className="space-y-5">
+            <EditorialImage
+              src="/images/scnic.jpg"
+              alt="Small World and a topiary at Disneyland on a clear day"
+              caption="Small World area at Disneyland. Photo: AnaheimCrowds."
+              priority
+              imageClassName="aspect-[16/10] object-cover"
+            />
+
+            <div className="rounded-[2rem] border border-amber-200 bg-amber-50 p-6 text-slate-800 shadow-sm">
+              <h2 className="text-xl font-black text-slate-900">
+                Quick answer
+              </h2>
+              <p className="mt-2 leading-relaxed">
+                The best overall time is <strong>Jan 12-Feb 12</strong>, especially Tuesday through Thursday.
+                For warmer weather, use <strong>May 4-14</strong>. For Halloween decor with lighter crowds than
+                October, use <strong>Sep 14-24</strong>.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-700">
+                After you pick a window, compare exact dates on the{" "}
+                <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
+                  Disneyland crowd calendar 2026
+                </Link>
+                .
+              </p>
+            </div>
           </div>
-
-          <div className="rounded-2xl border border-red-200 bg-red-50 p-5">
-            <p className="text-xs font-black uppercase tracking-widest text-red-700">Worst times to avoid</p>
-            <p className="mt-2 text-lg font-bold text-slate-900">Spring break, late October, late December</p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              Avoid <strong>Mar 23-Apr 10</strong>, <strong>Oct 12-31</strong>, and <strong>Dec 18-31</strong> if lower stress and shorter waits are the priority.
-            </p>
-          </div>
         </div>
-
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
-          <strong className="text-slate-900">Quick answer:</strong>{" "}
-          The best low-stress windows in 2026 are <strong>Jan 12-Feb 12</strong>,{" "}
-          <strong>May 4-14</strong>, and <strong>Sep 14-24</strong>. Once you have a shortlist,
-          verify the exact days on the{" "}
-          <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
-            2026 crowd calendar
-          </Link>
-          . If your main question is when Disneyland is least crowded or least busy, use the{" "}
-          <Link href="/articles/least-crowded-days-disneyland" className="font-bold underline hover:text-blue-600">
-            least crowded days guide
-          </Link>{" "}
-          for the tighter date shortlist
-          .
-        </div>
-
-        <div className="bg-white border border-blue-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed shadow-sm">
-          <h2 className="text-lg font-black text-slate-900">
-            Best time to visit Disneyland in 2026
-          </h2>
-          <p className="mt-2">
-            If you want the shortest practical answer, start with <strong>mid-January through early February</strong>.
-            If that does not work, compare <strong>May 4-14</strong> against <strong>Sep 14-24</strong>.
-            For Halloween season, September is usually the safer pick than October.
-          </p>
-          <p className="mt-2">
-            After you pick a window, check the exact dates on the{" "}
-            <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
-              Disneyland crowd calendar 2026
-            </Link>
-            .
-          </p>
-        </div>
-
-        <div className="flex flex-wrap gap-4 text-sm">
-          <a href="#best-windows-2026" className="font-bold underline hover:text-blue-600">
-            Best windows (2026)
-          </a>
-          <a href="#three-day-plan" className="font-bold underline hover:text-blue-600">
-            Best 3-day plan
-          </a>
-          <a href="#faq" className="font-bold underline hover:text-blue-600">
-            FAQ
-          </a>
-        </div>
-
-        <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
-        <p className="text-sm text-slate-500">
-          Source and forecast changes are tracked in{" "}
-          <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
-            Forecast Updates
-          </Link>
-          .
-        </p>
       </section>
+
+      <div className="mx-auto flex max-w-4xl flex-wrap items-center gap-4 text-sm text-slate-500">
+        <a href="#best-windows-2026" className="font-bold underline hover:text-blue-600">
+          Best windows
+        </a>
+        <a href="#three-day-plan" className="font-bold underline hover:text-blue-600">
+          Best 3-day plan
+        </a>
+        <a href="#faq" className="font-bold underline hover:text-blue-600">
+          FAQ
+        </a>
+        <span>Last updated: {AS_OF_DATE}</span>
+        <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
+          Recent updates
+        </Link>
+      </div>
 
       <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-8 text-white shadow-sm">
         <div className="relative grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end">
@@ -159,7 +131,7 @@ export default function BestTimesPage() {
               Pick the week before you plan the day.
             </h2>
             <p className="max-w-xl text-sm leading-relaxed text-slate-100">
-              A better week gives rope drop, dining breaks, and afternoon plans more room to work. Use this guide for a shortlist,
+              A better week gives rope drop, dining breaks, and afternoon plans more room to work. Use this guide to narrow the week,
               then compare exact dates on the calendar.
             </p>
           </div>
@@ -446,7 +418,7 @@ export default function BestTimesPage() {
               <strong>Ticket tiers:</strong> Higher price dates usually mean Disney expects a busier day.
             </li>
             <li>
-              <strong>Local behavior:</strong> Even on school-is-in-session weeks, evenings can spike on Fri-Sun.
+              <strong>Local behavior:</strong> Even on school-is-in-session weeks, evenings can get busier on Fri-Sun.
             </li>
           </ul>
 
@@ -523,7 +495,7 @@ export default function BestTimesPage() {
         </div>
       </section>
 
-      {/* Magic Key spikes */}
+      {/* Magic Key evenings */}
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <AlertTriangle className="text-amber-500" />
@@ -531,14 +503,14 @@ export default function BestTimesPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed">
-          A lot of surprise crowd days are not driven by tourists. They are driven by locals. The most common shape:
+          A lot of surprise crowd days do not come from tourists. They come from locals. The most common pattern:
           the morning feels fine, and the evening turns packed (especially Friday).
         </p>
 
         <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-4">
           <ul className="list-disc ml-6 space-y-2 text-slate-700">
             <li>
-              <strong>Friday night</strong> is the most common local spike.
+              <strong>Friday night</strong> is the most common local rush.
             </li>
             <li>
               When key blockouts lift, you can get an "extra" evening wave that school calendars won't explain.
@@ -566,7 +538,7 @@ export default function BestTimesPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed">
-          This is the highest success-rate shape for a first trip. It assumes you want the big rides without burning out,
+          This is the easiest shape for a first trip. It assumes you want the big rides without burning out,
           and it's designed around how crowds actually build in 2026.
         </p>
 
@@ -575,8 +547,8 @@ export default function BestTimesPage() {
             <h3 className="text-xl font-black uppercase italic tracking-tight">Day 0 (Arrival Night)</h3>
             <ul className="list-disc ml-6 space-y-2 text-slate-700">
               <li>Stay walkable if possible so rope drop is realistic.</li>
-              <li>Pick your top 5 priorities now (don't decide at 10:30am in the park).</li>
-              <li>Set expectations: mornings are the advantage; afternoons are the grind.</li>
+              <li>Pick your top 5 must-dos now (don't decide at 10:30am in the park).</li>
+              <li>Set expectations: mornings are easier; afternoons are slower.</li>
             </ul>
             <p className="text-sm text-slate-600 leading-relaxed">
               If you are comparing Harbor Blvd against Disney-owned hotels, read the{" "}

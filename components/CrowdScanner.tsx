@@ -14,7 +14,7 @@ function getScannerCopy(score: number, date: string) {
       strategy:
         month >= 5 && month <= 8
           ? "Even on a lighter summer day, use the morning well. Summer still gets busy later, so do your biggest rides early."
-          : "Start with your biggest ride first, then use the morning for the rest of your priority list. You do not need to rush all day, but you should still use the early hours well.",
+          : "Start with your biggest ride first, then use the morning for the rest of your must-do list. You do not need to rush all day, but you should still use the early hours well.",
     };
   }
 
@@ -23,7 +23,7 @@ function getScannerCopy(score: number, date: string) {
       status: "warning" as const,
       text: "This date is workable, but it is not an easy day. Expect real waits, especially if you get a late start.",
       strategy:
-        "Use the first 90 minutes for your biggest rides. Save shows, shopping, and lower-priority attractions for later in the day.",
+        "Use the first 90 minutes for your biggest rides. Save shows, shopping, and less urgent attractions for later in the day.",
     };
   }
 
@@ -31,7 +31,7 @@ function getScannerCopy(score: number, date: string) {
     status: "bad" as const,
     text: "This is a crowded date. Lines will build earlier than usual, and the park will feel busier for most of the day.",
     strategy:
-      "If you have to go on this date, get there early, decide on your top priorities before you enter, and expect the afternoon to be the busiest part of the day.",
+      "If you have to go on this date, get there early, decide on your must-do rides before you enter, and expect the afternoon to be the busiest part of the day.",
   };
 }
 

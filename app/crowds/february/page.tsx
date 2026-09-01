@@ -18,7 +18,7 @@ export default function FebruaryCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">February 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          February balances a relaxed "off-season" vibe with localized surges driven by DCA festivals and holiday weekends.
+          February balances a relaxed "off-season" feel with busier pockets around DCA festivals and holiday weekends.
         </p>
       </section>
 
@@ -33,7 +33,7 @@ export default function FebruaryCrowdsPage() {
               <Zap size={16} className="text-blue-500" /> Lunar New Year
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              DCA becomes a hub for foodies. While this spikes California Adventure, Disneyland Park often remains a refuge.
+              DCA becomes a hub for food fans. While California Adventure gets busier, Disneyland Park often stays calmer.
             </p>
           </li>
           <li className="space-y-1">
@@ -41,7 +41,7 @@ export default function FebruaryCrowdsPage() {
               <AlertTriangle size={16} className="text-amber-500" /> President's Day
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              A major crowd spike. This holiday weekend pulls in large numbers of local Magic Key holders.
+              A major crowd bump. This holiday weekend pulls in large numbers of local Magic Key holders.
             </p>
           </li>
         </ul>
