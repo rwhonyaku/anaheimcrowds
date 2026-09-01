@@ -20,40 +20,44 @@ export function getCrowdEstimate(dateString: string): CrowdLevel {
   // Start with a neutral baseline
   let score = 5;
 
-  // 1. School Breaks (The "Locals" Factor)
-  // High impact for Disneyland as it is a locals-heavy park
-  const isSchoolBreak = SOCAL_2025_2026.some((period) =>
-    isWithinInterval(date, {
+  // 1. School breaks
+  const schoolBreakImpact = SOCAL_2025_2026.reduce((impact, period) => {
+    const isActive = isWithinInterval(date, {
       start: parseISO(period.startDate),
       end: parseISO(period.endDate),
-    })
-  );
-  if (isSchoolBreak) score += 3;
+    });
 
-  // 2. Disney Demand Tiers (The "Price" Factor)
-  // If Disney sets a Tier 5 or 6 price, they expect maximum capacity
+    if (!isActive) return impact;
+
+    const periodImpact =
+      period.coverage === "High" ? 3 : period.coverage === "Medium" ? 2 : 1;
+
+    return Math.max(impact, periodImpact);
+  }, 0);
+
+  score += schoolBreakImpact;
+
+  // 2. Disney ticket tiers
   if (PEAK_TIER_DATES.includes(dateKey)) score += 3;
   
-  // If Disney sets a Tier 0 or 1 price, it's a confirmed "Value" day
+  // Disney's lowest ticket tiers usually point to easier dates.
   if (VALUE_DATES.includes(dateKey)) score -= 2;
 
-  // 3. Anaheim Conventions (The "Hotel" Factor)
-  // Massive events like Expo West (March) or D23 (August) saturate the area
+  // 3. Anaheim conventions
   const activeConvention = MAJOR_CONVENTIONS.find(event => 
     isWithinInterval(date, { start: parseISO(event.start), end: parseISO(event.end) })
   );
   if (activeConvention) score += 1;
 
   // 4. Weekend vs Weekday
-  // Standard logic: Weekends are busier, but Sundays are often lighter than Saturdays
   if (isWeekend(date)) {
     score += (format(date, 'EEEE') === 'Saturday') ? 2 : 1;
   }
 
-  // 5. Final Score Normalization (Clamp between 1 and 10)
+  // 5. Clamp between 1 and 10
   const finalScore = Math.max(1, Math.min(score, 10));
 
-  // 6. Strategist Labels & Colors
+  // 6. Labels and colors
   if (finalScore <= 4) {
     return { 
       score: finalScore, 

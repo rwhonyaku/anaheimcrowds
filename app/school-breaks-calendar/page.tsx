@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { SOCAL_2025_2026, UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
+import { SOCAL_2025_2026, SOCAL_DISTRICT_BREAKS_2026_2027, UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
 import { Map, AlertCircle, CalendarDays, Users, Zap, ExternalLink } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "School Break Calendar | AnaheimCrowds",
-  description: "2026 Disneyland school break calendar with regional travel windows, Utah fall break dates, and source notes.",
+  description: "2026 Disneyland school break calendar with Southern California district dates, Utah fall break dates, and planning notes.",
 };
 
-const AS_OF_DATE = "August 24, 2026";
+const AS_OF_DATE = "September 1, 2026";
 
-const sourceLinks = [
+const utahSourceLinks = [
   {
     label: "Davis School District calendar page",
     href: "https://www.davis.k12.ut.us/documents/parent-information/school-year-calendar/26371133",
@@ -32,6 +32,14 @@ const sourceLinks = [
     label: "Granite 2026-27 calendar reference",
     href: "https://schools-calendar.com/school-calendar/ut/granite-school-district/",
   },
+];
+
+const sourceLinks = [
+  ...SOCAL_DISTRICT_BREAKS_2026_2027.map((source) => ({
+    label: source.sourceLabel,
+    href: source.sourceUrl,
+  })),
+  ...utahSourceLinks,
 ];
 
 export default function PeakDemandPage() {
@@ -87,6 +95,64 @@ export default function PeakDemandPage() {
             When nearby districts and fly-in markets line up, the park can stay busy from late morning through closing.
             That is why this page feeds into the daily crowd calendar instead of standing alone.
           </p>
+        </div>
+      </section>
+
+      <section className="space-y-8">
+        <div className="space-y-3">
+          <h2 className="text-2xl font-black uppercase italic flex items-center gap-2">
+            <Map className="text-sky-800" /> Local Districts We Track
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            These 2026-27 calendars cover the nearby districts most likely to affect Disneyland day trips and short hotel stays:
+            Los Angeles, Orange County, San Diego, and the Inland Empire.
+          </p>
+        </div>
+
+        <div className="grid gap-4">
+          {SOCAL_DISTRICT_BREAKS_2026_2027.map((row) => (
+            <article key={row.district} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm space-y-4">
+              <div className="flex flex-col gap-1 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-widest text-slate-400">{row.region}</p>
+                  <h3 className="text-lg font-black text-slate-900">{row.district}</h3>
+                </div>
+                <a
+                  href={row.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-bold underline hover:text-blue-600"
+                >
+                  Calendar source <ExternalLink size={14} />
+                </a>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">First day</p>
+                  <p className="text-sm font-bold text-slate-800">{row.firstDay}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Thanksgiving</p>
+                  <p className="text-sm font-bold text-slate-800">{row.thanksgiving}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Winter break</p>
+                  <p className="text-sm font-bold text-slate-800">{row.winterBreak}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Spring break</p>
+                  <p className="text-sm font-bold text-slate-800">{row.springBreak}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Last day</p>
+                  <p className="text-sm font-bold text-slate-800">{row.lastDay}</p>
+                </div>
+              </div>
+
+              <p className="text-sm leading-relaxed text-slate-600">{row.notes}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -166,7 +232,7 @@ export default function PeakDemandPage() {
       <section className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white text-center space-y-6">
         <h2 className="font-display text-4xl text-amber-300">How to use this page</h2>
         <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          If your dates land inside a high-impact window, assume the day will need a tighter morning plan and less room for wasted time. Rule out the worst windows here, then move to the crowd calendar for exact dates.
+          If your dates land inside a busier school-break window, assume the day will need a tighter morning plan and less room for wasted time. Rule out the hardest windows here, then move to the crowd calendar for exact dates.
         </p>
         <div className="flex flex-wrap justify-center gap-4 text-sm font-bold">
           <Link href="/crowd-calendar" className="text-amber-300 hover:underline">
@@ -185,7 +251,7 @@ export default function PeakDemandPage() {
         <h2 className="text-2xl font-black uppercase italic">Where These Dates Come From</h2>
         <p className="text-slate-700 leading-relaxed">
           The calendar combines Southern California school-break timing with nearby travel markets that regularly affect Disneyland,
-          especially Utah in October. For the latest date changes, see the{" "}
+          especially Utah in October. For recent date changes, see the{" "}
           <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
             forecast updates
           </Link>{" "}

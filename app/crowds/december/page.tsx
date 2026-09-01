@@ -30,18 +30,18 @@ export default function DecemberCrowdsPage() {
         <ul className="grid md:grid-cols-2 gap-6">
           <li className="space-y-1">
             <p className="font-bold text-slate-900 flex items-center gap-2">
-              <Zap size={16} className="text-blue-500" /> Maximum Capacity
+              <Zap size={16} className="text-blue-500" /> Christmas Week
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              Between Christmas and New Year's, the park hits its physical limit. Reservation windows will vanish months in advance.
+              Between Christmas and New Year's, reservations get harder and wait times climb fast.
             </p>
           </li>
           <li className="space-y-1">
             <p className="font-bold text-slate-900 flex items-center gap-2">
-              <AlertTriangle size={16} className="text-amber-500" /> Pass Blockouts
+              <AlertTriangle size={16} className="text-amber-500" /> School Breaks
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              Locals are mostly blocked out in late December, meaning the crowd is 100% tourists who stay in the park for 14 hours straight.
+              Most Southern California districts are out Dec 21-Jan 1, and LAUSD stays out through Jan 8.
             </p>
           </li>
         </ul>
@@ -78,13 +78,17 @@ export default function DecemberCrowdsPage() {
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             calendar
           </Link>{" "}
-          with a realistic rope drop and hotel plan. If you are debating a holiday trip, compare early December with{" "}
+          with a realistic morning and hotel plan. If you are debating a holiday trip, compare early December with{" "}
           <Link href="/crowds/november" className="font-bold underline hover:text-blue-600">
             November
           </Link>{" "}
           and the{" "}
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best-times guide
+          </Link>
+          , and check the{" "}
+          <Link href="/school-breaks-calendar" className="font-bold underline hover:text-blue-600">
+            school-break calendar
           </Link>
           .
         </p>

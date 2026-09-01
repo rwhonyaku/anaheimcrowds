@@ -18,7 +18,7 @@ export default function NovemberCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">November 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          November is a transition month. It's the "bridge" between the spooky fall and the winter holidays.
+          November starts with a calmer post-Halloween stretch, then gets much busier once Thanksgiving travel begins.
         </p>
       </section>
 
@@ -38,10 +38,10 @@ export default function NovemberCrowdsPage() {
           </li>
           <li className="space-y-1">
             <p className="font-bold text-slate-900 flex items-center gap-2">
-              <AlertTriangle size={16} className="text-amber-500" /> Thanksgiving Peak
+              <AlertTriangle size={16} className="text-amber-500" /> Thanksgiving Week
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              The entire week of Thanksgiving is busy. Expect long waits across the board.
+              Most nearby districts are out Nov 23-27, so the whole week should be treated like a holiday travel week.
             </p>
           </li>
         </ul>
@@ -68,9 +68,9 @@ export default function NovemberCrowdsPage() {
           Early November is one of the better backup windows after October if you still want holiday atmosphere without Thanksgiving-level crowds. Mid-week dates are the clear winners.
         </p>
         <p className="text-slate-700 leading-relaxed">
-          Best November target: <strong>Nov 3-12 weekdays</strong>. Thanksgiving week behaves like a holiday season launch, so use the{" "}
+          Best November target: <strong>Nov 3-12 weekdays</strong>. Thanksgiving week, Nov 23-29, behaves like a holiday season launch, so use the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">crowd calendar</Link>{" "}
-          before assuming a cheap-looking date is still worth it.
+          before choosing dates near the holiday.
         </p>
       </section>
 

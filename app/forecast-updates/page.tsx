@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CalendarCheck, ExternalLink, FileText } from "lucide-react";
+import { SOCAL_DISTRICT_BREAKS_2026_2027 } from "@/lib/school-data";
 
 export const metadata: Metadata = {
   title: "Disneyland Crowd Forecast Updates | AnaheimCrowds",
@@ -10,6 +11,17 @@ export const metadata: Metadata = {
 };
 
 const updates = [
+  {
+    date: "September 1, 2026",
+    title: "Added local 2026-27 school district dates",
+    details:
+      "Added 2026-27 calendars for LAUSD, Long Beach, Garden Grove, Anaheim Union, San Diego, Riverside, and San Bernardino. This helps the August back-to-school period, Thanksgiving week, winter break, and spring break line up more closely with nearby family travel.",
+    links: [
+      { href: "/school-breaks-calendar", label: "School Break Calendar" },
+      { href: "/crowds/august", label: "August crowds" },
+      { href: "/crowds/december", label: "December crowds" },
+    ],
+  },
   {
     date: "August 24, 2026",
     title: "Added 2026 Utah fall break district dates",
@@ -45,6 +57,10 @@ const updates = [
 ];
 
 const sourceChecks = [
+  ...SOCAL_DISTRICT_BREAKS_2026_2027.map((source) => ({
+    label: source.sourceLabel,
+    href: source.sourceUrl,
+  })),
   {
     label: "Davis School District calendar page",
     href: "https://www.davis.k12.ut.us/documents/parent-information/school-year-calendar/26371133",
@@ -89,8 +105,8 @@ export default function ForecastUpdatesPage() {
           Current status
         </div>
         <p className="text-slate-700 leading-relaxed">
-          The daily crowd calendar, Best Times guide, October guide, Utah October Effect article, and School Break Calendar
-          have been refreshed with the latest Utah fall-break checks available as of August 24, 2026.
+          The daily crowd calendar, month guides, and School Break Calendar now include local 2026-27 district dates
+          for Los Angeles, Orange County, San Diego, and the Inland Empire, checked September 1, 2026.
         </p>
       </section>
 
@@ -120,7 +136,7 @@ export default function ForecastUpdatesPage() {
           <h2 className="text-2xl font-black uppercase italic">Recent School Calendar Checks</h2>
         </div>
         <p className="text-slate-700 leading-relaxed">
-          These are the public school calendars used for the latest Utah fall-break update. District calendars can change,
+          These are the public school calendars used for the latest local and Utah school-break updates. District calendars can change,
           so date-specific trip planning should still be checked before booking.
         </p>
         <ul className="grid gap-2 text-sm">
