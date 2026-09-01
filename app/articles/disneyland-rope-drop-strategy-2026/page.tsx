@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { EditorialImage } from "@/components/EditorialImage";
 
 export const metadata: Metadata = {
   title: "Disneyland Rope Drop Guide 2026 | AnaheimCrowds",
@@ -35,7 +36,7 @@ export default function DisneylandRopeDropStrategyPage() {
     <article className="max-w-4xl mx-auto px-4 py-10 space-y-12 text-slate-900 leading-relaxed">
       <section className="space-y-4">
         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">
-          Planning guide
+          Morning planning guide
         </p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight">
           Disneyland Rope Drop Guide 2026
@@ -60,6 +61,22 @@ export default function DisneylandRopeDropStrategyPage() {
           </Link>{" "}
           to decide whether your date is worth a full rope-drop effort.
         </p>
+      </section>
+
+      <section className="grid gap-6 md:grid-cols-[1fr_0.9fr] md:items-center">
+        <EditorialImage
+          src="/images/galaxys-edge-rope-drop.jpg"
+          alt="Galaxy's Edge at Disneyland with the Millennium Falcon and spires in the background"
+          caption="Galaxy's Edge can be quiet early, but Rise of the Resistance is still a less reliable rope-drop target. Photo: AnaheimCrowds."
+          imageClassName="aspect-[16/10] object-cover"
+        />
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-2xl font-bold">Do not make the morning too complicated</h2>
+          <p className="mt-3 text-slate-700">
+            Galaxy's Edge is tempting first thing, but the safer morning is usually one major ride, then a quick pivot.
+            If Rise opens late or the posted wait jumps fast, move on instead of letting one ride swallow the best part of the day.
+          </p>
+        </div>
       </section>
 
       <AdSlot id="rope-drop-strategy-top" label="Rope drop strategy top" />

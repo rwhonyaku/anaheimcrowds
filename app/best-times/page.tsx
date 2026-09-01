@@ -147,6 +147,27 @@ export default function BestTimesPage() {
         </div>
       </section>
 
+      <section className="grid gap-6 rounded-[2.5rem] border border-stone-200 bg-white p-6 shadow-sm md:grid-cols-[0.9fr_1.1fr] md:items-center md:p-8">
+        <EditorialImage
+          src="/images/empty%20tables.jpg"
+          alt="Quiet shaded tables at Disneyland during a lower-crowd part of the day"
+          caption="The best dates are not only about shorter waits. They also make meals, breaks, and afternoon pacing easier."
+          imageClassName="aspect-[4/3] object-cover"
+        />
+        <div className="space-y-3">
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">
+            What better dates feel like
+          </p>
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900">
+            Easier days give you room to slow down.
+          </h2>
+          <p className="text-slate-700 leading-relaxed">
+            Lower-crowd weeks are easier because the whole day has more breathing room: mobile-order times are less annoying,
+            shaded seating is easier to find, and you do not have to force every ride into the first few hours.
+          </p>
+        </div>
+      </section>
+
       <AdSlot id="best-times-top" label="Top Guide Ad" />
 
       <section className="grid gap-4 md:grid-cols-2">
