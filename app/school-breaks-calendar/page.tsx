@@ -182,10 +182,10 @@ export default function PeakDemandPage() {
       </section>
 
       <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm space-y-4">
-        <h2 className="text-2xl font-black uppercase italic">How This Page Is Sourced</h2>
+        <h2 className="text-2xl font-black uppercase italic">Where These Dates Come From</h2>
         <p className="text-slate-700 leading-relaxed">
           The calendar combines Southern California school-break timing with nearby travel markets that regularly affect Disneyland,
-          especially Utah in October. For the latest source changes, see the{" "}
+          especially Utah in October. For the latest date changes, see the{" "}
           <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
             forecast updates
           </Link>{" "}

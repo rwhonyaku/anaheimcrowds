@@ -375,7 +375,7 @@ export default function OctoberCrowdsPage() {
 
           <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
             <strong className="text-slate-900">Reality check:</strong> On party days, the parks can feel “busy in a
-            different way.” Walkways, food, and chokepoints can be crowded even if some ride waits look normal.
+            different way.” Walkways, food lines, and narrow paths can be crowded even if some ride waits look normal.
           </div>
         </div>
       </section>

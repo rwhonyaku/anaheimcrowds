@@ -32,7 +32,7 @@ export default function PlanningResources() {
             <h2 className="text-xl font-black uppercase italic">Parking choice changes the morning</h2>
           </div>
           <p className="text-slate-600 leading-relaxed">
-            Most people default to Mickey & Friends. On heavier dates, that is not always the fastest move. Sometimes the better play is the option that keeps your arrival flow simpler, even if it is not the one people talk about most.
+            Most people default to Mickey & Friends. On heavier dates, that is not always the fastest choice. Sometimes the better option is the one with a simpler walk to the gates, even if it is not the one people talk about most.
           </p>
         </div>
 

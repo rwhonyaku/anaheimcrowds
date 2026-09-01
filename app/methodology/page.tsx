@@ -17,7 +17,7 @@ export default function MethodologyPage() {
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
           Most crowd calendars lean too hard on old attendance history. AnaheimCrowds still uses that history,
-          but pays closest attention to the things that actually move Disneyland dates in 2026.
+          but pays closest attention to the things that can make a 2026 Disneyland date feel busier or easier.
         </p>
       </section>
 
@@ -59,9 +59,9 @@ export default function MethodologyPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Anaheim convention weeks still matter</h2>
             <p className="text-slate-600 leading-relaxed">
-              Convention traffic does not always flood the parks, but it can tighten hotels, restaurants, and
-              the area around Harbor. That matters most when a date already looks borderline and a convention
-              week makes it less forgiving.
+              Convention traffic does not always flood the parks, but it can make hotels, restaurants, and
+              the area around Harbor feel busier. That matters most when a date already looks uneven and a convention
+              week brings more people into Anaheim.
             </p>
           </div>
         </div>
@@ -73,8 +73,8 @@ export default function MethodologyPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Weekdays still need context</h2>
             <p className="text-slate-600 leading-relaxed">
-              A Tuesday is not automatically good, and a Monday is not automatically bad. We use weekday
-              patterns as one hint, not the whole answer, because the week itself matters more than
+              A Tuesday is not automatically good, and a Monday is not automatically bad. We treat the day of the week
+              as one clue, not the whole answer, because the week itself matters more than
               the label on the calendar.
             </p>
           </div>
@@ -87,8 +87,8 @@ export default function MethodologyPage() {
           <h2 className="text-3xl font-black uppercase italic">How to read the forecast</h2>
         </div>
         <p className="text-sky-100 leading-relaxed text-lg">
-          The forecast is meant to help you make better date decisions, not promise a perfect park day. Ride
-          downtime, weather, and event noise can always change the feel of a trip. The point is better odds and
+          The forecast is meant to help you choose better dates, not promise a perfect park day. Ride
+          downtime, weather, and special events can always change the feel of a trip. The point is better odds and
           fewer bad surprises.
         </p>
         <Link href="/forecast-updates" className="inline-block font-bold text-white underline hover:text-sky-100">

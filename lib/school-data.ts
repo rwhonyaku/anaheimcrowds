@@ -90,7 +90,7 @@ export const SOCAL_2025_2026: SchoolBreak[] = [
     startDate: "2026-10-14",
     endDate: "2026-10-23",
     coverage: "Medium",
-    notes: "Large Utah districts cluster no-school days from Oct 14-23, with the first wave Oct 15-16 and Jordan later on Oct 20-23.",
+    notes: "Many large Utah districts have no-school days from Oct 14-23, with the first wave Oct 15-16 and Jordan later on Oct 20-23.",
     la: "N/A",
     oc: "N/A",
     sd: "N/A",

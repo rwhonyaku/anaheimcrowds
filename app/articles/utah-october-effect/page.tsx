@@ -95,7 +95,7 @@ export default function UtahOctoberEffectArticle() {
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Planning Guidance</h2>
         <p>
-          The cleanest move is simple: go earlier in October if you can. If you cannot, plan the trip like a busier school-break week instead of a normal shoulder-season weekday.
+          The easiest move is simple: go earlier in October if you can. If you cannot, plan the trip like a busier school-break week instead of a normal fall weekday.
         </p>
         <p>
           Use the{" "}

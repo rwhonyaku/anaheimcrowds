@@ -53,7 +53,7 @@ export default function JanuaryCrowdsPage() {
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
           <h3 className="font-black uppercase italic text-slate-400 text-xs tracking-widest">When to go</h3>
           <p className="font-bold text-slate-900 leading-tight">Last Two Weeks of January</p>
-          <p className="text-sm text-slate-600 italic">Historically the lightest crowd density of the entire year, provided you avoid holiday weekends.</p>
+          <p className="text-sm text-slate-600 italic">Historically one of the lightest crowd stretches of the entire year, provided you avoid holiday weekends.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
           <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>

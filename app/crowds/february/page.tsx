@@ -65,7 +65,7 @@ export default function FebruaryCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">Where February Still Wins</h2>
         <p className="text-slate-700 leading-relaxed">
-          Early February is one of the cleanest combinations on the calendar: school is mostly in session, pricing stays softer, and you still avoid the heavier March travel wave. Start with{" "}
+          Early February is one of the cleanest combinations on the calendar: school is mostly in session, ticket prices are usually lower, and you still avoid the heavier March travel wave. Start with{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">the day-by-day calendar</Link>{" "}
           and then check the{" "}
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">best-times guide</Link>{" "}

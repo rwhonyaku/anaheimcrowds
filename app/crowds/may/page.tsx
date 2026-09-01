@@ -53,7 +53,7 @@ export default function MayCrowdsPage() {
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
           <h3 className="font-black uppercase italic text-slate-400 text-xs tracking-widest">When to go</h3>
           <p className="font-bold text-slate-900 leading-tight">The First Two Weeks of May</p>
-          <p className="text-sm text-slate-600 italic">This is the definitive "Sweet Spot" for 2026. Minimal lines and perfect weather.</p>
+          <p className="text-sm text-slate-600 italic">This is one of the easiest 2026 windows: shorter lines, comfortable weather, and fewer school-break conflicts.</p>
         </div>
         <div className="bg-slate-900 p-8 rounded-[2rem] space-y-3 text-white">
           <h3 className="font-black uppercase italic text-slate-500 text-xs tracking-widest text-blue-400">Watch this part of the day</h3>
@@ -63,9 +63,9 @@ export default function MayCrowdsPage() {
       </div>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-black uppercase italic">Why Early May Is So Strong</h2>
+        <h2 className="text-2xl font-black uppercase italic">Why Early May Works So Well</h2>
         <p className="text-slate-700 leading-relaxed">
-          Early May is one of the best blends of weather, school-in-session weekdays, and lighter crowds. If you want a strong trip without January's refurbishment risk, this is the cleanest target.
+          Early May is one of the best blends of weather, school-in-session weekdays, and lighter crowds. If you want an easier trip without January's ride-closure risk, this is one of the best targets.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
@@ -75,7 +75,7 @@ export default function MayCrowdsPage() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-slate-900">Where it slips</h3>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-              The back half of May gets less forgiving once Grad Nite dates and Memorial Day travel overlap.
+              The back half of May gets harder once Grad Nite dates and Memorial Day travel overlap.
             </p>
           </div>
         </div>

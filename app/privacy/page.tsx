@@ -66,9 +66,9 @@ export default function PrivacyPage() {
 
       {/* 3. ACCURACY NOTE */}
       <section className="space-y-4 border-t border-slate-100 pt-12">
-        <h3 className="text-xl font-black uppercase italic">The &quot;Actual Reality&quot; Clause</h3>
+        <h3 className="text-xl font-black uppercase italic">Forecasts Are Not Guarantees</h3>
         <p className="text-slate-600 leading-relaxed text-sm">
-          While we spend a massive amount of time auditing school schedules and historical patterns, Disneyland is
+          While we spend a lot of time checking school schedules and past crowd behavior, Disneyland is
           unpredictable. Weather, ride breakdowns, and unannounced events can change the feel of the park instantly.
           Our data is a <strong>forecast</strong>, not a guarantee. We are not responsible for any travel decisions
           made based on this site’s information.

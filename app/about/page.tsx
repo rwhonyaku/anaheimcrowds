@@ -76,7 +76,7 @@ export default function AboutPage() {
         <ul className="list-disc ml-6 space-y-2 text-slate-700">
           <li>We track school break timing across major travel markets like Southern California, Arizona, and Utah.</li>
           <li>We track Disneyland ticket pricing tiers as one hint about which dates Disney expects to be busier.</li>
-          <li>We watch major Anaheim convention weeks that affect hotels, restaurants, and security flow.</li>
+          <li>We watch major Anaheim convention weeks that affect hotels, restaurants, and security lines.</li>
           <li>We note repeat crowd behavior, like Mondays that run hotter or evenings that fill in fast.</li>
         </ul>
         <p className="text-slate-600 leading-relaxed">

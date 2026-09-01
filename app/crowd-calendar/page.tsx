@@ -60,7 +60,7 @@ export default function CrowdCalendarPage() {
             page to narrow the window, then use this calendar to choose the exact dates.
           </p>
           <p className="text-sm text-slate-500 leading-relaxed max-w-2xl">
-            Major source changes are tracked on the{" "}
+            Major calendar updates are tracked on the{" "}
             <Link href="/forecast-updates" className="font-bold underline hover:text-sky-800">
               forecast updates
             </Link>{" "}
@@ -207,7 +207,7 @@ export default function CrowdCalendarPage() {
             How to Use This Calendar
           </h2>
           <p className="text-sm leading-relaxed text-slate-700">
-            Rule out Saturdays first. Then target Tuesday through Thursday dates inside the softer stretches. Finally, validate those dates against the{" "}
+            Rule out Saturdays first. Then target Tuesday through Thursday dates inside the quieter stretches. Finally, compare those dates with the{" "}
             <Link href="/best-times" className="font-bold underline hover:text-sky-800">
               best-times guide
             </Link>{" "}

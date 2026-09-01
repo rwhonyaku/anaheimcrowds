@@ -5,7 +5,7 @@ import { CalendarCheck, ExternalLink, FileText } from "lucide-react";
 export const metadata: Metadata = {
   title: "Disneyland Crowd Forecast Updates | AnaheimCrowds",
   description:
-    "A plain update log for AnaheimCrowds 2026 Disneyland crowd forecast changes, source checks, and date-data revisions.",
+    "A plain update log for AnaheimCrowds 2026 Disneyland crowd forecast changes, school calendar checks, and date changes.",
   alternates: { canonical: "/forecast-updates" },
 };
 
@@ -72,13 +72,13 @@ export default function ForecastUpdatesPage() {
     <main className="max-w-4xl mx-auto px-4 py-12 space-y-12 text-slate-900">
       <section className="space-y-4">
         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">
-          Site Maintenance
+          Recent Changes
         </p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight">
           Disneyland Crowd Forecast Updates
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          This page tracks meaningful changes to the AnaheimCrowds 2026 forecasts, source checks, and date-data updates.
+          This page tracks meaningful changes to the AnaheimCrowds 2026 forecasts, school calendar checks, and date changes.
           It is here so readers can see what changed and why.
         </p>
       </section>
@@ -117,10 +117,10 @@ export default function ForecastUpdatesPage() {
       <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm space-y-4">
         <div className="flex items-center gap-2">
           <FileText className="text-blue-600" size={20} />
-          <h2 className="text-2xl font-black uppercase italic">Recent Source Checks</h2>
+          <h2 className="text-2xl font-black uppercase italic">Recent School Calendar Checks</h2>
         </div>
         <p className="text-slate-700 leading-relaxed">
-          These are the public calendar sources used for the latest Utah fall-break update. District calendars can change,
+          These are the public school calendars used for the latest Utah fall-break update. District calendars can change,
           so date-specific trip planning should still be checked before booking.
         </p>
         <ul className="grid gap-2 text-sm">
