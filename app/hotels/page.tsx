@@ -111,28 +111,28 @@ export default function HotelRankingsPage() {
   return (
     <article className="max-w-6xl mx-auto px-4 py-10 space-y-12 text-slate-900">
       {/* Header */}
-      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-50 p-6 md:p-10 shadow-sm">
-        <div className="absolute inset-0 bg-[url('/images/entrance.jpg')] bg-cover bg-center opacity-22" />
-        <div className="absolute inset-0 bg-stone-50/86" />
-        <div className="absolute inset-x-0 top-0 h-full opacity-40 [background-image:linear-gradient(rgba(148,163,184,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.16)_1px,transparent_1px)] [background-size:28px_28px]" />
+      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-slate-950 p-6 md:p-10 shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/entrance.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/68 to-slate-950/28" />
+        <div className="absolute inset-x-0 top-0 h-full opacity-25 [background-image:linear-gradient(rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:28px_28px]" />
 
         <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-          <div className="space-y-5">
+          <div className="space-y-5 text-white">
             <p className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
               <MapPin size={14} /> Harbor Blvd hotel guide
             </p>
 
-            <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+            <h1 className="max-w-xl font-display text-5xl md:text-6xl text-white leading-[0.95]">
               Disneyland hotels ranked by walk time
             </h1>
 
-            <p className="max-w-2xl text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
-              If you’re searching “closest hotels to Disneyland entrance,” ignore map distance. Around Disneyland,
+            <p className="max-w-xl text-lg md:text-xl text-slate-100 leading-relaxed font-medium">
+              If you’re searching “closest hotels to Disneyland entrance,” do not rely on map distance alone. Around Disneyland,
               <strong> the number that matters is walk time to the entrance gates</strong>.
-              This page ranks Harbor Blvd hotels by how fast you can get from the lobby to The Esplanade.
+              This page ranks Harbor Blvd hotels by how fast you can get from the lobby to the main entrance plaza.
             </p>
 
-            <p className="text-sm text-slate-500">Last updated: {AS_OF_DATE}</p>
+            <p className="text-sm text-slate-300">Last updated: {AS_OF_DATE}</p>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
@@ -155,10 +155,10 @@ export default function HotelRankingsPage() {
       <section className="space-y-4">
         <div className="p-6 bg-amber-50 border-l-4 border-amber-400 rounded-r-2xl shadow-sm space-y-2">
           <p className="text-lg font-bold text-amber-900 leading-tight">
-            “0.3 miles” can still be a bad hotel choice if the route forces a detour or sends you through slower walking areas.
+            A short map distance can still be a bad hotel choice if the walk takes you the long way around.
           </p>
           <p className="text-sm text-amber-900 leading-relaxed">
-            Want the proof and the morning security explanation? Read:
+            For why the route matters before the parks open, read:
             <Link href="/articles/harbor-advantage" className="ml-2 underline font-bold hover:text-slate-900">
               The Harbor Blvd Advantage →
             </Link>

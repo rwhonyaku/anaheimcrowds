@@ -20,20 +20,20 @@ export default function ValueStrategyArticle() {
 
   return (
     <article className="max-w-6xl mx-auto px-4 py-10 space-y-12 text-slate-900 leading-relaxed">
-      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-50 p-6 md:p-10 shadow-sm">
-        <div className="absolute inset-0 bg-[url('/images/Big Thunder scenic 2.jpg')] bg-cover bg-center opacity-20" />
-        <div className="absolute inset-0 bg-stone-50/88" />
-        <div className="absolute inset-x-0 top-0 h-full opacity-40 [background-image:linear-gradient(rgba(148,163,184,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.16)_1px,transparent_1px)] [background-size:28px_28px]" />
+      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-slate-950 p-6 md:p-10 shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/Big Thunder scenic 2.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/66 to-slate-950/25" />
+        <div className="absolute inset-x-0 top-0 h-full opacity-25 [background-image:linear-gradient(rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:28px_28px]" />
 
         <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-          <div className="space-y-5">
+          <div className="space-y-5 text-white">
             <p className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
               <Ticket size={14} /> Ticket price guide
             </p>
-            <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+            <h1 className="max-w-xl font-display text-5xl md:text-6xl text-white leading-[0.95]">
               Lower-price Disneyland dates in 2026
             </h1>
-            <p className="max-w-2xl text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
+            <p className="max-w-xl text-lg md:text-xl text-slate-100 leading-relaxed font-medium">
               Lower Disneyland ticket prices do not guarantee empty parks, but they are still one of the clearest
               public hints Disney gives you. Cheaper dates are a good place to start when you want a calmer trip.
             </p>
