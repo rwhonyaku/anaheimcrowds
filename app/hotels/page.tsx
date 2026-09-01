@@ -109,42 +109,44 @@ export default function HotelRankingsPage() {
   const topTen = HARBOR_HOTELS.slice(0, 10);
 
   return (
-    <article className="max-w-4xl mx-auto px-4 py-10 space-y-12 text-slate-900">
+    <article className="max-w-6xl mx-auto px-4 py-10 space-y-12 text-slate-900">
       {/* Header */}
-      <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-10 text-white shadow-sm">
-        <div className="absolute inset-0 bg-[url('/images/entrance.jpg')] bg-cover bg-center opacity-35" />
-        <div className="absolute inset-0 bg-slate-950/70" />
-        <div className="relative space-y-4">
-          <div className="flex items-center gap-2 text-amber-300 font-bold uppercase tracking-widest text-xs">
-            <MapPin size={14} /> Disneyland Hotels Walking Distance (2026)
+      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-50 p-6 md:p-10 shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/entrance.jpg')] bg-cover bg-center opacity-22" />
+        <div className="absolute inset-0 bg-stone-50/86" />
+        <div className="absolute inset-x-0 top-0 h-full opacity-40 [background-image:linear-gradient(rgba(148,163,184,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.16)_1px,transparent_1px)] [background-size:28px_28px]" />
+
+        <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+          <div className="space-y-5">
+            <p className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
+              <MapPin size={14} /> Harbor Blvd hotel guide
+            </p>
+
+            <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+              Disneyland hotels ranked by walk time
+            </h1>
+
+            <p className="max-w-2xl text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
+              If you’re searching “closest hotels to Disneyland entrance,” ignore map distance. Around Disneyland,
+              <strong> the number that matters is walk time to the entrance gates</strong>.
+              This page ranks Harbor Blvd hotels by how fast you can get from the lobby to The Esplanade.
+            </p>
+
+            <p className="text-sm text-slate-500">Last updated: {AS_OF_DATE}</p>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white">
-            Disneyland Hotels{" "}
-            <span className="text-amber-300 italic">Walking Distance</span>{" "}
-            Ranked (Harbor Blvd)
-          </h1>
-
-          <p className="max-w-2xl text-lg text-slate-100 leading-relaxed">
-            If you’re searching “closest hotels to Disneyland entrance,” ignore map distance. Around Disneyland,
-            <strong> the number that matters is walk time to the entrance gates</strong>.
-            This page ranks Harbor Blvd hotels by how fast you can get from the lobby to The Esplanade.
-          </p>
-
-          <p className="text-sm text-slate-300">Last updated: {AS_OF_DATE}</p>
-
-          <div className="grid gap-3 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
-              <p className="text-xs font-black uppercase tracking-widest text-amber-200">Fastest group</p>
-              <p className="mt-1 text-2xl font-black">Under 5 min</p>
+          <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="rounded-2xl border border-stone-200 bg-white/90 p-4 shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Fastest group</p>
+              <p className="mt-1 text-2xl font-black text-slate-900">Under 5 min</p>
             </div>
-            <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
-              <p className="text-xs font-black uppercase tracking-widest text-amber-200">Best route</p>
-              <p className="mt-1 text-2xl font-black">Harbor side</p>
+            <div className="rounded-2xl border border-stone-200 bg-white/90 p-4 shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best route</p>
+              <p className="mt-1 text-2xl font-black text-slate-900">Harbor side</p>
             </div>
-            <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
-              <p className="text-xs font-black uppercase tracking-widest text-amber-200">Use case</p>
-              <p className="mt-1 text-2xl font-black">Rope drop</p>
+            <div className="rounded-2xl border border-stone-200 bg-slate-900 p-4 text-white shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-amber-300">Best for</p>
+              <p className="mt-1 text-2xl font-black">Early mornings</p>
             </div>
           </div>
         </div>

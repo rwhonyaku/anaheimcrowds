@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { MonthNavigation } from "@/components/MonthNavigation";
-import { AlertTriangle, CalendarDays, Info, Zap, ExternalLink } from "lucide-react";
+import { AlertTriangle, CalendarDays, Info, MoveRight, Zap, ExternalLink } from "lucide-react";
 import { UTAH_FALL_BREAK_2026 } from "@/lib/school-data";
 
 const AS_OF_DATE = "August 24, 2026";
@@ -16,25 +16,66 @@ export const metadata: Metadata = {
 
 export default function OctoberCrowdsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 space-y-12 text-slate-900">
+    <div className="max-w-6xl mx-auto px-4 py-10 space-y-12 text-slate-900">
       {/* Header */}
-      <section className="space-y-5">
-        <p className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">
-          2026 Monthly Crowd Guide
-        </p>
+      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-50 p-6 md:p-10 shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/crowds.jpg')] bg-cover bg-center opacity-25" />
+        <div className="absolute inset-0 bg-stone-50/88" />
+        <div className="absolute inset-x-0 top-0 h-full opacity-40 [background-image:linear-gradient(rgba(148,163,184,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.16)_1px,transparent_1px)] [background-size:28px_28px]" />
 
-        <h1 className="text-4xl md:text-6xl font-black tracking-tighter italic uppercase">
-          Disneyland Crowds in <span className="text-blue-600">October 2026</span>
-        </h1>
+        <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+          <div className="space-y-5">
+            <p className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
+              <CalendarDays size={14} /> October crowd guide
+            </p>
 
-        <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          October used to be a shoulder month. In 2026 it behaves like peak season. Halloween crowds, weekend locals,
-          and overlapping fall breaks keep the parks busy from rope drop through late night, especially in the second half
-          of the month.
-        </p>
+            <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+              Disneyland in October 2026
+            </h1>
+
+            <p className="max-w-2xl text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
+              October used to be a shoulder month. In 2026 it behaves like peak season. Halloween crowds, weekend locals,
+              and overlapping fall breaks keep the parks busy from early morning through late night, especially in the second half
+              of the month.
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/crowd-calendar"
+                className="inline-flex items-center gap-2 rounded-2xl bg-amber-700 px-6 py-3 font-black uppercase tracking-tight text-white transition-all hover:bg-slate-900"
+              >
+                Check October Dates <MoveRight size={18} />
+              </Link>
+              <Link
+                href="/articles/utah-october-effect"
+                className="rounded-2xl border border-stone-300 bg-white px-6 py-3 font-black uppercase tracking-tight text-slate-900 transition-all hover:border-amber-700 hover:text-amber-700"
+              >
+                Utah Break Guide
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="rounded-2xl border border-stone-200 bg-white/90 p-4 shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best dates</p>
+              <p className="mt-1 text-2xl font-black text-slate-900">Oct 6-8</p>
+              <p className="mt-1 text-sm text-slate-600">Early weekdays are your best shot.</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-white/90 p-4 shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Hardest stretch</p>
+              <p className="mt-1 text-2xl font-black text-slate-900">Oct 12-31</p>
+              <p className="mt-1 text-sm text-slate-600">Fall breaks and Halloween overlap.</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-slate-900 p-4 text-white shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-amber-300">Plan for</p>
+              <p className="mt-1 text-2xl font-black">Busy nights</p>
+              <p className="mt-1 text-sm text-slate-300">Seasonal food, photos, and parties add crowding.</p>
+            </div>
+          </div>
+        </div>
 
         {/* Required: clear, confident answer */}
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
+        <div className="relative mt-8 bg-white/90 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed shadow-sm">
           <strong className="text-slate-900">Is Disneyland busy in October 2026?</strong>{" "}
           <span className="font-semibold">Yes.</span> Expect a month where “moderate” days are the exception, not the
           rule. Your best odds are <strong>early-October weekdays</strong>. The worst weeks are{" "}
@@ -45,14 +86,14 @@ export default function OctoberCrowdsPage() {
           treat October like a peak-season month, not a quiet fall window.
         </div>
 
-        <div className="bg-white border border-amber-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed shadow-sm">
+        <div className="relative mt-4 bg-white border border-amber-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed shadow-sm">
           <h2 className="text-xl font-black text-slate-900">
             Is Disneyland busy on October 24 or October 28, 2026?
           </h2>
           <p className="mt-2">
             Yes. <strong>October 24</strong> is a Saturday during Halloween season, so plan for a heavy day.
             <strong> October 28</strong> is a Wednesday, but it still sits inside the final Halloween week, when crowds
-            is usually high even outside the weekend.
+            are usually high even outside the weekend.
           </p>
           <p className="mt-2">
             If you want Halloween decor with a better chance of an easier day, compare those dates against{" "}
@@ -64,7 +105,7 @@ export default function OctoberCrowdsPage() {
           </p>
         </div>
 
-        <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
+        <p className="relative mt-4 text-sm text-slate-500">Last updated: {AS_OF_DATE}</p>
       </section>
 
       <AdSlot id="october-top" label="October page top" />
@@ -79,7 +120,7 @@ export default function OctoberCrowdsPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed">
-          If you only take one thing from this page, take this: October is not “one crowd level.” It’s a moving target.
+          If you only take one thing from this page, take this: October is not “one crowd level.”
           Some weeks feel like a normal busy season. Others feel like the week between Christmas and New Year’s—just
           with pumpkins.
         </p>
@@ -143,7 +184,7 @@ export default function OctoberCrowdsPage() {
                 <td className="py-4 pr-4 font-bold">Week 5</td>
                 <td className="py-4 pr-4">Oct 26 (Mon) – Oct 31 (Sat)</td>
                 <td className="py-4 pr-4">
-                  <span className="font-semibold">Peak</span> (Oct 31 is brutal)
+                  <span className="font-semibold">Peak</span> (Halloween Saturday)
                 </td>
                 <td className="py-4 pr-4 text-slate-600">
                   Halloween is Saturday in 2026. The final stretch pulls both travelers and locals.
@@ -156,7 +197,7 @@ export default function OctoberCrowdsPage() {
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
           <strong className="text-slate-900">Best bet:</strong> If your calendar is flexible, aim for{" "}
           <strong>Tue–Thu, Oct 6–8</strong>. If you’re choosing between mid-month and late-month, mid-month is crowded
-          because of breaks; late-month is crowded because of Halloween energy. Pick your poison—but go in with a plan.
+          because of breaks; late-month is crowded because of Halloween. Either way, go in with a plan.
         </div>
       </section>
 
@@ -506,7 +547,7 @@ export default function OctoberCrowdsPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed">
-          If your goal is to experience Halloween season without donating half your day to lines, the best bet is still
+          If your goal is to experience Halloween season without spending too much of the day in lines, the best bet is still
           early October weekdays—especially Tuesday through Thursday. If your only option is mid-month or late-month,
           it’s not “doomed,” but you need to approach the day differently: earlier arrival, a shorter must-do list, and a
           plan for breaks so you don’t burn out when the park hits its afternoon peak.

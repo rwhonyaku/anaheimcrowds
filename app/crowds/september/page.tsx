@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { MonthNavigation } from "@/components/MonthNavigation";
-import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
+import { AlertTriangle, CalendarDays, MoveRight, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Disneyland September Crowd Calendar 2026 | Crowds, Best Dates",
@@ -13,14 +13,58 @@ export const metadata: Metadata = {
 
 export default function SeptemberCrowdsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 space-y-12 text-slate-900">
-      <section className="space-y-4">
-        <h1 className="text-4xl md:text-6xl font-black tracking-tighter italic uppercase">
-          Disneyland Crowds in <span className="text-blue-600">September 2026</span>
-        </h1>
-        <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          September is one of the better Disneyland months if you can go mid-week after Labor Day. School is back in session, but Halloween decorations are already up.
-        </p>
+    <div className="max-w-6xl mx-auto px-4 py-10 space-y-12 text-slate-900">
+      <section className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-50 p-6 md:p-10 shadow-sm">
+        <div className="absolute inset-0 bg-[url('/images/scnic.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-stone-50/85" />
+        <div className="absolute inset-x-0 top-0 h-full opacity-45 [background-image:linear-gradient(rgba(148,163,184,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.16)_1px,transparent_1px)] [background-size:28px_28px]" />
+
+        <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+          <div className="space-y-5">
+            <p className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
+              <CalendarDays size={14} /> September crowd guide
+            </p>
+            <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
+              Disneyland in September 2026
+            </h1>
+            <p className="max-w-2xl text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
+              September is one of the better Disneyland months if you can go mid-week after Labor Day.
+              School is back in session, but Halloween decorations are already up.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/crowd-calendar"
+                className="inline-flex items-center gap-2 rounded-2xl bg-amber-700 px-6 py-3 font-black uppercase tracking-tight text-white transition-all hover:bg-slate-900"
+              >
+                Check Daily Dates <MoveRight size={18} />
+              </Link>
+              <Link
+                href="/best-times"
+                className="rounded-2xl border border-stone-300 bg-white px-6 py-3 font-black uppercase tracking-tight text-slate-900 transition-all hover:border-amber-700 hover:text-amber-700"
+              >
+                Compare Best Months
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="rounded-2xl border border-stone-200 bg-white/90 p-4 shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best dates</p>
+              <p className="mt-1 text-2xl font-black text-slate-900">Sep 14-24</p>
+              <p className="mt-1 text-sm text-slate-600">Weekdays are the target.</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-white/90 p-4 shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best feel</p>
+              <p className="mt-1 text-2xl font-black text-slate-900">Halloween</p>
+              <p className="mt-1 text-sm text-slate-600">Decor without full October crowds.</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-slate-900 p-4 text-white shadow-sm">
+              <p className="text-[10px] font-black uppercase tracking-widest text-amber-300">Watch</p>
+              <p className="mt-1 text-2xl font-black">Party nights</p>
+              <p className="mt-1 text-sm text-slate-300">DCA parties can shift crowds.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="bg-blue-50 border border-blue-200 rounded-2xl p-5 space-y-3">
