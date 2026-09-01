@@ -5,7 +5,13 @@ import { AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { CrowdScanner } from "@/components/CrowdScanner";
 import { EditorialImage } from "@/components/EditorialImage";
+import { RecentUpdateStrip } from "@/components/RecentUpdateStrip";
+import { SavedDateCompare } from "@/components/SavedDateCompare";
+import { TripWindowPlanner } from "@/components/TripWindowPlanner";
+import { UpcomingDates } from "@/components/UpcomingDates";
 import { getPlanningMonths } from "@/lib/planning-window";
+
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "Disneyland Crowd Calendar 2026-2027 | Daily Crowd Levels",
@@ -71,6 +77,8 @@ export default function CrowdCalendarPage() {
 
       <AdSlot id="calendar-top" label="High Visibility Placement" />
 
+      <RecentUpdateStrip />
+
       <EditorialImage
         src="/images/Big%20Thunder%20scenic%202.jpg"
         alt="Big Thunder Mountain area at Disneyland on a clear afternoon"
@@ -102,6 +110,13 @@ export default function CrowdCalendarPage() {
 
       <section className="rounded-[2.5rem] border border-slate-200 bg-slate-50 p-6 md:p-8">
         <CrowdScanner />
+      </section>
+
+      <UpcomingDates />
+
+      <section className="grid gap-8 lg:grid-cols-2">
+        <TripWindowPlanner />
+        <SavedDateCompare />
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { HotelDecisionHelper } from "@/components/HotelDecisionHelper";
 import { HARBOR_HOTELS, HotelProperty } from "@/lib/hotel-data";
 import {
   Timer,
@@ -13,6 +14,8 @@ import {
 } from "lucide-react";
 
 const AS_OF_DATE = "February 19, 2026";
+
+export const revalidate = 86400;
 
 function mapsSearchUrl(hotelName: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -192,6 +195,8 @@ export default function HotelRankingsPage() {
           </div>
         </div>
       </section>
+
+      <HotelDecisionHelper />
 
       {/* Top 10 quick table */}
       <section className="space-y-6">

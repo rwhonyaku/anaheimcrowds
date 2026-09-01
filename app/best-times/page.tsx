@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { EditorialImage } from "@/components/EditorialImage";
+import { RecentUpdateStrip } from "@/components/RecentUpdateStrip";
+import { UpcomingDates } from "@/components/UpcomingDates";
 
 export const metadata: Metadata = {
   title: "Best Times to Visit Disneyland in 2026-2027 | AnaheimCrowds",
@@ -21,6 +23,8 @@ export const metadata: Metadata = {
 };
 
 const AS_OF_DATE = "September 1, 2026";
+
+export const revalidate = 86400;
 
 export default function BestTimesPage() {
   return (
@@ -119,6 +123,10 @@ export default function BestTimesPage() {
           Recent updates
         </Link>
       </div>
+
+      <RecentUpdateStrip />
+
+      <UpcomingDates />
 
       <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-8 text-white shadow-sm">
         <div className="relative grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end">

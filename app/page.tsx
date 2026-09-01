@@ -2,7 +2,13 @@ import Link from "next/link";
 import { CrowdScanner } from "@/components/CrowdScanner";
 import { AdSlot } from "@/components/AdSlot";
 import { EditorialImage } from "@/components/EditorialImage";
+import { RecentUpdateStrip } from "@/components/RecentUpdateStrip";
+import { SavedDateCompare } from "@/components/SavedDateCompare";
+import { TripWindowPlanner } from "@/components/TripWindowPlanner";
+import { UpcomingDates } from "@/components/UpcomingDates";
 import { MoveRight, CalendarDays, Hotel, Map, Search, Clock3 } from "lucide-react";
+
+export const revalidate = 86400;
 
 const sampleCalendarDays = [
   { day: "Mon", date: "14", score: 3, color: "bg-emerald-100 text-emerald-800 border-emerald-200" },
@@ -126,6 +132,15 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      <RecentUpdateStrip />
+
+      <UpcomingDates />
+
+      <section className="max-w-6xl mx-auto w-full px-4 grid gap-8 lg:grid-cols-2">
+        <TripWindowPlanner />
+        <SavedDateCompare />
       </section>
 
       <AdSlot id="home-mid" label="Homepage Featured Ad" />
