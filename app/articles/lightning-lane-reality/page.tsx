@@ -82,7 +82,7 @@ export default function LightningLaneRealityArticle() {
             href="/articles/disneyland-rope-drop-strategy-2026"
             className="font-bold underline hover:text-blue-600"
           >
-            Disneyland rope drop strategy
+            Disneyland rope drop guide
           </Link>{" "}
           next, then check the{" "}
           <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">

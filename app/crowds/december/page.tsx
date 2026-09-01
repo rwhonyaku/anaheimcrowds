@@ -70,7 +70,7 @@ export default function DecemberCrowdsPage() {
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <p className="font-bold text-slate-900">Best December target: Dec 1-10 weekdays.</p>
           <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-            Late December is not just busy. It is sustained all-day demand from guests who stay in the park from open to close, which changes ride strategy, food timing, and even exit logistics.
+            Late December is not just busy. Many guests stay in the park from open to close, which changes ride planning, food timing, and even the walk out at night.
           </p>
         </div>
         <p className="text-slate-700 leading-relaxed">
@@ -97,7 +97,7 @@ export default function DecemberCrowdsPage() {
           <Link href="/best-times" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Best Times</Link>
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/november" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">November Crowds</Link>
-          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Guide</Link>
           <Link href="/articles/harbor-advantage" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Harbor Advantage</Link>
         </div>
         <MonthNavigation currentMonth="december" />

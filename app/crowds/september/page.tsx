@@ -80,7 +80,7 @@ export default function SeptemberCrowdsPage() {
               <Zap size={16} className="text-blue-500" /> Halloween Time
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              As soon as the pumpkins appear, weekend demand spikes. This is a highly localized surge.
+              As soon as the pumpkins appear, weekends get noticeably busier.
             </p>
           </li>
           <li className="space-y-1">
@@ -112,7 +112,7 @@ export default function SeptemberCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">September Rewards Precision</h2>
         <p className="text-slate-700 leading-relaxed">
-          September is one of the best school-is-back windows on the calendar. Mid-week dates can be legitimately efficient even with Halloween decor already drawing attention.
+          September is one of the best school-is-back windows on the calendar. Mid-week dates can be easier even with Halloween decor already drawing attention.
         </p>
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <p className="font-bold text-slate-900">Best September target: Sep 14-24 weekdays.</p>
@@ -121,7 +121,7 @@ export default function SeptemberCrowdsPage() {
           </p>
         </div>
         <p className="text-slate-700 leading-relaxed">
-          If you want Halloween atmosphere without full October demand, use the{" "}
+          If you want Halloween atmosphere without full October crowds, use the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar
           </Link>{" "}
@@ -142,7 +142,7 @@ export default function SeptemberCrowdsPage() {
           <Link href="/crowds/august" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">August Crowds</Link>
           <Link href="/crowds/october" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">October Crowds</Link>
           <Link href="/articles/magic-key-crowd" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Magic Key Evening Spike</Link>
-          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Value Date Strategy</Link>
+          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lower-Price Dates</Link>
         </div>
         <MonthNavigation currentMonth="september" />
       </section>

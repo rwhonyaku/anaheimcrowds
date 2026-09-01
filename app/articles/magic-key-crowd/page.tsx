@@ -36,7 +36,7 @@ export default function MagicKeyEveningSpikeArticle() {
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best-times guide
           </Link>{" "}
-          to avoid the weeks where local spikes stack with heavier travel demand.
+          to avoid the weeks where local visitors overlap with heavier vacation travel.
         </p>
         <p>
           This shows up a lot in{" "}
@@ -86,12 +86,12 @@ export default function MagicKeyEveningSpikeArticle() {
       <section className="bg-amber-50 border border-amber-200 rounded-3xl p-8 space-y-4">
         <h2 className="text-2xl font-bold text-amber-900">How to Plan Around It</h2>
         <p className="text-amber-900">
-          Use the midday softness for rides. Eat earlier than feels natural. Protect one or two nighttime priorities and stop pretending the whole evening will stay efficient.
+          Use the calmer midday hours for rides. Eat earlier than feels natural. Protect one or two nighttime must-dos and assume the evening will slow down.
         </p>
         <p className="text-amber-900">
           On busier dates, pair that approach with the{" "}
           <Link href="/articles/disneyland-midday-break-strategy" className="font-bold underline hover:text-slate-900">
-            midday break strategy
+            midday break guide
           </Link>{" "}
           so the evening spike does not wipe out the whole second half of the day.
         </p>

@@ -62,7 +62,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-black tracking-tight">Why we focus on Harbor Blvd</h3>
             <p className="text-slate-600 leading-relaxed">
               For many visitors, the real difference is not the hotel brand. It is walking time. Harbor Blvd hotels can be
-              closer to security and the turnstiles than many on-property routes.
+              closer to security and the entrance gates than many on-property routes.
             </p>
             <Link href="/hotels" className="underline font-semibold text-blue-600">
               See Harbor hotels ranked by walk time
@@ -75,7 +75,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-black tracking-tight">How we keep forecasts grounded</h2>
         <ul className="list-disc ml-6 space-y-2 text-slate-700">
           <li>We track school break timing across major travel markets like Southern California, Arizona, and Utah.</li>
-          <li>We track Disneyland ticket pricing tiers as one clue about demand.</li>
+          <li>We track Disneyland ticket pricing tiers as one hint about which dates Disney expects to be busier.</li>
           <li>We watch major Anaheim convention weeks that affect hotels, restaurants, and security flow.</li>
           <li>We note repeat crowd behavior, like Mondays that run hotter or evenings that fill in fast.</li>
         </ul>

@@ -41,7 +41,7 @@ export default function JanuaryCrowdsPage() {
               <AlertTriangle size={16} className="text-amber-500" /> Maintenance Windows
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              Because demand is low, Disney schedules major ride refurbishments. Check the schedule for "E-Ticket" closures before booking.
+              Because January is usually quieter, Disney schedules major ride refurbishments. Check the schedule for major closures before booking.
             </p>
           </li>
         </ul>
@@ -79,7 +79,7 @@ export default function JanuaryCrowdsPage() {
             </p>
           </div>
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-            <h3 className="font-bold text-slate-900">The tradeoff</h3>
+            <h3 className="font-bold text-slate-900">The downside</h3>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               January can look light in the parks while hotels tighten around Anaheim conventions, and refurbishments matter more here than in other months.
             </p>
@@ -106,7 +106,7 @@ export default function JanuaryCrowdsPage() {
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/february" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">February Crowds</Link>
           <Link href="/articles/least-crowded-days-disneyland" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Least Crowded Days</Link>
-          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Value Date Strategy</Link>
+          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lower-Price Dates</Link>
         </div>
         <MonthNavigation currentMonth="january" />
       </section>

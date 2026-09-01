@@ -166,7 +166,7 @@ export default function PeakDemandPage() {
       <section className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white text-center space-y-6">
         <h2 className="font-display text-4xl text-amber-300">How to use this page</h2>
         <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          If your dates land inside a high-impact window, assume the day will need a tighter morning plan and less margin for wasted time. Rule out the worst windows here, then move to the crowd calendar for exact dates.
+          If your dates land inside a high-impact window, assume the day will need a tighter morning plan and less room for wasted time. Rule out the worst windows here, then move to the crowd calendar for exact dates.
         </p>
         <div className="flex flex-wrap justify-center gap-4 text-sm font-bold">
           <Link href="/crowd-calendar" className="text-amber-300 hover:underline">

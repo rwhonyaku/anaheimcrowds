@@ -3,9 +3,9 @@ import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
-  title: "Disneyland Rope Drop Strategy 2026 | AnaheimCrowds",
+  title: "Disneyland Rope Drop Guide 2026 | AnaheimCrowds",
   description:
-    "Disneyland rope drop strategy for 2026: where to stand, what to ride first, how Harbor Blvd changes the morning, and when Lightning Lane should wait.",
+    "Disneyland rope drop guide for 2026: where to stand, what to ride first, how Harbor Blvd changes the morning, and when Lightning Lane should wait.",
   alternates: { canonical: "/articles/disneyland-rope-drop-strategy-2026" },
 };
 
@@ -38,7 +38,7 @@ export default function DisneylandRopeDropStrategyPage() {
           Planning guide
         </p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight">
-          Disneyland Rope Drop Strategy 2026
+          Disneyland Rope Drop Guide 2026
         </h1>
         <p className="text-lg text-slate-600">
           Rope drop still matters in 2026 because the first 60 to 90 minutes are usually the easiest part of
@@ -49,7 +49,7 @@ export default function DisneylandRopeDropStrategyPage() {
       <section className="rounded-3xl border border-slate-200 bg-slate-50 p-8 space-y-4">
         <h2 className="text-2xl font-bold">Short answer</h2>
         <p className="text-slate-700">
-          The best rope drop strategy in 2026 is to stay walkable if possible, clear Harbor security early,
+          The best rope drop plan in 2026 is to stay walkable if possible, clear Harbor security early,
           and hit one or two major attractions before standby waits jump. Use the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar

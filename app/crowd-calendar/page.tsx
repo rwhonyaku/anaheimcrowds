@@ -217,7 +217,7 @@ export default function CrowdCalendarPage() {
             </Link>{" "}
             before you book hotels or tickets. If the trip depends on rope drop, pair your dates with the{" "}
             <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-sky-800">
-              Harbor Blvd hotel-location strategy
+              Harbor Blvd hotel-location guide
             </Link>
             .
           </p>
@@ -254,7 +254,7 @@ export default function CrowdCalendarPage() {
           <h2 className="text-lg font-black text-slate-900">How should I use the 1-10 crowd level?</h2>
           <p className="mt-2 text-sm leading-relaxed text-slate-700">
             Use the number to choose between dates, not to promise an empty park. A lower level usually means the morning is easier,
-            while an 8-10 means you should plan rope drop, meals, and breaks before you arrive.
+            while an 8-10 means you should plan your early start, meals, and breaks before you arrive.
           </p>
         </div>
       </section>
@@ -275,9 +275,9 @@ export default function CrowdCalendarPage() {
             <Link href="/crowds/july" className="text-amber-300 hover:underline">
               July crowd guide
             </Link>{" "}
-            so you understand what a "manageable" day actually feels like on the ground. On packed dates, the{" "}
+            so you understand what an easier day actually feels like on the ground. On packed dates, the{" "}
             <Link href="/articles/disneyland-midday-break-strategy" className="text-amber-300 hover:underline">
-              midday break strategy
+              midday break guide
             </Link>{" "}
             becomes part of the plan, not an extra.
           </p>

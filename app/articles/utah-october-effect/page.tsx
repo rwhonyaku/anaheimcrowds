@@ -86,7 +86,7 @@ export default function UtahOctoberEffectArticle() {
         <ul className="list-disc ml-6 space-y-2 text-slate-700">
           <li>Mid-week waits can get heavy enough to wreck a one-day plan.</li>
           <li>Harbor Blvd hotels tighten because more guests are making full vacation trips.</li>
-          <li>Lightning Lane decisions get harder because the margin for a lazy start disappears.</li>
+          <li>Lightning Lane decisions get harder because a lazy start leaves fewer good options.</li>
         </ul>
       </section>
 
@@ -108,7 +108,7 @@ export default function UtahOctoberEffectArticle() {
           </Link>{" "}
           and{" "}
           <Link href="/hotels" className="font-bold underline hover:text-blue-600">
-            the Harbor hotel strategy page
+            the Harbor hotel guide
           </Link>
           .
         </p>

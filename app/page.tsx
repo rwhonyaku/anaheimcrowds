@@ -191,7 +191,7 @@ export default function HomePage() {
             Start with the calendar.
           </h2>
           <p className="text-sky-100 text-lg font-medium max-w-xl mx-auto">
-            If the week is wrong, the rest of the plan gets expensive fast. Start with the forecast, then build hotels and park strategy around it.
+            If the week is wrong, the rest of the plan gets expensive fast. Start with the forecast, then choose hotels and park days around it.
           </p>
           <Link
             href="/crowd-calendar"

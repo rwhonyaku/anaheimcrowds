@@ -80,7 +80,7 @@ export default function BestTimesPage() {
             <p className="text-xs font-black uppercase tracking-widest text-blue-700">Best low-crowd window</p>
             <p className="mt-2 text-lg font-bold text-slate-900">May 4-14 and Sep 14-24</p>
             <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              These are two of the best shoulder-season weekday windows if you want lighter parks without the January refurbishment tradeoff.
+              These are two of the best shoulder-season weekday windows if you want lighter parks without as much January ride-closure risk.
             </p>
           </div>
 
@@ -249,7 +249,7 @@ export default function BestTimesPage() {
 
         <p className="text-slate-700 leading-relaxed">
           These windows consistently do better than the rest of the year because they avoid the two biggest causes of heavy crowds:
-          <strong> school-out travel</strong> and <strong>holiday/weekend stacking</strong>.
+          <strong> school-out travel</strong> and <strong>holiday/weekend overlap</strong>.
           If you can move your trip by even a few days, this is where you save the most time.
         </p>
 
@@ -272,7 +272,7 @@ export default function BestTimesPage() {
 
               <p className="text-sm leading-relaxed">
                 This is the cleanest "back to routine" stretch of the year. Holiday travel is done, most schools are back,
-                and the parks usually behave more predictably. If you want the best shot at manageable waits with fewer
+                and the parks usually behave more predictably. If you want the best shot at easier waits with fewer
                 surprises, this is it.
               </p>
 
@@ -434,7 +434,7 @@ export default function BestTimesPage() {
         <p className="text-slate-700 leading-relaxed">
           Disneyland crowds are not random. The biggest driver is simple:{" "}
           <strong>when families can travel</strong>. That is why school calendars matter more than almost anything else.
-          When multiple districts are out at once, weekday crowds rise and Lightning Lane demand jumps.
+          When multiple districts are out at once, weekday crowds rise and Lightning Lane return times disappear earlier.
         </p>
 
         <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-5">
@@ -581,7 +581,7 @@ export default function BestTimesPage() {
             <p className="text-sm text-slate-600 leading-relaxed">
               If you are comparing Harbor Blvd against Disney-owned hotels, read the{" "}
               <Link href="/articles/harbor-advantage" className="font-bold underline hover:text-blue-600">
-                Harbor Blvd advantage breakdown
+                Harbor Blvd hotel guide
               </Link>{" "}
               before you book.
             </p>
@@ -591,10 +591,10 @@ export default function BestTimesPage() {
           </div>
 
           <div className="border-t border-slate-100 pt-6 space-y-3">
-            <h3 className="text-xl font-black uppercase italic tracking-tight">Day 1 (Disneyland Park - Rope Drop Day)</h3>
+            <h3 className="text-xl font-black uppercase italic tracking-tight">Day 1 (Disneyland Park - Early Start)</h3>
             <ul className="list-disc ml-6 space-y-2 text-slate-700">
               <li>Arrive early. Try to get through 2-3 major rides before the park fully wakes up.</li>
-              <li>Do your highest priority rides first. Do not warm up with lower-priority attractions.</li>
+              <li>Do your must-do rides first. Do not warm up with lower-importance attractions.</li>
               <li>Midday: take a hotel break if you can. Come back for evening atmosphere.</li>
             </ul>
             <p className="text-sm text-slate-600 leading-relaxed">
@@ -700,7 +700,7 @@ export default function BestTimesPage() {
               Disneyland is usually least crowded on Tuesday through Thursday during school-is-in-session windows.
               For 2026, the best time of year to start is <strong>Jan 12-Feb 12</strong>, then{" "}
               <strong>May 4-14</strong> and <strong>Sep 14-24</strong>. Avoid holiday weekends, spring break,
-              late October, and late December if lower waits are the priority.
+              late October, and late December if lower waits matter most.
             </p>
           </div>
 
@@ -749,7 +749,7 @@ export default function BestTimesPage() {
             </h4>
             <p className="text-xs text-slate-400 leading-relaxed italic">
               MLK (Jan 17-19), Presidents' Day (Feb 14-16), Memorial Day (May 23-25), and Labor Day (Sep 5-7) pull locals and long-weekend travelers.
-              If those are your only options, plan rope drop and keep your priority list tight.
+              If those are your only options, arrive for park opening and keep your must-do list tight.
             </p>
           </div>
 

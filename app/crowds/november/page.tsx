@@ -65,7 +65,7 @@ export default function NovemberCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">November's Real Sweet Spot</h2>
         <p className="text-slate-700 leading-relaxed">
-          Early November is one of the better fallback windows after October if you still want holiday atmosphere without Thanksgiving-level demand. Mid-week dates are the clear winners.
+          Early November is one of the better backup windows after October if you still want holiday atmosphere without Thanksgiving-level crowds. Mid-week dates are the clear winners.
         </p>
         <p className="text-slate-700 leading-relaxed">
           Best November target: <strong>Nov 3-12 weekdays</strong>. Thanksgiving week behaves like a holiday season launch, so use the{" "}

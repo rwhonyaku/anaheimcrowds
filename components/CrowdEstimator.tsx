@@ -58,7 +58,7 @@ export default function CrowdEstimator() {
               <p className="text-xs text-blue-800 leading-relaxed font-medium">
                 {result.score >= 8 
                   ? "This date looks crowded. If you go, get there early and keep your priority list short." 
-                  : "This date looks more manageable. You still want an early start, but the day should be easier to handle."}
+                  : "This date looks easier. You still want an early start, but the day should be easier to handle."}
               </p>
             </div>
           </div>

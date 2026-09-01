@@ -18,7 +18,7 @@ export default function MarchCrowdsPage() {
           Disneyland Crowds in <span className="text-blue-600">March 2026</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          March marks the end of the "off-season." Once the first Spring Break districts release, the park baseline shifts to high demand.
+          March marks the end of the "off-season." Once the first spring break districts are out of school, the parks get much busier.
         </p>
       </section>
 
@@ -74,7 +74,7 @@ export default function MarchCrowdsPage() {
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
             <h3 className="font-bold text-slate-900">Where March turns</h3>
             <p className="mt-2 text-sm text-slate-700 leading-relaxed">
-              Once you hit late March, hotels tighten, Lightning Lane demand rises earlier, and mid-week waits start looking like weekend waits.
+              Once you hit late March, hotels fill faster, Lightning Lane return times disappear earlier, and mid-week waits start looking like weekend waits.
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function MarchCrowdsPage() {
           <Link href="/crowds/february" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">February Crowds</Link>
           <Link href="/crowds/april" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">April Crowds</Link>
           <Link href="/articles/lightning-lane-reality" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lightning Lane Reality</Link>
-          <Link href="/articles/disneyland-rope-drop-strategy-2026" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Rope Drop Strategy</Link>
+          <Link href="/articles/disneyland-rope-drop-strategy-2026" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Rope Drop Guide</Link>
         </div>
         <MonthNavigation currentMonth="march" />
       </section>

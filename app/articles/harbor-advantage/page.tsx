@@ -33,7 +33,7 @@ export default function HarborAdvantageArticle() {
         <h2 className="text-2xl font-bold">The 7:30 AM Comparison</h2>
         <p>
           At 7:30 AM, guests staying at the Disneyland Hotel or Pixar Place still have to deal with the Downtown Disney route.
-          Guests staying on Harbor Blvd are already playing the simpler game: shorter walk, cleaner approach, faster shot at the turnstiles.
+          Guests staying on Harbor Blvd already have the simpler morning: shorter walk, cleaner approach, faster path to the entrance gates.
         </p>
         <p>
           If your whole trip depends on winning the first hour, this is not a branding question. It is a geometry question.
@@ -65,8 +65,8 @@ export default function HarborAdvantageArticle() {
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">The Only Hotel Metric That Actually Matters</h2>
         <p>
-          People search "closest hotel to Disneyland entrance" and then get tricked by mileage. Mileage is the wrong metric.
-          Around Disneyland, the useful number is <strong>walk time to the turnstiles</strong>.
+          People search "closest hotel to Disneyland entrance" and then get tricked by map distance. Around Disneyland,
+          the useful number is <strong>walk time to the entrance gates</strong>.
         </p>
         <p>
           If you are still choosing dates, use the{" "}
@@ -80,7 +80,7 @@ export default function HarborAdvantageArticle() {
           first. If your dates are busy, Harbor proximity matters even more because rope drop stops being optional.
         </p>
         <p>
-          This matters most on heavy-demand weeks like{" "}
+          This matters most on heavy-crowd weeks like{" "}
           <Link href="/crowds/october" className="font-bold underline hover:text-blue-600">
             October
           </Link>{" "}
@@ -131,7 +131,7 @@ export default function HarborAdvantageArticle() {
             href="/articles/disneyland-rope-drop-strategy-2026"
             className="text-amber-700 font-semibold underline"
           >
-            2026 rope drop strategy
+            2026 rope drop guide
           </Link>
           . If you are planning midday hotel breaks on a packed day, the{" "}
           <Link

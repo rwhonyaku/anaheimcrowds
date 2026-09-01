@@ -74,7 +74,7 @@ export default function FebruaryCrowdsPage() {
         <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
           <p className="font-bold text-slate-900">Best February target: Feb 3-12 weekdays.</p>
           <p className="mt-2 text-sm text-slate-700 leading-relaxed">
-            Stay clear of Feb 13-16 and Valentine weekend evenings. February is only easy if you stay away from the holiday stack.
+            Stay clear of Feb 13-16 and Valentine weekend evenings. February is only easy if you stay away from the holiday overlap.
           </p>
         </div>
       </section>

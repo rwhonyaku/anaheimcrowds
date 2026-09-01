@@ -21,7 +21,7 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
     { href: "/articles/lightning-lane-reality", label: "Lightning Lane Reality (2026)" },
     { href: "/articles/harbor-advantage", label: "Why Harbor Blvd Works" },
     { href: "/articles/utah-october-effect", label: "Utah October Effect" },
-    { href: "/articles/value-strategy", label: "2026 Value Dates" },
+    { href: "/articles/value-strategy", label: "Lower-Price Dates" },
     { href: "/articles/magic-key-crowd", label: "Magic Key Evening Spike" },
   ];
 

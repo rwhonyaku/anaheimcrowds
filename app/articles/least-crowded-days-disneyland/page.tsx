@@ -27,13 +27,13 @@ const dateGroups = [
     label: "Early May shoulder season",
     dates: VALUE_DATES.filter((date) => date.startsWith("2026-05")).slice(0, 4),
     takeaway:
-      "Early May is one of the best combinations of weather, lower pricing, and manageable weekday crowds.",
+      "Early May is one of the best combinations of weather, lower pricing, and easier weekday crowds.",
   },
   {
     label: "Mid-September school-is-back window",
     dates: VALUE_DATES.filter((date) => date.startsWith("2026-09")).slice(0, 6),
     takeaway:
-      "September wins when school is back and Halloween demand has not fully taken over every weekday.",
+      "September wins when school is back and Halloween crowds have not fully taken over every weekday.",
   },
 ];
 

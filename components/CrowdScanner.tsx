@@ -21,7 +21,7 @@ function getScannerCopy(score: number, date: string) {
   if (score <= 7) {
     return {
       status: "warning" as const,
-      text: "This date is manageable, but it is not an easy day. Expect real waits, especially if you get a late start.",
+      text: "This date is workable, but it is not an easy day. Expect real waits, especially if you get a late start.",
       strategy:
         "Use the first 90 minutes for your biggest rides. Save shows, shopping, and lower-priority attractions for later in the day.",
     };

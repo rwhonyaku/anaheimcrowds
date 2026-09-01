@@ -10,7 +10,7 @@ const AS_OF_DATE = "August 24, 2026";
 export const metadata: Metadata = {
   title: "Disneyland October Crowd Calendar 2026 | Halloween & Utah Break",
   description:
-    "Disneyland October crowd calendar 2026: Halloween demand, Utah fall break, Oogie Boogie spillover, worst weeks to avoid, and best early-October dates.",
+    "Disneyland October crowd calendar 2026: Halloween crowds, Utah fall break, Oogie Boogie spillover, worst weeks to avoid, and best early-October dates.",
   alternates: { canonical: "/crowds/october" },
 };
 
@@ -28,8 +28,8 @@ export default function OctoberCrowdsPage() {
         </h1>
 
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
-          October used to be a shoulder month. In 2026 it behaves like peak season. Halloween demand, weekend locals,
-          and stacked fall breaks keep the parks busy from rope drop through late night—especially in the second half
+          October used to be a shoulder month. In 2026 it behaves like peak season. Halloween crowds, weekend locals,
+          and overlapping fall breaks keep the parks busy from rope drop through late night, especially in the second half
           of the month.
         </p>
 
@@ -38,8 +38,8 @@ export default function OctoberCrowdsPage() {
           <strong className="text-slate-900">Is Disneyland busy in October 2026?</strong>{" "}
           <span className="font-semibold">Yes.</span> Expect a month where “moderate” days are the exception, not the
           rule. Your best odds are <strong>early-October weekdays</strong>. The worst weeks are{" "}
-          <strong>mid-October through Halloween weekend</strong>, when Utah fall break, Halloween demand, and Oogie Boogie
-          spillover stack together. Halloween is <strong>Saturday, October 31, 2026</strong>.
+          <strong>mid-October through Halloween weekend</strong>, when Utah fall break, Halloween crowds, and Oogie Boogie
+          visitors all arrive close together. Halloween is <strong>Saturday, October 31, 2026</strong>.
           <br />
           <strong className="text-slate-900">How busy is Disneyland in October?</strong> Very busy after mid-month;
           treat October like a peak-season month, not a quiet fall window.
@@ -51,11 +51,11 @@ export default function OctoberCrowdsPage() {
           </h2>
           <p className="mt-2">
             Yes. <strong>October 24</strong> is a Saturday during Halloween season, so plan for a heavy day.
-            <strong> October 28</strong> is a Wednesday, but it still sits inside the final Halloween week, when demand
+            <strong> October 28</strong> is a Wednesday, but it still sits inside the final Halloween week, when crowds
             is usually high even outside the weekend.
           </p>
           <p className="mt-2">
-            If you want Halloween decor with a better chance of a manageable day, compare those dates against{" "}
+            If you want Halloween decor with a better chance of an easier day, compare those dates against{" "}
             <strong>Oct 6-8</strong> and the full-year shortlist on{" "}
             <Link href="/best-times" className="font-bold underline hover:text-blue-600">
               best times to visit Disneyland in 2026
@@ -195,7 +195,7 @@ export default function OctoberCrowdsPage() {
               multiple school calendars often line up. That’s how you get a Tuesday that feels like a Saturday.
             </p>
             <p className="text-slate-800 leading-relaxed">
-              If you’re visiting in this window, assume Lightning Lane Multi-Pass demand will be strong, Harbor Blvd
+              If you’re visiting in this window, assume Lightning Lane Multi-Pass may sell early, Harbor Blvd
               hotels will be tighter, and the morning rush will matter more than it does in slower months.
             </p>
             <div className="pt-2">
@@ -344,7 +344,7 @@ export default function OctoberCrowdsPage() {
               <p className="font-bold text-slate-900">Halloween Time (official season dates)</p>
               <p className="text-sm text-slate-700 leading-relaxed">
                 In 2026, Halloween Time is scheduled from <strong>Aug 21 through Oct 31</strong>. That means October is
-                the “fully online” month—everything is in place, and demand builds as you get closer to Halloween.
+                the month when everything is in place, and crowds build as you get closer to Halloween.
               </p>
               <a
                 href="https://disneyland.disney.go.com/events-tours/halloween-time-at-the-disneyland-resort/"
@@ -388,7 +388,7 @@ export default function OctoberCrowdsPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed">
-          Disneyland’s ticket pricing tends to “tell on” demand. When October dates jump tiers, it’s usually because
+          Disneyland’s ticket pricing tends to reveal the busier dates. When October dates jump tiers, it’s usually because
           Disney expects higher attendance. You don’t have to obsess over the exact tier number to use this. You just
           need to notice the split: early October weekdays are usually the best deal, while weekends and late October
           carry the premium.
@@ -410,7 +410,7 @@ export default function OctoberCrowdsPage() {
 
           <div className="pt-2">
             <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-              See the “Value Dates” shortlist (our easiest wins)
+              See the cheaper October dates worth checking
             </Link>
           </div>
         </div>
@@ -445,7 +445,7 @@ export default function OctoberCrowdsPage() {
 
           <div className="pt-2">
             <Link href="/hotels" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-              Walkable hotels ranked (Harbor Blvd strategy)
+              Walkable hotels ranked by Harbor Blvd access
             </Link>
             <p className="mt-3 text-sm text-slate-700 leading-relaxed">
               If rope drop matters on your dates, the{" "}
@@ -466,9 +466,9 @@ export default function OctoberCrowdsPage() {
         </div>
 
         <p className="text-slate-700 leading-relaxed">
-          October is one of the months where Lightning Lane Multi-Pass demand is most predictable: on busy days it gets
+          October is one of the months where Lightning Lane Multi-Pass sells early: on busy days it gets
           purchased early, and the “good” return times disappear fast. In 2026, with Disneyland’s shift away from
-          traditional early-entry advantages and toward limited perks, the playing field is closer to level. That means
+          traditional early-entry perks and toward more limited hotel perks, the playing field is closer to level. That means
           you can’t count on being “fine” because you’re staying nearby or because you arrived in the afternoon.
         </p>
 
@@ -479,11 +479,11 @@ export default function OctoberCrowdsPage() {
 
           <ul className="list-disc ml-6 space-y-2 text-slate-700">
             <li>
-              On <strong>Week 3–5</strong> dates, assume Multi-Pass demand is high. If you’re buying, buy early.
+              On <strong>Week 3-5</strong> dates, assume Multi-Pass may sell quickly. If you’re buying, buy early.
             </li>
             <li>
               If you’re trying to ride the big headliners, treat the first <strong>90 minutes</strong> of the day as
-              your “free advantage” window.
+              your best no-extra-cost window.
             </li>
             <li>
               If you wait until mid-day to decide, you’ll often be choosing from leftovers (or spending your day in
@@ -508,25 +508,25 @@ export default function OctoberCrowdsPage() {
         <p className="text-slate-700 leading-relaxed">
           If your goal is to experience Halloween season without donating half your day to lines, the best bet is still
           early October weekdays—especially Tuesday through Thursday. If your only option is mid-month or late-month,
-          it’s not “doomed,” but you need to approach the day differently: earlier arrival, tighter priorities, and a
+          it’s not “doomed,” but you need to approach the day differently: earlier arrival, a shorter must-do list, and a
           plan for breaks so you don’t burn out when the park hits its afternoon peak.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-slate-50 border border-slate-200 rounded-[2rem] p-7 space-y-3">
-            <p className="text-xs font-black uppercase tracking-widest text-slate-400">Best odds</p>
+            <p className="text-xs font-black uppercase tracking-widest text-slate-400">Best bet</p>
             <p className="font-bold text-slate-900 text-lg">Early October Tue–Thu</p>
             <p className="text-slate-700 leading-relaxed">
               You still get the seasonal overlays and vibe, but with better control over your day—especially if you
               arrive before open and knock out headliners early.
             </p>
             <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-              Value Dates: best October picks
+              Cheaper October dates worth checking
             </Link>
           </div>
 
           <div className="bg-slate-900 rounded-[2rem] p-7 space-y-3 text-white">
-            <p className="text-xs font-black uppercase tracking-widest text-blue-300">Hard mode</p>
+            <p className="text-xs font-black uppercase tracking-widest text-blue-300">Harder dates</p>
             <p className="font-bold text-white text-lg">Oct 12–18 and Oct 26–31</p>
             <p className="text-slate-300 leading-relaxed">
               These stretches make late starts harder. If you’re going anyway, plan rope drop, pick a walkable hotel, and
@@ -564,13 +564,13 @@ export default function OctoberCrowdsPage() {
             Magic Key Evening Spike
           </Link>
           <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-            Midday Break Strategy
+            Midday Break Guide
           </Link>
           <Link href="/hotels" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             Hotels Near Disneyland
           </Link>
           <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
-            Value Date Shortlist
+            Lower-Price Dates
           </Link>
           <Link href="/crowd-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             2026 Crowd Calendar

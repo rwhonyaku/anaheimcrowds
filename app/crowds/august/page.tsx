@@ -70,7 +70,7 @@ export default function AugustCrowdsPage() {
         <p className="text-slate-700 leading-relaxed">
           Best August target: <strong>Aug 17-27 weekdays</strong>. Use the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">crowd calendar</Link>{" "}
-          to avoid the dates where lingering summer travel collides with the start of Halloween demand.
+          to avoid the dates where lingering summer travel collides with the start of Halloween crowds.
         </p>
       </section>
 
@@ -82,7 +82,7 @@ export default function AugustCrowdsPage() {
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/july" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">July Crowds</Link>
           <Link href="/crowds/september" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">September Crowds</Link>
-          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Guide</Link>
           <Link href="/articles/harbor-advantage" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Harbor Advantage</Link>
         </div>
         <MonthNavigation currentMonth="august" />

@@ -14,7 +14,7 @@ const weekdayRows = [
     day: "Tuesday",
     verdict: "Best pure low-crowd bet",
     detail:
-      "Tuesday is the strongest default answer because it avoids Monday travel spillover and still sits far enough from Friday local traffic.",
+      "Tuesday is usually the best answer because it avoids Monday travel spillover and still sits far enough from Friday local traffic.",
   },
   {
     day: "Wednesday",
@@ -38,7 +38,7 @@ const weekdayRows = [
     day: "Saturday",
     verdict: "Avoid if possible",
     detail:
-      "Saturday is the worst default pick because it stacks locals, tourists, premium pricing, and longer full-day behavior.",
+      "Saturday is the worst usual pick because it brings together locals, tourists, premium pricing, and longer full-day visits.",
   },
 ];
 

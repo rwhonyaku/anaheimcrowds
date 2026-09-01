@@ -84,12 +84,12 @@ export default function JulyCrowdsPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-black uppercase italic">What a Good July Day Actually Means</h2>
         <p className="text-slate-700 leading-relaxed">
-          July rarely gives you a true low-crowd experience. Your real goal is not finding an empty day. It is finding the most manageable weekday and treating rope drop as mandatory.
+          July rarely gives you a true low-crowd experience. Your real goal is not finding an empty day. It is finding the easiest weekday and getting there for park opening.
         </p>
         <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <p className="font-bold text-slate-900">Best July target: Jul 7-9.</p>
           <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-            That does not mean light crowds. It means a slightly better chance to control the first half of your day after the July 4 holiday stack clears.
+            That does not mean light crowds. It means a slightly better chance to control the first half of your day after the July 4 holiday crowds ease.
           </p>
         </div>
       </section>
@@ -102,7 +102,7 @@ export default function JulyCrowdsPage() {
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/june" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">June Crowds</Link>
           <Link href="/crowds/august" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">August Crowds</Link>
-          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Guide</Link>
           <Link href="/articles/lightning-lane-reality" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lightning Lane Reality</Link>
         </div>
         <MonthNavigation currentMonth="july" />

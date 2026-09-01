@@ -126,8 +126,8 @@ export default function HotelRankingsPage() {
           </h1>
 
           <p className="max-w-2xl text-lg text-slate-100 leading-relaxed">
-            If you’re searching “closest hotels to Disneyland entrance,” ignore the mileage. Around Disneyland,
-            <strong> the only number that matters is walk time to the turnstiles</strong>.
+            If you’re searching “closest hotels to Disneyland entrance,” ignore map distance. Around Disneyland,
+            <strong> the number that matters is walk time to the entrance gates</strong>.
             This page ranks Harbor Blvd hotels by how fast you can get from the lobby to The Esplanade.
           </p>
 
@@ -153,7 +153,7 @@ export default function HotelRankingsPage() {
       <section className="space-y-4">
         <div className="p-6 bg-amber-50 border-l-4 border-amber-400 rounded-r-2xl shadow-sm space-y-2">
           <p className="text-lg font-bold text-amber-900 leading-tight">
-            “0.3 miles” can still be a bad hotel choice if the route forces a detour or hits the wrong choke points.
+            “0.3 miles” can still be a bad hotel choice if the route forces a detour or sends you through slower walking areas.
           </p>
           <p className="text-sm text-amber-900 leading-relaxed">
             Want the proof and the morning security explanation? Read:
@@ -176,7 +176,7 @@ export default function HotelRankingsPage() {
             <p className="font-bold text-slate-900">What are the closest hotels to the Disneyland entrance?</p>
             <p>
               The closest walkable hotels are the{" "}
-              <strong>sub-5 minute Harbor Blvd properties</strong> listed below. They’re the fastest “bed-to-turnstiles”
+              <strong>sub-5 minute Harbor Blvd properties</strong> listed below. They’re the fastest “hotel-room-to-gate”
               options you can buy without paying Disney-owned hotel prices.
             </p>
           </div>
@@ -251,17 +251,17 @@ export default function HotelRankingsPage() {
         <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 space-y-4 text-slate-700 leading-relaxed">
           <ul className="list-disc ml-6 space-y-2">
             <li>
-              Measured as a real-world walk from <strong>hotel exit to Disneyland turnstiles</strong> (not “distance to a point on a map”).
+              Measured as a real-world walk from <strong>hotel exit to the Disneyland entrance gates</strong> (not “distance to a point on a map”).
             </li>
             <li>Assumes normal walking speed. Strollers and small kids can add time.</li>
             <li>Does not include elevator waits or stopping for coffee.</li>
             <li>
-              The goal is consistency: if you’re rope dropping, you need a hotel that behaves predictably at 7:00–8:00 AM.
+              The goal is a predictable morning: if you plan to arrive before opening, your hotel walk should be simple at 7:00-8:00 AM.
             </li>
           </ul>
           <p className="text-sm text-slate-600 italic">
-            If you’re comparing a Disney-owned hotel vs Harbor Blvd, the security route difference is the whole story.
-            That’s why we keep pushing the Harbor Advantage piece.
+            If you’re comparing a Disney-owned hotel with Harbor Blvd, the security route difference is the whole story.
+            That’s why the Harbor Blvd guide matters.
           </p>
         </div>
       </section>
@@ -294,7 +294,7 @@ export default function HotelRankingsPage() {
             Still Walkable: 6–10 Minutes
           </h2>
           <p className="text-slate-700 leading-relaxed">
-            This is the sweet spot for a lot of families: still easy for rope drop, still practical for a mid-day break,
+            This is the sweet spot for a lot of families: still easy for an early start, still practical for a mid-day break,
             and usually more forgiving on price than the sub-5 group.
           </p>
           <div className="grid gap-6">
@@ -314,11 +314,11 @@ export default function HotelRankingsPage() {
       {elevenToFifteen.length > 0 ? (
         <section className="space-y-6">
           <h2 className="text-2xl font-black uppercase italic tracking-tight">
-            Borderline Rope Drop: 11–15 Minutes
+            Still Possible for an Early Start: 11-15 Minutes
           </h2>
           <p className="text-slate-700 leading-relaxed">
-            These can still work, but the margin gets thinner. If you’re trying to be through security and at the gates early,
-            you’ll feel the difference. This tier is best when you’re optimizing budget but still want to stay on the Harbor side.
+            These can still work, but you have less room for a slow morning. If you’re trying to be through security and at the gates early,
+            you’ll feel the difference. This tier is best when you want to save money but still stay on the Harbor side.
           </p>
           <div className="grid gap-6">
             {elevenToFifteen.map((hotel, idx) => (

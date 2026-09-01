@@ -33,7 +33,7 @@ export default function MayCrowdsPage() {
               <Zap size={16} className="text-blue-500" /> The Spring Lull
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              With Spring Break over and schools still in session, the park's baseline capacity remains exceptionally manageable.
+              With spring break over and schools still in session, weekdays are often much easier than the surrounding months.
             </p>
           </li>
           <li className="space-y-1">
@@ -75,7 +75,7 @@ export default function MayCrowdsPage() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h3 className="font-bold text-slate-900">Where it slips</h3>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-              The back half of May gets less forgiving once Grad Nite logistics and Memorial Day demand start stacking.
+              The back half of May gets less forgiving once Grad Nite dates and Memorial Day travel overlap.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function MayCrowdsPage() {
           <Link href="/crowds/april" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">April Crowds</Link>
           <Link href="/crowds/june" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">June Crowds</Link>
           <Link href="/articles/least-crowded-days-disneyland" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Least Crowded Days</Link>
-          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Value Date Strategy</Link>
+          <Link href="/articles/value-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lower-Price Dates</Link>
         </div>
         <MonthNavigation currentMonth="may" />
       </section>

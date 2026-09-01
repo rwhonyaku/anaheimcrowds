@@ -84,7 +84,7 @@ export default function JuneCrowdsPage() {
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/may" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">May Crowds</Link>
           <Link href="/crowds/july" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">July Crowds</Link>
-          <Link href="/articles/disneyland-rope-drop-strategy-2026" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Rope Drop Strategy</Link>
+          <Link href="/articles/disneyland-rope-drop-strategy-2026" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Rope Drop Guide</Link>
           <Link href="/articles/harbor-advantage" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Harbor Advantage</Link>
         </div>
         <MonthNavigation currentMonth="june" />

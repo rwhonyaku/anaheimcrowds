@@ -4,7 +4,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { EditorialImage } from "@/components/EditorialImage";
 
 export const metadata: Metadata = {
-  title: "Disneyland Midday Break Strategy on Crowded Days | AnaheimCrowds",
+  title: "Disneyland Midday Break Guide on Crowded Days | AnaheimCrowds",
   description:
     "How to use a midday break at Disneyland on crowded days, when it helps, and when it is better to stay inside the parks.",
   alternates: { canonical: "/articles/disneyland-midday-break-strategy" },
@@ -18,7 +18,7 @@ export default function DisneylandMiddayBreakStrategyPage() {
           2026 Crowd Strategy
         </p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight">
-          Disneyland Midday Break Strategy on Crowded Days
+          Disneyland Midday Break Guide on Crowded Days
         </h1>
         <p className="text-lg text-slate-600">
           A midday break works best when the date is crowded, your hotel is truly walkable, and you already used the morning well.
@@ -53,7 +53,7 @@ export default function DisneylandMiddayBreakStrategyPage() {
           <h2 className="text-2xl font-bold">Why a Break Can Work</h2>
           <p className="text-slate-700">
             The goal is not to leave just because the park is busy. It is to skip the hours when waits, heat,
-            food lines, and tired feet all stack up at once, then come back when the day starts to breathe again.
+            food lines, and tired feet all hit at once, then come back when the day starts to breathe again.
           </p>
           <p className="text-slate-700">
             This only pays off when your hotel is close enough that the round trip feels easy. If the walk is long,

@@ -32,7 +32,7 @@ export default function HolidaysPage() {
               Late August through October 31.
             </p>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Halloween season now brings its own travel demand. Even weekdays that look mild on pricing can still feel busy because the park has more seasonal purpose: party nights, themed food, repeat rides, and guests who are staying late on purpose.
+              Halloween season now brings its own travel crowds. Even weekdays that look mild on pricing can still feel busy because the park has more seasonal purpose: party nights, themed food, repeat rides, and guests who are staying late on purpose.
             </p>
             <div className="bg-orange-50/50 p-4 rounded-2xl border-l-4 border-orange-400">
               <p className="text-xs text-orange-700 leading-relaxed">
@@ -96,7 +96,7 @@ export default function HolidaysPage() {
           <h2 className="text-2xl font-black uppercase italic">Simple rule</h2>
         </div>
         <p className="text-slate-300 leading-relaxed">
-          Decorations and events matter, but the harder days usually come when seasonality stacks with a school-break window. Always check the seasonal context and the school calendar together before you book around a holiday period.
+          Decorations and events matter, but the harder days usually come when seasonal events overlap with a school-break window. Always check the seasonal context and the school calendar together before you book around a holiday period.
         </p>
       </section>
     </div>

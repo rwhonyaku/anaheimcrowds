@@ -43,9 +43,9 @@ export default function MethodologyPage() {
             <Ticket size={32} />
           </div>
           <div className="space-y-2">
-            <h2 className="text-2xl font-black uppercase italic tracking-tight">Disney pricing is a useful clue</h2>
+            <h2 className="text-2xl font-black uppercase italic tracking-tight">Disney pricing helps narrow the dates</h2>
             <p className="text-slate-600 leading-relaxed">
-              Ticket tiers are not perfect, but they are one of the clearest public clues Disney gives you.
+              Ticket tiers are not perfect, but they are one of the clearest public hints Disney gives you.
               Lower-priced dates are often worth checking. Higher-priced weekends and holiday dates usually
               confirm what the calendar is already telling you.
             </p>
@@ -74,7 +74,7 @@ export default function MethodologyPage() {
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Weekdays still need context</h2>
             <p className="text-slate-600 leading-relaxed">
               A Tuesday is not automatically good, and a Monday is not automatically bad. We use weekday
-              patterns as one clue, not the whole answer, because the week itself matters more than
+              patterns as one hint, not the whole answer, because the week itself matters more than
               the label on the calendar.
             </p>
           </div>

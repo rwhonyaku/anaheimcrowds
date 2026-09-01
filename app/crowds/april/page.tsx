@@ -33,7 +33,7 @@ export default function AprilCrowdsPage() {
               <Zap size={16} className="text-blue-500" /> The Easter Wave
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              The weeks surrounding Easter are historically max capacity. Expect Level 9 demand for the entire holiday week.
+              The weeks surrounding Easter are historically very crowded. Expect Level 9 crowds for the entire holiday week.
             </p>
           </li>
           <li className="space-y-1">
@@ -86,7 +86,7 @@ export default function AprilCrowdsPage() {
           <Link href="/school-breaks-calendar" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">School Break Calendar</Link>
           <Link href="/crowds/march" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">March Crowds</Link>
           <Link href="/crowds/may" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">May Crowds</Link>
-          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Strategy</Link>
+          <Link href="/articles/disneyland-midday-break-strategy" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Midday Break Guide</Link>
           <Link href="/articles/lightning-lane-reality" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">Lightning Lane Reality</Link>
         </div>
         <MonthNavigation currentMonth="april" />
