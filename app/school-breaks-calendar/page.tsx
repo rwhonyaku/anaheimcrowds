@@ -189,9 +189,9 @@ export default function PeakDemandPage() {
           <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
             forecast updates
           </Link>{" "}
-          page. For the scoring logic behind the daily calendar, see{" "}
+          page. For how the daily calendar works, see{" "}
           <Link href="/methodology" className="font-bold underline hover:text-blue-600">
-            methodology
+            how our forecasts work
           </Link>
           .
         </p>

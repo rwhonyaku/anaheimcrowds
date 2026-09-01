@@ -400,7 +400,7 @@ export default function HotelRankingsPage() {
           That detour can turn a short-looking route into a long morning.
         </p>
         <p className="text-red-800 text-sm leading-relaxed">
-          If rope drop matters, optimize for <strong>Harbor Blvd walk time</strong>—not “distance from the park.”
+          If rope drop matters, choose based on <strong>Harbor Blvd walk time</strong>, not “distance from the park.”
         </p>
       </section>
 

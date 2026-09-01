@@ -11,6 +11,7 @@ import {
   Zap,
 } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
+import { EditorialImage } from "@/components/EditorialImage";
 
 export const metadata: Metadata = {
   title: "Best Times to Visit Disneyland in 2026: Lowest-Crowd Dates | AnaheimCrowds",
@@ -58,6 +59,14 @@ export default function BestTimesPage() {
           </p>
         </div>
 
+        <EditorialImage
+          src="/images/scnic.jpg"
+          alt="Small World and a topiary at Disneyland on a clear day"
+          caption="Small World area at Disneyland. Photo: AnaheimCrowds."
+          priority
+          imageClassName="aspect-[16/9] object-cover"
+        />
+
         <div className="grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-green-200 bg-green-50 p-5">
             <p className="text-xs font-black uppercase tracking-widest text-green-700">Best overall time</p>
@@ -85,7 +94,7 @@ export default function BestTimesPage() {
         </div>
 
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-sm text-slate-700 leading-relaxed">
-          <strong className="text-slate-900">Bottom line:</strong>{" "}
+          <strong className="text-slate-900">Quick answer:</strong>{" "}
           The best low-stress windows in 2026 are <strong>Jan 12-Feb 12</strong>,{" "}
           <strong>May 4-14</strong>, and <strong>Sep 14-24</strong>. Once you have a shortlist,
           verify the exact days on the{" "}
@@ -141,8 +150,6 @@ export default function BestTimesPage() {
       </section>
 
       <section className="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-900 p-6 md:p-8 text-white shadow-sm">
-        <div className="absolute inset-0 bg-[url('/images/crowds.jpg')] bg-cover bg-center opacity-35" />
-        <div className="absolute inset-0 bg-slate-950/65" />
         <div className="relative grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end">
           <div className="space-y-3">
             <p className="text-xs font-black uppercase tracking-[0.2em] text-amber-300">
@@ -152,7 +159,7 @@ export default function BestTimesPage() {
               Pick the week before you plan the day.
             </h2>
             <p className="max-w-xl text-sm leading-relaxed text-slate-100">
-              A better week gives rope drop, dining breaks, and afternoon plans more room to work. Use this guide for the shortlist,
+              A better week gives rope drop, dining breaks, and afternoon plans more room to work. Use this guide for a shortlist,
               then compare exact dates on the calendar.
             </p>
           </div>
@@ -417,7 +424,7 @@ export default function BestTimesPage() {
         </div>
       </section>
 
-      {/* Modeling */}
+      {/* Forecast factors */}
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <Zap className="text-blue-600" />
@@ -433,7 +440,7 @@ export default function BestTimesPage() {
         <div className="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm space-y-5">
           <ul className="list-disc ml-6 space-y-2 text-slate-700">
             <li>
-              <strong>School break modeling:</strong> More school-out overlap = heavier weekday crowds.
+              <strong>School breaks:</strong> More school-out overlap usually means heavier weekday crowds.
             </li>
             <li>
               <strong>Ticket tiers:</strong> Higher price dates usually mean Disney expects a busier day.
@@ -446,7 +453,7 @@ export default function BestTimesPage() {
           <div className="bg-slate-50 p-4 rounded-2xl flex gap-2 italic text-xs border-l-4 border-blue-500">
             <Info size={18} className="shrink-0 text-blue-500" />
             <span>
-              October is the best example of school-out overlap beating "local calendar logic." If you are considering October,
+              October is the best example of regional breaks overwhelming a normal weekday. If you are considering October,
               start here:{" "}
               <Link href="/crowds/october" className="underline font-bold hover:text-slate-900">
                 October crowds -&gt;
@@ -601,7 +608,7 @@ export default function BestTimesPage() {
               Day 2 (DCA + Flex Night)
             </h3>
             <ul className="list-disc ml-6 space-y-2 text-slate-700">
-              <li>DCA tends to feel easier to navigate mid-day than Disneyland, especially on non-holiday weekdays.</li>
+              <li>DCA tends to feel easier mid-day than Disneyland, especially on non-holiday weekdays.</li>
               <li>Use Day 2 to catch what you missed and keep energy in the tank.</li>
               <li>If you are doing a nighttime show anywhere, pick Day 2 so you're not exhausted on Day 3.</li>
             </ul>

@@ -21,14 +21,14 @@ const SITE = {
   name: "AnaheimCrowds",
   origin: "https://anaheimcrowds.com",
   description:
-    "Expert Disneyland crowd analysis. We track Magic Key tiers, Anaheim convention schedules, and school calendars to help you navigate the park like a local.",
+    "Disneyland crowd planning for 2026, with school breaks, ticket prices, Anaheim events, and walkable hotel advice in one place.",
   contactEmail: "support@anaheimcrowds.com",
 } as const;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.origin),
   title: {
-    default: `Disneyland crowds (typical patterns, Anaheim) | ${SITE.name}`,
+    default: `Disneyland crowds (typical behavior, Anaheim) | ${SITE.name}`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE.origin,
     siteName: SITE.name,
-    title: `Disneyland Crowd Patterns & Strategy | ${SITE.name}`,
+    title: `Disneyland crowds and trip planning | ${SITE.name}`,
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `Disneyland Crowd Patterns & Strategy | ${SITE.name}`,
+    title: `Disneyland crowds and trip planning | ${SITE.name}`,
     description: SITE.description,
   },
 };

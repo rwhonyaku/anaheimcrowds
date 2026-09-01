@@ -22,7 +22,7 @@ export function SiteHeader() {
               Anaheim<span className="text-amber-700">Crowds</span>
             </span>
             <small className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-none mt-1">
-              Disneyland Strategy, 2026
+              Disneyland Planning, 2026
             </small>
           </div>
         </Link>
@@ -41,7 +41,7 @@ export function SiteHeader() {
             href="/crowd-calendar"
             className="bg-amber-700 text-white px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-slate-900 transition-colors"
           >
-            View Forecast
+            Check Dates
           </Link>
         </nav>
       </div>

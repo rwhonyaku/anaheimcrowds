@@ -425,8 +425,8 @@ export default function OctoberCrowdsPage() {
 
         <p className="text-slate-700 leading-relaxed">
           October hotel pricing near Disneyland tends to move in the same direction as crowds: early month is your best
-          shot, mid-month tightens, and late month can get expensive fast—especially around weekends. The big mistake is
-          waiting “because it’s not summer.” In October, that logic backfires.
+          shot, mid-month tightens, and late month can get expensive fast, especially around weekends. The big mistake is
+          waiting “because it’s not summer.” In October, that bet can backfire.
         </p>
 
         <div className="bg-white border border-slate-200 rounded-[2rem] p-7 shadow-sm space-y-4">

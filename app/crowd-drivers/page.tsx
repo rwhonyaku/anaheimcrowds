@@ -4,7 +4,7 @@ import { TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "What Moves Disneyland Crowds in 2026 | AnaheimCrowds",
-  description: "A practical breakdown of the signals that shift Disneyland crowd pressure in 2026.",
+  description: "A practical breakdown of what changes Disneyland crowds in 2026.",
   alternates: { canonical: "/crowd-drivers" },
 };
 
@@ -13,26 +13,26 @@ const DRIVERS = [
     driver: "School-break overlap",
     effect: "The biggest all-day shift",
     impact2026:
-      "When multiple districts are out at once, Disneyland stops behaving like a normal weekday park. That is the cleanest reason a Tuesday suddenly feels too full.",
-    indicator: "Weekday wait pressure from open to late afternoon",
+      "When multiple districts are out at once, Disneyland stops behaving like a normal weekday park. This is the biggest reason a Tuesday suddenly feels too busy.",
+    indicator: "Longer waits from opening through late afternoon",
   },
   {
-    driver: "Magic Key access patterns",
+    driver: "Magic Key access",
     effect: "Evening spikes",
     impact2026:
-      "Some dates stay reasonable at lunch and tighten after work. That is usually a local access pattern, not a random surprise.",
+      "Some dates stay reasonable at lunch and get much busier after work. That is usually local traffic, not a random surprise.",
     indicator: "Heavier walkways and food lines after 5 PM",
   },
   {
-    driver: "Ticket pricing signals",
+    driver: "Ticket pricing",
     effect: "Demand warning sign",
     impact2026:
-      "Lower-priced dates are often worth a second look. Higher-priced Fridays and Saturdays are usually telling you the hard truth up front.",
+      "Lower-priced dates are often worth checking. Higher-priced Fridays and Saturdays usually tell you the truth up front.",
     indicator: "Tier jumps around weekends and holidays",
   },
   {
-    driver: "Seasonal event stacking",
-    effect: "Crowded in a different way",
+    driver: "Seasonal events",
+    effect: "A different kind of busy",
     impact2026:
       "Halloween season, holiday runs, and event nights do not just add people. They also change how those people move through the park.",
     indicator: "Full walkways, food lines, and slower evenings",
@@ -45,7 +45,8 @@ export default function CrowdDriversPage() {
       <section className="bg-sky-50 border-l-8 border-sky-800 p-8 rounded-r-2xl space-y-4">
         <h1 className="font-display text-4xl text-slate-900">What actually moves Disneyland crowds</h1>
         <p className="text-lg text-slate-700 leading-relaxed">
-          The old weekend-versus-weekday rule is not enough on its own. In 2026, crowd pressure comes from a few repeat signals, and the useful question is not "Is it a Tuesday?" but "What kind of Tuesday is it?"
+          The old weekend-versus-weekday rule is not enough on its own. In 2026, the better question is not
+          "Is it a Tuesday?" but "What else is going on that week?"
         </p>
       </section>
 

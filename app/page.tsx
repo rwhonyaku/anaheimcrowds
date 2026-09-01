@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CrowdScanner } from "@/components/CrowdScanner";
 import { AdSlot } from "@/components/AdSlot";
+import { EditorialImage } from "@/components/EditorialImage";
 import { MoveRight, CalendarDays, Hotel, Map, Search, Clock3 } from "lucide-react";
 
 const sampleCalendarDays = [
@@ -33,7 +34,7 @@ export default function HomePage() {
                   Disneyland crowd calendar and date estimator
                 </h1>
                 <p className="text-xl text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Check a 2026 Disneyland date, compare 1-10 crowd scores, and see which weeks are easier before
+                  Check a 2026 Disneyland date, compare expected crowd levels, and see which weeks are easier before
                   you book tickets or a hotel near the parks.
                 </p>
               </div>
@@ -55,7 +56,7 @@ export default function HomePage() {
 
               <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0 text-left">
                 <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Scores</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Crowd level</p>
                   <p className="mt-1 text-2xl font-black text-slate-900">1-10</p>
                 </div>
                 <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
@@ -67,6 +68,15 @@ export default function HomePage() {
                   <p className="mt-1 text-lg font-black text-slate-900">2026</p>
                 </div>
               </div>
+
+              <EditorialImage
+                src="/images/scnic.jpg"
+                alt="Small World and a topiary at Disneyland on a sunny day"
+                caption="Original AnaheimCrowds photo from Disneyland."
+                priority
+                imageClassName="aspect-[16/7] max-h-52 object-cover"
+                className="max-w-xl mx-auto lg:mx-0"
+              />
             </div>
 
             <div className="relative">
@@ -79,7 +89,7 @@ export default function HomePage() {
                           Example week
                         </p>
                         <h2 className="mt-1 text-2xl font-black text-slate-900">
-                          September 2026 crowd scores
+                          September 2026 crowd levels
                         </h2>
                       </div>
                       <div className="rounded-2xl bg-sky-800 px-3 py-2 text-xs font-black uppercase tracking-widest text-white">
@@ -105,7 +115,7 @@ export default function HomePage() {
                         <Search size={16} className="text-sky-800" /> Search any 2026 date
                       </p>
                       <p className="flex items-center gap-2">
-                        <Clock3 size={16} className="text-amber-700" /> Plan mornings around the score
+                        <Clock3 size={16} className="text-amber-700" /> Plan mornings around the crowd level
                       </p>
                     </div>
                   </div>

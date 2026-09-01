@@ -41,7 +41,7 @@ export default function AugustCrowdsPage() {
               <AlertTriangle size={16} className="text-amber-500" /> Peak Humidity
             </p>
             <p className="text-sm text-slate-500 leading-relaxed">
-              August is often the hottest month in Anaheim. Expect crowds to cluster in shops and AC-heavy attractions.
+              August is often the hottest month in Anaheim. Expect crowds to bunch up in shops and AC-heavy attractions.
             </p>
           </li>
         </ul>

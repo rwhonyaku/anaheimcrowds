@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { EditorialImage } from "@/components/EditorialImage";
 
 export const metadata: Metadata = {
   title: "Disneyland Midday Break Strategy on Crowded Days | AnaheimCrowds",
@@ -28,7 +29,7 @@ export default function DisneylandMiddayBreakStrategyPage() {
       <section className="rounded-3xl border border-slate-200 bg-slate-50 p-8 space-y-4">
         <h2 className="text-2xl font-bold">Short answer</h2>
         <p className="text-slate-700">
-          Use a midday break on high-crowd days when your score on the{" "}
+          Use a midday break on high-crowd days when the expected crowd level on the{" "}
           <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
             crowd calendar
           </Link>{" "}
@@ -39,6 +40,26 @@ export default function DisneylandMiddayBreakStrategyPage() {
           </Link>{" "}
           before you try to solve a bad week with tactics alone.
         </p>
+      </section>
+
+      <section className="grid gap-6 md:grid-cols-[0.85fr_1fr] md:items-center">
+        <EditorialImage
+          src="/images/empty%20tables.jpg"
+          alt="Quiet shaded tables at Disneyland in the afternoon"
+          caption="A quieter seating area inside Disneyland. Photo: AnaheimCrowds."
+          imageClassName="aspect-[4/5] max-h-[620px] object-cover"
+        />
+        <div className="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <h2 className="text-2xl font-bold">Why a Break Can Work</h2>
+          <p className="text-slate-700">
+            The goal is not to leave just because the park is busy. It is to skip the hours when waits, heat,
+            food lines, and tired feet all stack up at once, then come back when the day starts to breathe again.
+          </p>
+          <p className="text-slate-700">
+            This only pays off when your hotel is close enough that the round trip feels easy. If the walk is long,
+            staying inside the parks and finding a slower corner can be the better move.
+          </p>
+        </div>
       </section>
 
       <AdSlot id="midday-break-top" label="Midday break top" />

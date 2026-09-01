@@ -4,11 +4,12 @@ import { AdSlot } from "@/components/AdSlot";
 import { AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { CrowdScanner } from "@/components/CrowdScanner";
+import { EditorialImage } from "@/components/EditorialImage";
 
 export const metadata: Metadata = {
-  title: "Disneyland Crowd Calendar 2026 | Anaheim Daily Crowd Scores",
+  title: "Disneyland Crowd Calendar 2026 | Daily Crowd Levels",
   description:
-    "Disneyland crowd calendar 2026 for Anaheim trip planning, with daily 1-10 crowd scores, lower-crowd dates, busy weeks to avoid, and school-break overlap.",
+    "Disneyland crowd calendar 2026 for Anaheim trip planning, with daily 1-10 crowd levels, lower-crowd dates, busy weeks to avoid, and school-break overlap.",
 };
 
 function getDaysInMonth(month: number) {
@@ -50,7 +51,7 @@ export default function CrowdCalendarPage() {
           </h1>
 
           <p className="text-slate-600 max-w-2xl font-medium leading-relaxed">
-            This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd score</strong> for Anaheim trip planning, based on school-break overlap, season, weekends, and Disney pricing.
+            This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd level</strong> for Anaheim trip planning, based on school-break overlap, season, weekends, and Disney pricing.
             Use it as a <strong>Disneyland busy days calendar</strong> to spot the roughest weeks before you choose tickets or hotels.
             Use the{" "}
             <Link href="/best-times" className="font-bold underline hover:text-sky-800">
@@ -82,12 +83,20 @@ export default function CrowdCalendarPage() {
 
       <AdSlot id="calendar-top" label="High Visibility Placement" />
 
+      <EditorialImage
+        src="/images/Big%20Thunder%20scenic%202.jpg"
+        alt="Big Thunder Mountain area at Disneyland on a clear afternoon"
+        caption="Big Thunder Mountain area at Disneyland. Photo: AnaheimCrowds."
+        priority
+        imageClassName="aspect-[16/7] object-cover"
+      />
+
       <section className="rounded-2xl border border-blue-200 bg-blue-50 p-6 shadow-sm">
         <h2 className="text-2xl font-black text-slate-900">
           Disneyland crowd calendar 2026
         </h2>
         <p className="mt-2 text-slate-700 leading-relaxed">
-          This is a 2026 Disneyland crowd calendar for Anaheim, California. Use the daily scores to compare dates,
+          This is a 2026 Disneyland crowd calendar for Anaheim, California. Use the daily crowd levels to compare dates,
           then check the month guides for the reason behind each busy stretch.
         </p>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
@@ -184,7 +193,7 @@ export default function CrowdCalendarPage() {
             Worst Weeks in 2026
           </h2>
           <p className="text-sm leading-relaxed text-slate-700">
-            The roughest dates cluster in <strong>Mar 23-Apr 10</strong>, <strong>late June through July</strong>,{" "}
+            The roughest dates fall in <strong>Mar 23-Apr 10</strong>, <strong>late June through July</strong>,{" "}
             <strong>Oct 12-31</strong>, and <strong>Dec 18-31</strong>. If October is still on the table, read the{" "}
             <Link href="/crowds/october" className="font-bold underline hover:text-sky-800">
               October crowd guide
@@ -242,20 +251,18 @@ export default function CrowdCalendarPage() {
           </p>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-lg font-black text-slate-900">How should I use the 1-10 score?</h2>
+          <h2 className="text-lg font-black text-slate-900">How should I use the 1-10 crowd level?</h2>
           <p className="mt-2 text-sm leading-relaxed text-slate-700">
-            Use the score to choose between dates, not to promise an empty park. A lower score usually means the morning is easier,
+            Use the number to choose between dates, not to promise an empty park. A lower level usually means the morning is easier,
             while an 8-10 means you should plan rope drop, meals, and breaks before you arrive.
           </p>
         </div>
       </section>
 
       <section className="bg-slate-900 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/crowds.jpg')] bg-cover bg-center opacity-25" />
-        <div className="absolute inset-0 bg-slate-950/70" />
         <div className="relative z-10 space-y-6">
           <div className="flex items-center gap-2 text-amber-300 font-black text-xs uppercase tracking-widest">
-            <AlertTriangle size={16} /> What the score does not tell you
+            <AlertTriangle size={16} /> What the number does not tell you
           </div>
 
           <h2 className="font-display text-4xl leading-tight">
@@ -268,7 +275,7 @@ export default function CrowdCalendarPage() {
             <Link href="/crowds/july" className="text-amber-300 hover:underline">
               July crowd guide
             </Link>{" "}
-            so you understand what a "manageable" score actually feels like on the ground. On packed dates, the{" "}
+            so you understand what a "manageable" day actually feels like on the ground. On packed dates, the{" "}
             <Link href="/articles/disneyland-midday-break-strategy" className="text-amber-300 hover:underline">
               midday break strategy
             </Link>{" "}

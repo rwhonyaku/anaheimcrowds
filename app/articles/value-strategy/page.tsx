@@ -46,7 +46,7 @@ export default function ValueStrategyArticle() {
           <Link href="/best-times" className="font-bold underline hover:text-blue-600">
             best-times guide
           </Link>
-          . The strongest clusters usually line up with the{" "}
+          . The best stretches usually line up with the{" "}
           <Link href="/crowds/january" className="font-bold underline hover:text-blue-600">
             January
           </Link>

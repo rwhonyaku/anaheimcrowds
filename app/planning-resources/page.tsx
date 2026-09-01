@@ -42,7 +42,7 @@ export default function PlanningResources() {
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Midday break or midday reset</h2>
           </div>
           <p className="text-slate-300 leading-relaxed mb-6">
-            The hardest stretch of the day is usually early afternoon. The park feels hotter, slower, and more crowded even when the score itself is not extreme.
+            The hardest stretch of the day is usually early afternoon. The park feels hotter, slower, and more crowded even when the overall day is not one of the worst.
           </p>
           <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700">
             <p className="text-sm text-slate-300">

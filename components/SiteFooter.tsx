@@ -13,7 +13,7 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
     { href: "/crowd-calendar", label: "2026 Crowd Calendar" },
     { href: "/best-times", label: "Best Times (2026)" },
     { href: "/school-breaks-calendar", label: "School Break Calendar" },
-    { href: "/forecast-updates", label: "Forecast Updates" },
+    { href: "/forecast-updates", label: "Recent Updates" },
     { href: "/hotels", label: "Hotels Walking Distance" },
   ];
 
@@ -95,7 +95,7 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
                   href="/methodology"
                   className="text-sm font-bold text-slate-900 hover:text-blue-600 underline decoration-blue-200 underline-offset-4 transition-colors"
                 >
-                  Our Methodology
+                  How Our Forecasts Work
                 </Link>
                 <Link
                   href="/contact"

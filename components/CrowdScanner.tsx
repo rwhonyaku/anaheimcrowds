@@ -69,7 +69,7 @@ export function CrowdScanner() {
           Check your date before you build the trip around it
         </h2>
         <p className="text-slate-600 text-base md:text-lg font-medium max-w-2xl mx-auto">
-          Enter a date and see the same 1-10 score used on the calendar, plus a plain-English read on what
+          Enter a date and see the same 1-10 crowd level used on the calendar, plus a plain-English read on what
           that day is likely to feel like.
         </p>
       </div>
@@ -85,7 +85,7 @@ export function CrowdScanner() {
           type="submit"
           className="bg-sky-800 text-white px-8 py-5 rounded-2xl font-black uppercase tracking-tight hover:bg-slate-900 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
         >
-          <Search size={18} /> Scan Date
+          <Search size={18} /> Check Date
         </button>
       </form>
 

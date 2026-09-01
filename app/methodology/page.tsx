@@ -4,7 +4,7 @@ import { ShieldCheck, GraduationCap, Ticket, Hotel, Zap } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 
 export const metadata: Metadata = {
-  title: "Methodology | AnaheimCrowds",
+  title: "How Our Disneyland Crowd Forecasts Work | AnaheimCrowds",
   description: "How AnaheimCrowds uses school breaks, ticket pricing, convention weeks, and weekday behavior in its 2026 forecasts.",
 };
 
@@ -13,15 +13,15 @@ export default function MethodologyPage() {
     <div className="max-w-4xl mx-auto px-4 py-12 space-y-16 text-slate-900">
       <section className="space-y-4">
         <h1 className="font-display text-5xl md:text-6xl text-slate-900 leading-none">
-          Methodology
+          How Our Forecasts Work
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium">
           Most crowd calendars lean too hard on old attendance history. AnaheimCrowds still uses that history,
-          but gives more weight to the things that actually move Disneyland dates in 2026.
+          but pays closest attention to the things that actually move Disneyland dates in 2026.
         </p>
       </section>
 
-      <AdSlot id="method-top" label="Methodology Header Ad" />
+      <AdSlot id="method-top" label="Forecast explainer header ad" />
 
       <section className="space-y-12">
         <div className="flex items-start gap-6 group">
@@ -31,7 +31,7 @@ export default function MethodologyPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-black uppercase italic tracking-tight">School breaks matter most</h2>
             <p className="text-slate-600 leading-relaxed">
-              School calendars are the biggest driver in the model. We track major districts across Southern
+              School calendars are the biggest factor. We track major districts across Southern
               California and nearby travel markets because Disneyland weekdays change fast when families are out
               of school at the same time.
             </p>
@@ -74,7 +74,7 @@ export default function MethodologyPage() {
             <h2 className="text-2xl font-black uppercase italic tracking-tight">Weekdays still need context</h2>
             <p className="text-slate-600 leading-relaxed">
               A Tuesday is not automatically good, and a Monday is not automatically bad. We use weekday
-              behavior as supporting context, not the whole answer, because the week itself matters more than
+              patterns as one clue, not the whole answer, because the week itself matters more than
               the label on the calendar.
             </p>
           </div>

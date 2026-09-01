@@ -89,7 +89,7 @@ export default function MagicKeyEveningSpikeArticle() {
           Use the midday softness for rides. Eat earlier than feels natural. Protect one or two nighttime priorities and stop pretending the whole evening will stay efficient.
         </p>
         <p className="text-amber-900">
-          On higher-score dates, pair that approach with the{" "}
+          On busier dates, pair that approach with the{" "}
           <Link href="/articles/disneyland-midday-break-strategy" className="font-bold underline hover:text-slate-900">
             midday break strategy
           </Link>{" "}

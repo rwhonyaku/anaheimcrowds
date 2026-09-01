@@ -82,7 +82,7 @@ export default function HolidaysPage() {
               Select dates in May and June.
             </p>
             <p className="text-sm text-slate-600 leading-relaxed">
-              These dates do not always destroy ride waits, but they can change the mood of the day and make evenings feel louder, fuller, and harder to manage than the score alone suggests.
+              These dates do not always destroy ride waits, but they can change the mood of the day and make evenings feel louder, fuller, and harder to manage than the calendar alone suggests.
             </p>
           </div>
         </div>

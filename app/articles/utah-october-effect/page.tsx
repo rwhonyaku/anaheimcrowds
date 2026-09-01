@@ -82,7 +82,7 @@ export default function UtahOctoberEffectArticle() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-bold">Why It Matters</h2>
+        <h2 className="text-2xl font-bold">What It Changes</h2>
         <ul className="list-disc ml-6 space-y-2 text-slate-700">
           <li>Mid-week waits can get heavy enough to wreck a one-day plan.</li>
           <li>Harbor Blvd hotels tighten because more guests are making full vacation trips.</li>
