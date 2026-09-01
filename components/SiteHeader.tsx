@@ -22,7 +22,7 @@ export function SiteHeader() {
               Anaheim<span className="text-amber-700">Crowds</span>
             </span>
             <small className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-none mt-1">
-              Disneyland Planning, 2026
+              Disneyland Planning, 2026-2027
             </small>
           </div>
         </Link>

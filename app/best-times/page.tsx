@@ -14,13 +14,13 @@ import { AdSlot } from "@/components/AdSlot";
 import { EditorialImage } from "@/components/EditorialImage";
 
 export const metadata: Metadata = {
-  title: "Best Times to Visit Disneyland in 2026: Lowest-Crowd Dates | AnaheimCrowds",
+  title: "Best Times to Visit Disneyland in 2026-2027 | AnaheimCrowds",
   description:
-    "Best times to visit Disneyland in 2026: Jan 12-Feb 12, May 4-14, and Sep 14-24 are the best lower-crowd date windows.",
+    "Best times to visit Disneyland in 2026-2027, with lower-crowd date windows, school-break timing, and month-by-month planning notes.",
   alternates: { canonical: "/best-times" },
 };
 
-const AS_OF_DATE = "August 24, 2026";
+const AS_OF_DATE = "September 1, 2026";
 
 export default function BestTimesPage() {
   return (
@@ -30,17 +30,16 @@ export default function BestTimesPage() {
         <div className="relative grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/85 px-4 py-2 text-xs font-black uppercase tracking-widest text-sky-800 shadow-sm">
-              <CalendarCheck size={14} /> Disneyland 2026 date guide
+              <CalendarCheck size={14} /> Disneyland 2026-2027 date guide
             </div>
 
             <div className="space-y-4">
               <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
-                Best times to visit Disneyland in 2026
+                Best times to visit Disneyland in 2026-2027
               </h1>
               <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-700">
-                Start with <strong>Jan 12-Feb 12</strong>, <strong>May 4-14</strong>, or{" "}
-                <strong>Sep 14-24</strong>. Those windows usually mean fewer school breaks, easier weekdays,
-                and lower Disney ticket prices.
+                For the current planning window, start with <strong>Sep 14-24, 2026</strong>, early November weekdays,
+                early December weekdays, and 2027 weekdays after the largest school breaks clear.
               </p>
             </div>
 
@@ -62,15 +61,15 @@ export default function BestTimesPage() {
             <div className="grid gap-3 sm:grid-cols-3">
               <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best overall</p>
-                <p className="mt-1 text-lg font-black text-slate-900">Jan 12-Feb 12</p>
-              </div>
-              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best weather</p>
-                <p className="mt-1 text-lg font-black text-slate-900">May 4-14</p>
-              </div>
-              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best fall pick</p>
                 <p className="mt-1 text-lg font-black text-slate-900">Sep 14-24</p>
+              </div>
+              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Holiday choice</p>
+                <p className="mt-1 text-lg font-black text-slate-900">Early Dec</p>
+              </div>
+              <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">2027 watch</p>
+                <p className="mt-1 text-lg font-black text-slate-900">After breaks</p>
               </div>
             </div>
           </div>
@@ -96,7 +95,7 @@ export default function BestTimesPage() {
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 After you pick a window, compare exact dates on the{" "}
                 <Link href="/crowd-calendar" className="font-bold underline hover:text-blue-600">
-                  Disneyland crowd calendar 2026
+                  Disneyland crowd calendar
                 </Link>
                 .
               </p>
@@ -653,6 +652,18 @@ export default function BestTimesPage() {
           <Link href="/crowds/october" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
             October 2026 crowds -&gt;
           </Link>
+          <Link href="/crowds/2027/january" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            January 2027 crowds -&gt;
+          </Link>
+          <Link href="/crowds/2027/march" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            March 2027 crowds -&gt;
+          </Link>
+          <Link href="/crowds/2027/april" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            April 2027 crowds -&gt;
+          </Link>
+          <Link href="/crowds/2027/july" className="text-sm font-bold text-slate-900 hover:text-blue-600 underline">
+            July 2027 crowds -&gt;
+          </Link>
         </div>
       </section>
 
@@ -660,7 +671,7 @@ export default function BestTimesPage() {
       <section id="faq" className="space-y-6 scroll-mt-24">
         <div className="flex items-center gap-3">
           <Info className="text-blue-600" />
-          <h2 className="text-3xl font-black italic uppercase">FAQ: Best Time to Go to Disneyland 2026</h2>
+          <h2 className="text-3xl font-black italic uppercase">FAQ: Best Time to Go to Disneyland</h2>
         </div>
 
         <div className="grid gap-4">

@@ -21,7 +21,7 @@ const SITE = {
   name: "AnaheimCrowds",
   origin: "https://anaheimcrowds.com",
   description:
-    "Disneyland crowd planning for 2026, with school breaks, ticket prices, Anaheim events, and walkable hotel advice in one place.",
+    "Disneyland crowd planning for 2026-2027, with school breaks, ticket prices, Anaheim events, and walkable hotel advice in one place.",
   contactEmail: "support@anaheimcrowds.com",
 } as const;
 

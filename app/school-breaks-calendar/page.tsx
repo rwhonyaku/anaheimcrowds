@@ -50,7 +50,7 @@ export default function PeakDemandPage() {
           School Break <span className="text-sky-800">Calendar</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-2xl">
-          Disneyland does not get busy by accident. These are the 2026 school-break windows and travel overlaps that turn an ordinary weekday into a much harder park day.
+          Disneyland does not get busy by accident. These are the 2026-27 school-break windows and travel overlaps that turn an ordinary weekday into a much harder park day.
         </p>
         <p className="text-sm text-slate-400">Last updated: {AS_OF_DATE}</p>
       </section>
@@ -159,7 +159,7 @@ export default function PeakDemandPage() {
       <section className="space-y-8">
         <div className="flex items-center justify-between border-b border-slate-200 pb-4">
           <h2 className="text-2xl font-black uppercase italic flex items-center gap-2">
-            <Map className="text-sky-800" /> 2026 High-Volume Windows
+            <Map className="text-sky-800" /> 2026-27 Busier Windows
           </h2>
         </div>
 
@@ -236,7 +236,7 @@ export default function PeakDemandPage() {
         </p>
         <div className="flex flex-wrap justify-center gap-4 text-sm font-bold">
           <Link href="/crowd-calendar" className="text-amber-300 hover:underline">
-            2026 Crowd Calendar
+            Crowd Calendar
           </Link>
           <Link href="/best-times" className="text-amber-300 hover:underline">
             Best Times

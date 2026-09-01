@@ -157,6 +157,30 @@ export const SOCAL_2025_2026: SchoolBreak[] = [
     sd: "Mar 29 – Apr 2",
     ie: "Mar 29 – Apr 2",
   },
+  {
+    breakType: "Summer Break 2027",
+    dateRange: "May 26-Aug 10",
+    startDate: "2027-05-26",
+    endDate: "2027-08-10",
+    coverage: "High",
+    notes: "This window starts as local schools finish the 2026-27 year. August return dates will be updated as more 2027-28 calendars are published.",
+    la: "Summer starts Jun 5",
+    oc: "Summer starts May 26-Jun 10",
+    sd: "Summer starts May 27",
+    ie: "Summer starts May 28-Jun 4",
+  },
+  {
+    breakType: "Late Summer 2027",
+    dateRange: "Aug 11-31",
+    startDate: "2027-08-11",
+    endDate: "2027-08-31",
+    coverage: "Low",
+    notes: "Some large districts are likely back in school while later-starting districts may still be out. Check these dates again before booking once more calendars are posted.",
+    la: "LAUSD starts Aug 12",
+    oc: "Mixed start dates",
+    sd: "Mixed start dates",
+    ie: "Mixed start dates",
+  },
 ];
 
 export const SOCAL_DISTRICT_BREAKS_2026_2027: SoCalDistrictBreak[] = [

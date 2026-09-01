@@ -5,15 +5,16 @@ import { AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { CrowdScanner } from "@/components/CrowdScanner";
 import { EditorialImage } from "@/components/EditorialImage";
+import { getPlanningMonths } from "@/lib/planning-window";
 
 export const metadata: Metadata = {
-  title: "Disneyland Crowd Calendar 2026 | Daily Crowd Levels",
+  title: "Disneyland Crowd Calendar 2026-2027 | Daily Crowd Levels",
   description:
-    "Disneyland crowd calendar 2026 for Anaheim trip planning, with daily 1-10 crowd levels, lower-crowd dates, busy weeks to avoid, and school-break overlap.",
+    "Disneyland crowd calendar for Anaheim trip planning, with daily 1-10 crowd levels, lower-crowd dates, busy weeks to avoid, and school-break overlap.",
 };
 
-function getDaysInMonth(month: number) {
-  const date = new Date(2026, month, 1);
+function getDaysInMonth(year: number, month: number) {
+  const date = new Date(year, month, 1);
   const days: string[] = [];
   while (date.getMonth() === month) {
     days.push(new Date(date).toISOString().split("T")[0]);
@@ -22,36 +23,23 @@ function getDaysInMonth(month: number) {
   return days;
 }
 
-function getMonthStartOffset(month: number) {
-  return new Date(2026, month, 1).getDay();
+function getMonthStartOffset(year: number, month: number) {
+  return new Date(year, month, 1).getDay();
 }
 
-const MONTHS = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
 export default function CrowdCalendarPage() {
+  const planningMonths = getPlanningMonths();
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 space-y-12">
       <section className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-4">
           <h1 className="font-display text-5xl md:text-6xl text-slate-900 leading-none">
-            Disneyland Crowd Calendar 2026
+            Disneyland Crowd Calendar 2026-2027
           </h1>
 
           <p className="text-slate-600 max-w-2xl font-medium leading-relaxed">
-            This Disneyland crowd calendar for 2026 gives every date a visible <strong>1-10 crowd level</strong> for Anaheim trip planning, based on school-break overlap, season, weekends, and Disney pricing.
+            This Disneyland crowd calendar shows the next 12 months of dates with a visible <strong>1-10 crowd level</strong> for Anaheim trip planning, based on school breaks, season, weekends, and Disney pricing when it is available.
             Use it as a <strong>Disneyland busy days calendar</strong> to spot the roughest weeks before you choose tickets or hotels.
             Use the{" "}
             <Link href="/best-times" className="font-bold underline hover:text-sky-800">
@@ -92,11 +80,11 @@ export default function CrowdCalendarPage() {
       />
 
       <section className="rounded-2xl border border-blue-200 bg-blue-50 p-6 shadow-sm">
-        <h2 className="text-2xl font-black text-slate-900">
-          Disneyland crowd calendar 2026
+          <h2 className="text-2xl font-black text-slate-900">
+          Disneyland crowd calendar for the next 12 months
         </h2>
         <p className="mt-2 text-slate-700 leading-relaxed">
-          This is a 2026 Disneyland crowd calendar for Anaheim, California. Use the daily crowd levels to compare dates,
+          This calendar currently covers {planningMonths[0].label} through {planningMonths[planningMonths.length - 1].label}. Use the daily crowd levels to compare dates,
           then check the month guides for the reason behind each busy stretch.
         </p>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
@@ -117,19 +105,21 @@ export default function CrowdCalendarPage() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {MONTHS.map((monthName, monthIndex) => {
-          const days = getDaysInMonth(monthIndex);
-          const offset = getMonthStartOffset(monthIndex);
+        {planningMonths.map((month) => {
+          const days = getDaysInMonth(month.year, month.monthIndex);
+          const offset = getMonthStartOffset(month.year, month.monthIndex);
 
           return (
             <div
-              key={monthName}
+              key={`${month.year}-${month.slug}`}
               className="bg-white border border-stone-200 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="text-lg font-black mb-4 flex items-center justify-between">
-                {monthName}
+                <Link href={month.href} className="hover:text-blue-600">
+                  {month.name}
+                </Link>
                 <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">
-                  2026
+                  {month.year}
                 </span>
               </h3>
 
@@ -143,7 +133,7 @@ export default function CrowdCalendarPage() {
 
               <div className="grid grid-cols-7 gap-1">
                 {Array.from({ length: offset }).map((_, index) => (
-                  <div key={`pad-${monthName}-${index}`} className="h-12" />
+                  <div key={`pad-${month.label}-${index}`} className="h-12" />
                 ))}
 
                 {days.map((dateStr) => {
@@ -180,21 +170,21 @@ export default function CrowdCalendarPage() {
       <section className="grid gap-6 md:grid-cols-3">
         <div className="rounded-[2rem] border border-emerald-200 bg-emerald-50 p-6 space-y-3">
           <h2 className="text-xl font-black uppercase italic text-emerald-800">
-            Best Weeks in 2026
+            Better Weeks to Check First
           </h2>
           <p className="text-sm leading-relaxed text-slate-700">
-            The strongest stretches are <strong>Jan 12-30</strong>, <strong>Feb 3-12</strong>, <strong>May 4-14</strong>, and{" "}
-            <strong>Sep 14-24</strong>. These are the weeks where school calendars, weekday timing, and pricing point the same way.
+            In the current window, start with <strong>Sep 14-24, 2026</strong>, early November weekdays, early December weekdays,
+            and the quieter 2027 weekday stretches after major school breaks end.
           </p>
         </div>
 
         <div className="rounded-[2rem] border border-rose-200 bg-rose-50 p-6 space-y-3">
           <h2 className="text-xl font-black uppercase italic text-rose-800">
-            Worst Weeks in 2026
+            Hardest Weeks to Avoid
           </h2>
           <p className="text-sm leading-relaxed text-slate-700">
-            The roughest dates fall in <strong>Mar 23-Apr 10</strong>, <strong>late June through July</strong>,{" "}
-            <strong>Oct 12-31</strong>, and <strong>Dec 18-31</strong>. If October is still on the table, read the{" "}
+            The roughest dates fall around <strong>Oct 12-31, 2026</strong>, <strong>Thanksgiving week</strong>,{" "}
+            <strong>Dec 19, 2026-Jan 10, 2027</strong>, spring break, and peak summer. If October is still on the table, read the{" "}
             <Link href="/crowds/october" className="font-bold underline hover:text-sky-800">
               October crowd guide
             </Link>{" "}
@@ -232,11 +222,11 @@ export default function CrowdCalendarPage() {
           Search results often mix Disneyland in Anaheim with Disney World in Florida. This page is only for the Anaheim parks:
           Disneyland Park and Disney California Adventure. For a month-by-month view, start with{" "}
           <Link href="/crowds/september" className="font-bold underline hover:text-sky-800">
-            September crowds
+            September 2026 crowds
           </Link>{" "}
           and{" "}
           <Link href="/crowds/october" className="font-bold underline hover:text-sky-800">
-            October crowds
+            October 2026 crowds
           </Link>
           , because those are the fall pages getting the most search impressions.
         </p>

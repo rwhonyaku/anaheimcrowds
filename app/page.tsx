@@ -26,7 +26,7 @@ export default function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div className="space-y-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-white/80 text-sky-800 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-stone-200 shadow-sm">
-                <CalendarDays size={14} /> Disneyland crowd calendar 2026
+                <CalendarDays size={14} /> Disneyland crowd calendar 2026-2027
               </div>
 
               <div className="space-y-5">
@@ -34,7 +34,7 @@ export default function HomePage() {
                   Disneyland crowd calendar and date estimator
                 </h1>
                 <p className="text-xl text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Check a 2026 Disneyland date, compare expected crowd levels, and see which weeks are easier before
+                  Check Disneyland dates, compare expected crowd levels, and see which weeks are easier before
                   you book tickets or a hotel near the parks.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
                 </div>
                 <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Updated</p>
-                  <p className="mt-1 text-lg font-black text-slate-900">2026</p>
+                  <p className="mt-1 text-lg font-black text-slate-900">2026-27</p>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@ export default function HomePage() {
 
                     <div className="mt-4 grid gap-2 text-sm text-slate-700 md:grid-cols-2">
                       <p className="flex items-center gap-2">
-                        <Search size={16} className="text-sky-800" /> Search any 2026 date
+                        <Search size={16} className="text-sky-800" /> Search dates in the planning window
                       </p>
                       <p className="flex items-center gap-2">
                         <Clock3 size={16} className="text-amber-700" /> Plan mornings around the crowd level
@@ -197,7 +197,7 @@ export default function HomePage() {
             href="/crowd-calendar"
             className="inline-block bg-white text-sky-800 px-10 py-5 rounded-2xl font-black uppercase tracking-tight hover:bg-slate-900 hover:text-white transition-all"
           >
-            See the 2026 Forecast
+            See the Crowd Calendar
           </Link>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { statSync } from "node:fs";
 import { join } from "node:path";
+import { MONTH_GUIDES_2027 } from "@/lib/month-guide-2027";
 
 type SitemapEntry = {
   path: string;
@@ -37,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/crowds/october", file: "app/crowds/october/page.tsx", priority: 0.85, changeFrequency: "monthly" },
     { path: "/crowds/november", file: "app/crowds/november/page.tsx", priority: 0.8, changeFrequency: "monthly" },
     { path: "/crowds/december", file: "app/crowds/december/page.tsx", priority: 0.8, changeFrequency: "monthly" },
+    ...MONTH_GUIDES_2027.map((month) => ({
+      path: `/crowds/2027/${month.slug}`,
+      file: "app/crowds/2027/[month]/page.tsx",
+      priority: 0.78,
+      changeFrequency: "monthly" as const,
+    })),
 
     { path: "/crowd-drivers", file: "app/crowd-drivers/page.tsx", priority: 0.7, changeFrequency: "monthly" },
     { path: "/school-breaks", file: "app/school-breaks/page.tsx", priority: 0.7, changeFrequency: "monthly" },

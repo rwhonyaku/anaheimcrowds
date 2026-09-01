@@ -2,16 +2,15 @@
 
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
+import { getEarlier2026Months, getPlanningMonths } from "@/lib/planning-window";
 
 export function SiteFooter({ contactEmail }: { contactEmail: string }) {
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-  ];
+  const planningMonths = getPlanningMonths();
+  const earlierMonths = getEarlier2026Months();
 
   const planningLinks = [
-    { href: "/crowd-calendar", label: "2026 Crowd Calendar" },
-    { href: "/best-times", label: "Best Times (2026)" },
+    { href: "/crowd-calendar", label: "2026-2027 Crowd Calendar" },
+    { href: "/best-times", label: "Best Times" },
     { href: "/school-breaks-calendar", label: "School Break Calendar" },
     { href: "/forecast-updates", label: "Recent Updates" },
     { href: "/hotels", label: "Hotels Walking Distance" },
@@ -36,7 +35,7 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
               About AnaheimCrowds
             </p>
             <p className="text-[13px] text-slate-500 leading-relaxed font-medium">
-              Independent 2026 planning resource focused on school calendars,
+              Independent Disneyland planning resource focused on school calendars,
               ticket pricing, and hotel walking distance.
             </p>
           </div>
@@ -110,19 +109,37 @@ export function SiteFooter({ contactEmail }: { contactEmail: string }) {
 
         <div className="pt-8 border-t border-slate-200 space-y-4">
           <p className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center">
-            2026 Monthly Crowd Forecasts
+            Monthly Crowd Guides
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-6 gap-y-3 gap-x-4 text-center">
-            {months.map((month) => (
+            {planningMonths.map((month) => (
               <Link
-                key={month}
-                href={`/crowds/${month.toLowerCase()}`}
+                key={`${month.year}-${month.slug}`}
+                href={month.href}
                 className="text-[12px] font-bold text-slate-900 hover:text-blue-600 transition-colors"
               >
-                {month}
+                {month.name} {month.year}
               </Link>
             ))}
           </div>
+          {earlierMonths.length > 0 && (
+            <div className="pt-4 text-center">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                Earlier 2026
+              </p>
+              <div className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-2">
+                {earlierMonths.map((month) => (
+                  <Link
+                    key={`${month.year}-${month.slug}`}
+                    href={month.href}
+                    className="text-[11px] font-bold text-slate-500 hover:text-blue-600"
+                  >
+                    {month.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="text-center pt-8 border-t border-slate-100">

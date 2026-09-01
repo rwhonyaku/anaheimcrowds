@@ -17,7 +17,7 @@ export default function CrowdEstimator() {
   return (
     <div className="w-full max-w-xl mx-auto bg-white border border-slate-200 rounded-3xl shadow-xl overflow-hidden">
       <div className="bg-slate-900 p-6 text-white text-center">
-        <h3 className="text-xl font-black italic uppercase tracking-tighter">The 2026 Crowd Checker</h3>
+        <h3 className="text-xl font-black italic uppercase tracking-tighter">Crowd Date Checker</h3>
         <p className="text-slate-400 text-xs">Based on school breaks, pricing, and past crowd behavior</p>
       </div>
 
