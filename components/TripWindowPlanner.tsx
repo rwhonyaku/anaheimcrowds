@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { CalendarRange, Printer, Save } from "lucide-react";
+import { DateReasons } from "@/components/DateReasons";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
 import { eachDateInRange, formatLongDate, isValidDate } from "@/lib/date-utils";
 
@@ -44,6 +45,7 @@ export function TripWindowPlanner() {
         label: formatLongDate(date),
         weekday,
         score: estimate.score,
+        reasons: estimate.reasons,
         level: estimate.label,
       };
     });
@@ -144,6 +146,7 @@ export function TripWindowPlanner() {
               <div key={day.date} className="grid gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-[1fr_auto] md:items-center">
                 <div>
                   <p className="font-bold text-slate-900">{day.label}</p>
+                  <DateReasons reasons={day.reasons} />
                   <p className="text-sm text-slate-600">
                     {day.score >= 8
                       ? "Make this a lighter park day if you can."

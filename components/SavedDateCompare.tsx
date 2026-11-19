@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Bookmark, Plus, Trash2 } from "lucide-react";
+import { DateReasons } from "@/components/DateReasons";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
 import { formatLongDate, isValidDate } from "@/lib/date-utils";
 
@@ -51,6 +52,7 @@ export function SavedDateCompare() {
           date: savedDate,
           label: formatLongDate(savedDate),
           score: estimate.score,
+          reasons: estimate.reasons,
           level: estimate.label,
           day,
         };
@@ -128,6 +130,7 @@ export function SavedDateCompare() {
               <div>
                 <p className="font-black text-slate-900">{row.label}</p>
                 <p className="text-sm text-slate-600">{row.day}</p>
+                <DateReasons reasons={row.reasons} />
               </div>
               <div className="text-left md:text-right">
                 <p className="text-2xl font-black text-slate-900">{row.score}/10</p>

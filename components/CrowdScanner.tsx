@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { DateReasons } from "@/components/DateReasons";
 import { Search, AlertTriangle, CheckCircle, Info, Zap } from "lucide-react";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
 
@@ -39,6 +40,7 @@ export function CrowdScanner() {
   const [date, setDate] = useState("");
   const [result, setResult] = useState<{
     score: number;
+    reasons: string[];
     text: string;
     status: "good" | "warning" | "bad";
     strategy: string;
@@ -53,6 +55,7 @@ export function CrowdScanner() {
 
     setResult({
       score: forecast.score,
+      reasons: forecast.reasons,
       status: copy.status,
       text: copy.text,
       strategy: copy.strategy,
@@ -130,6 +133,7 @@ export function CrowdScanner() {
             <div>
               <p className="text-slate-900 font-black uppercase italic text-sm mb-1">What to expect</p>
               <p className="text-slate-700 font-medium leading-relaxed">{result.text}</p>
+              <DateReasons reasons={result.reasons} />
             </div>
 
             <div className="pt-4 border-t border-slate-200/60">
