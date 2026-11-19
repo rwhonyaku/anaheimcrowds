@@ -11,6 +11,7 @@ import { TripWindowPlanner } from "@/components/TripWindowPlanner";
 import { UpcomingDates } from "@/components/UpcomingDates";
 import { getPlanningMonths } from "@/lib/planning-window";
 import { toISODate } from "@/lib/date-utils";
+import { PlanningChecks } from "@/components/PlanningChecks";
 
 export const revalidate = 86400;
 
@@ -79,6 +80,7 @@ export default function CrowdCalendarPage() {
       <AdSlot id="calendar-top" label="High Visibility Placement" />
 
       <RecentUpdateStrip />
+      <PlanningChecks />
 
       <EditorialImage
         src="/images/Big%20Thunder%20scenic%202.jpg"

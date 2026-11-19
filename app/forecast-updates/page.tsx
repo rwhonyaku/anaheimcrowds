@@ -12,6 +12,15 @@ export const metadata: Metadata = {
 
 const updates = [
   {
+    date: "November 18, 2026",
+    title: "Checked holiday dates and LAUSD school breaks",
+    details: "Checked Disney's published November 13-January 6 holiday season and LAUSD's November 23-27 and December 21-January 8 recess dates. Added direct source links and reminders to check daily hours, closures, ticket prices, and reservations. Other district dates retain their earlier checks; this was not a fresh verification of every district.",
+    links: [
+      { href: "/crowd-calendar", label: "Crowd Calendar" },
+      { href: "/crowds/december", label: "December guide" },
+    ],
+  },
+  {
     date: "September 1, 2026",
     title: "Added local 2026-27 school district dates",
     details:

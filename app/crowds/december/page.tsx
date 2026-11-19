@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AdSlot } from "@/components/AdSlot";
 import { MonthNavigation } from "@/components/MonthNavigation";
+import { PlanningChecks } from "@/components/PlanningChecks";
 import { AlertTriangle, CalendarDays, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -48,6 +49,7 @@ export default function DecemberCrowdsPage() {
       </div>
 
       <AdSlot id="ad-month-december-mid" label="Mid-month page ad" />
+      <PlanningChecks />
 
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-slate-50 p-8 rounded-[2rem] space-y-3">
