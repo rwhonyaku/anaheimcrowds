@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { CalendarRange, Printer, Save } from "lucide-react";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
-import { eachDateInRange, formatLongDate } from "@/lib/date-utils";
+import { eachDateInRange, formatLongDate, isValidDate } from "@/lib/date-utils";
 
 const STORAGE_KEY = "anaheimcrowds.tripWindow";
 
@@ -18,22 +18,22 @@ export function TripWindowPlanner() {
   const [savedMessage, setSavedMessage] = useState("");
 
   useEffect(() => {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return;
-
     try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
       const parsed = JSON.parse(raw) as SavedTrip;
-      if (parsed.arrival) setArrival(parsed.arrival);
-      if (parsed.departure) setDeparture(parsed.departure);
+      if (isValidDate(parsed?.arrival)) setArrival(parsed.arrival);
+      if (isValidDate(parsed?.departure)) setDeparture(parsed.departure);
     } catch {
-      window.localStorage.removeItem(STORAGE_KEY);
+      setSavedMessage("Your saved trip could not be loaded.");
     }
   }, []);
 
   const tripDays = useMemo(() => {
     const dates = eachDateInRange(arrival, departure);
 
-    return dates.slice(0, 14).map((date) => {
+    if (dates.length > 14) return [];
+    return dates.map((date) => {
       const estimate = getCrowdEstimate(date);
       const weekday = new Date(`${date}T12:00:00`).toLocaleDateString("en-US", {
         weekday: "long",
@@ -54,7 +54,13 @@ export function TripWindowPlanner() {
   const firstBestDay = bestDays[0];
 
   function saveTrip() {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ arrival, departure }));
+    if (!tripDays.length) return;
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ arrival, departure }));
+    } catch {
+      setSavedMessage("Your browser could not save this trip.");
+      return;
+    }
     setSavedMessage("Saved in this browser.");
     window.setTimeout(() => setSavedMessage(""), 2500);
   }
@@ -74,7 +80,7 @@ export function TripWindowPlanner() {
         </div>
       </div>
 
-      <div className="mt-6 grid gap-3 md:grid-cols-[1fr_1fr_auto_auto] md:items-end">
+      <div className="mt-6 grid gap-3 sm:grid-cols-2 md:items-end">
         <label className="grid gap-2 text-sm font-bold text-slate-700">
           Arrival
           <input
@@ -96,7 +102,7 @@ export function TripWindowPlanner() {
         <button
           type="button"
           onClick={saveTrip}
-          disabled={!arrival || !departure}
+          disabled={tripDays.length === 0}
           className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-sky-800 px-5 font-black uppercase tracking-tight text-white hover:bg-slate-900 disabled:cursor-not-allowed disabled:bg-slate-300"
         >
           <Save size={18} /> Save
@@ -122,7 +128,7 @@ export function TripWindowPlanner() {
               <p className="text-sm text-slate-700">{firstBestDay?.score}/10 crowd level</p>
             </div>
             <div className="rounded-2xl border border-blue-200 bg-blue-50 p-4">
-              <p className="text-xs font-black uppercase tracking-widest text-blue-800">Good DCA day</p>
+              <p className="text-xs font-black uppercase tracking-widest text-blue-800">Another date to consider</p>
               <p className="mt-1 font-black text-slate-900">{bestDays[1]?.label ?? firstBestDay?.label}</p>
               <p className="text-sm text-slate-700">Use the easier day for your longest park plan.</p>
             </div>
@@ -153,7 +159,11 @@ export function TripWindowPlanner() {
         </div>
       ) : (
         <p className="mt-6 rounded-2xl bg-slate-50 p-4 text-sm text-slate-600">
-          Pick a date range up to two weeks long to compare each day.
+          {arrival && departure && arrival > departure
+            ? "Departure must be on or after arrival."
+            : eachDateInRange(arrival, departure).length > 14
+              ? "Choose up to 14 days, including arrival and departure."
+              : "Pick a date range up to 14 days long to compare each day."}
         </p>
       )}
     </section>

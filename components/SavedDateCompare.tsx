@@ -3,33 +3,41 @@
 import { useEffect, useMemo, useState } from "react";
 import { Bookmark, Plus, Trash2 } from "lucide-react";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
-import { formatLongDate } from "@/lib/date-utils";
+import { formatLongDate, isValidDate } from "@/lib/date-utils";
 
 const STORAGE_KEY = "anaheimcrowds.savedDates";
 
-function cleanDates(dates: string[]) {
-  return Array.from(new Set(dates)).filter(Boolean).sort().slice(0, 8);
+function cleanDates(dates: unknown[]) {
+  return Array.from(new Set(dates.filter(isValidDate))).sort().slice(0, 8);
 }
 
 export function SavedDateCompare() {
   const [date, setDate] = useState("");
   const [savedDates, setSavedDates] = useState<string[]>([]);
+  const [loaded, setLoaded] = useState(false);
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return;
-
     try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
       const parsed = JSON.parse(raw);
       if (Array.isArray(parsed)) setSavedDates(cleanDates(parsed));
     } catch {
       setSavedDates([]);
+    } finally {
+      setLoaded(true);
     }
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(savedDates));
-  }, [savedDates]);
+    if (!loaded) return;
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(savedDates));
+    } catch {
+      setMessage("Your browser could not save these dates. You can still compare them here.");
+    }
+  }, [savedDates, loaded]);
 
   const rows = useMemo(
     () =>
@@ -56,7 +64,10 @@ export function SavedDateCompare() {
   }, null);
 
   function addDate() {
-    if (!date) return;
+    if (!isValidDate(date)) return;
+    if (savedDates.includes(date)) { setMessage("This date is already saved."); return; }
+    if (savedDates.length >= 8) { setMessage("You can compare up to 8 dates. Remove one to add another."); return; }
+    setMessage("");
     setSavedDates((current) => cleanDates([...current, date]));
     setDate("");
   }
@@ -80,12 +91,14 @@ export function SavedDateCompare() {
 
         <div className="flex w-full flex-col gap-2 sm:flex-row lg:max-w-md">
           <input
+            aria-label="Date to save and compare"
             type="date"
             value={date}
             onChange={(event) => setDate(event.target.value)}
             className="min-h-12 flex-1 rounded-2xl border border-stone-300 bg-white px-4 font-bold text-slate-900 outline-none focus:ring-2 focus:ring-amber-600"
           />
           <button
+            disabled={!loaded || !isValidDate(date)}
             type="button"
             onClick={addDate}
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-sky-800 px-5 font-black uppercase tracking-tight text-white hover:bg-slate-900"
@@ -94,6 +107,8 @@ export function SavedDateCompare() {
           </button>
         </div>
       </div>
+
+      <p role="status" className="mt-3 text-sm text-slate-600">{message}</p>
 
       <div className="mt-6 grid gap-3">
         {rows.length === 0 ? (

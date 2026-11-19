@@ -23,6 +23,7 @@ export function formatLongDate(dateISO: string) {
 }
 
 export function eachDateInRange(startISO: string, endISO: string) {
+  if (!isValidDate(startISO) || !isValidDate(endISO)) return [];
   const start = new Date(`${startISO}T12:00:00`);
   const end = new Date(`${endISO}T12:00:00`);
 
@@ -33,10 +34,16 @@ export function eachDateInRange(startISO: string, endISO: string) {
   const dates: string[] = [];
   const cursor = new Date(start);
 
-  while (cursor <= end) {
+  while (cursor <= end && dates.length < 15) {
     dates.push(toISODate(cursor));
     cursor.setDate(cursor.getDate() + 1);
   }
 
   return dates;
 }
+export function isValidDate(value: unknown): value is string {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(`${value}T12:00:00`);
+  return !Number.isNaN(date.getTime()) && toISODate(date) === value;
+}
+
