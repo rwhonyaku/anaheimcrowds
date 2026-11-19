@@ -10,6 +10,7 @@ import { SavedDateCompare } from "@/components/SavedDateCompare";
 import { TripWindowPlanner } from "@/components/TripWindowPlanner";
 import { UpcomingDates } from "@/components/UpcomingDates";
 import { getPlanningMonths } from "@/lib/planning-window";
+import { toISODate } from "@/lib/date-utils";
 
 export const revalidate = 86400;
 
@@ -23,7 +24,7 @@ function getDaysInMonth(year: number, month: number) {
   const date = new Date(year, month, 1);
   const days: string[] = [];
   while (date.getMonth() === month) {
-    days.push(new Date(date).toISOString().split("T")[0]);
+    days.push(toISODate(date));
     date.setDate(date.getDate() + 1);
   }
   return days;
@@ -168,7 +169,7 @@ export default function CrowdCalendarPage() {
                       className={`h-12 rounded-xl px-1 py-1 flex flex-col items-center justify-center transition-colors ${bgColor}`}
                     >
                       <span className="text-[9px] leading-none text-slate-500">
-                        {new Date(dateStr).getDate()}
+                        {Number(dateStr.slice(-2))}
                       </span>
                       <span className="text-sm font-black leading-none text-slate-900">
                         {estimate.score}
@@ -188,7 +189,7 @@ export default function CrowdCalendarPage() {
             Better Weeks to Check First
           </h2>
           <p className="text-sm leading-relaxed text-slate-700">
-            In the current window, start with <strong>Sep 14-24, 2026</strong>, early November weekdays, early December weekdays,
+            In the current window, start with early December weekdays,
             and the quieter 2027 weekday stretches after major school breaks end.
           </p>
         </div>

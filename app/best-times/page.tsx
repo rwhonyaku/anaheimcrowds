@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/best-times" },
 };
 
-const AS_OF_DATE = "September 1, 2026";
+const AS_OF_DATE = "November 18, 2026";
 
 export const revalidate = 86400;
 
@@ -42,8 +42,7 @@ export default function BestTimesPage() {
                 Best times to visit Disneyland in 2026-2027
               </h1>
               <p className="max-w-2xl text-xl font-medium leading-relaxed text-slate-700">
-                For the current planning window, start with <strong>Sep 14-24, 2026</strong>, early November weekdays,
-                early December weekdays, and 2027 weekdays after the largest school breaks clear.
+                For an upcoming trip, compare early December weekdays with January and February 2027 after school holidays end. Thanksgiving week and late December need more care.
               </p>
             </div>
 
@@ -65,7 +64,7 @@ export default function BestTimesPage() {
             <div className="grid gap-3 sm:grid-cols-3">
               <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best overall</p>
-                <p className="mt-1 text-lg font-black text-slate-900">Sep 14-24</p>
+                <p className="mt-1 text-lg font-black text-slate-900">Early Dec weekdays</p>
               </div>
               <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Holiday choice</p>
@@ -92,9 +91,7 @@ export default function BestTimesPage() {
                 Quick answer
               </h2>
               <p className="mt-2 leading-relaxed">
-                The best overall time is <strong>Jan 12-Feb 12</strong>, especially Tuesday through Thursday.
-                For warmer weather, use <strong>May 4-14</strong>. For Halloween decor with lighter crowds than
-                October, use <strong>Sep 14-24</strong>.
+                For holiday decorations, check early December weekdays. For a winter trip, compare January 2027 after Jan 11 with early February weekdays, allowing for holiday weekends and possible ride closures.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 After you pick a window, compare exact dates on the{" "}

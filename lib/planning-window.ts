@@ -28,7 +28,7 @@ export function getMonthHref(year: number, slug: string) {
   return year === 2026 ? `/crowds/${slug}` : `/crowds/${year}/${slug}`;
 }
 
-export function getPlanningMonths(referenceDate = new Date(), count = 12): PlanningMonth[] {
+export function getPlanningMonths(referenceDate = anaheimToday(), count = 12): PlanningMonth[] {
   const startYear = referenceDate.getFullYear();
   const startMonth = referenceDate.getMonth();
 
@@ -50,7 +50,7 @@ export function getPlanningMonths(referenceDate = new Date(), count = 12): Plann
   });
 }
 
-export function getEarlier2026Months(referenceDate = new Date()): PlanningMonth[] {
+export function getEarlier2026Months(referenceDate = anaheimToday()): PlanningMonth[] {
   if (referenceDate.getFullYear() > 2026) {
     return MONTH_NAMES.map((name, monthIndex) => {
       const slug = MONTH_SLUGS[monthIndex];
@@ -79,3 +79,4 @@ export function getEarlier2026Months(referenceDate = new Date()): PlanningMonth[
     };
   });
 }
+import { anaheimToday } from "./date-utils";

@@ -47,3 +47,11 @@ export function isValidDate(value: unknown): value is string {
   return !Number.isNaN(date.getTime()) && toISODate(date) === value;
 }
 
+export function anaheimToday(now = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(now);
+  const part = (type: string) => parts.find((item) => item.type === type)!.value;
+  return new Date(`${part("year")}-${part("month")}-${part("day")}T12:00:00`);
+}
+

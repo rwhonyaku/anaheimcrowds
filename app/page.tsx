@@ -6,6 +6,8 @@ import { RecentUpdateStrip } from "@/components/RecentUpdateStrip";
 import { SavedDateCompare } from "@/components/SavedDateCompare";
 import { TripWindowPlanner } from "@/components/TripWindowPlanner";
 import { UpcomingDates } from "@/components/UpcomingDates";
+import { anaheimToday, toISODate } from "@/lib/date-utils";
+import { getCrowdEstimate } from "@/lib/crowd-engine";
 import { MoveRight, CalendarDays, Hotel, Map, Search, Clock3 } from "lucide-react";
 
 export const revalidate = 86400;
@@ -21,6 +23,14 @@ const sampleCalendarDays = [
 ];
 
 export default function HomePage() {
+  const today = anaheimToday();
+  const upcomingWeek = Array.from({ length: 7 }, (_, offset) => {
+    const date = new Date(today);
+    date.setDate(date.getDate() + offset);
+    const score = getCrowdEstimate(toISODate(date)).score;
+    return { day: date.toLocaleDateString("en-US", { weekday: "short" }), date: `${date.getDate()}`, score,
+      color: score <= 4 ? "bg-emerald-100 text-emerald-800 border-emerald-200" : score <= 7 ? "bg-amber-100 text-amber-800 border-amber-200" : "bg-rose-100 text-rose-800 border-rose-200" };
+  });
   return (
     <div className="flex flex-col gap-16 pb-20">
       <section className="relative overflow-hidden px-4 pt-8 md:pt-12">
@@ -67,7 +77,7 @@ export default function HomePage() {
                 </div>
                 <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Best window</p>
-                  <p className="mt-1 text-lg font-black text-slate-900">Sep 14-24</p>
+                  <p className="mt-1 text-lg font-black text-slate-900">Compare dates below</p>
                 </div>
                 <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Updated</p>
@@ -92,10 +102,10 @@ export default function HomePage() {
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">
-                          Example week
+                          Next seven days
                         </p>
                         <h2 className="mt-1 text-2xl font-black text-slate-900">
-                          September 2026 crowd levels
+                          {today.toLocaleDateString("en-US", { month: "long", year: "numeric" })} crowd levels
                         </h2>
                       </div>
                       <div className="rounded-2xl bg-sky-800 px-3 py-2 text-xs font-black uppercase tracking-widest text-white">
@@ -104,7 +114,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-5 grid grid-cols-7 gap-2">
-                      {sampleCalendarDays.map((day) => (
+                      {upcomingWeek.map((day) => (
                         <div
                           key={`${day.day}-${day.date}`}
                           className={`min-h-20 rounded-2xl border p-2 text-center ${day.color}`}

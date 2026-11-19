@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { AlertTriangle, CheckCircle2 } from "lucide-react";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
-import { formatShortDate, toISODate } from "@/lib/date-utils";
+import { anaheimToday, formatShortDate, toISODate } from "@/lib/date-utils";
 
 function getNextDates(count: number) {
-  const today = new Date();
+  const today = anaheimToday();
   today.setHours(12, 0, 0, 0);
 
   return Array.from({ length: count }, (_, offset) => {

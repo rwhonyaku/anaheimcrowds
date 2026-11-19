@@ -8,7 +8,7 @@ export function RecentUpdateStrip() {
         <div className="flex items-start gap-3">
           <CalendarCheck className="mt-0.5 shrink-0 text-sky-800" size={18} />
           <p>
-            <strong>Updated September 1:</strong> added local 2026-27 school calendars and a rolling 12-month planning window.
+            <strong>Updated November 18:</strong> saved-date and trip-planning tools now explain the factors behind each crowd estimate.
           </p>
         </div>
         <Link href="/forecast-updates" className="font-bold underline hover:text-blue-600">
