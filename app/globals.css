@@ -34,3 +34,13 @@ a {
 .glass-card {
   @apply bg-white border border-[hsl(var(--border))] rounded-2xl shadow-sm hover:shadow-md transition-shadow;
 }
+
+@media print {
+  body * { visibility: hidden; }
+  .trip-plan, .trip-plan * { visibility: visible; }
+  .trip-plan { position: absolute; inset: 0 auto auto 0; width: 100%; border: 0; box-shadow: none; padding: 20px; }
+  .trip-plan button, .trip-plan select, .trip-plan textarea, .trip-plan input, .trip-plan [role="status"] { display: none; }
+  .trip-plan details > * { display: block; }
+  .trip-plan .grid { display: block; }
+  .trip-plan .grid > div { margin-bottom: 12px; break-inside: avoid; }
+}
