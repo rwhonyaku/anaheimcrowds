@@ -36,7 +36,7 @@ function getScannerCopy(score: number, date: string) {
   };
 }
 
-export function CrowdScanner() {
+export function CrowdScanner({ compact = false }: { compact?: boolean }) {
   const [date, setDate] = useState("");
   const [result, setResult] = useState<{
     score: number;
@@ -68,10 +68,10 @@ export function CrowdScanner() {
         <p className="text-xs font-black uppercase tracking-[0.2em] text-slate-500">
           Check a Date
         </p>
-        <h2 className="font-display text-4xl md:text-5xl text-slate-900 leading-tight">
-          Check your date before you build the trip around it
+        <h2 className={compact ? "font-display text-3xl text-slate-900 leading-tight" : "font-display text-4xl md:text-5xl text-slate-900 leading-tight"}>
+          {compact ? "How busy will your date be?" : "Check your date before you build the trip around it"}
         </h2>
-        <p className="text-slate-600 text-base md:text-lg font-medium max-w-2xl mx-auto">
+        <p className={compact ? "hidden" : "text-slate-600 text-base md:text-lg font-medium max-w-2xl mx-auto"}>
           Enter a date and see the same 1-10 crowd level used on the calendar, plus a plain-English read on what
           that day is likely to feel like.
         </p>
@@ -79,6 +79,7 @@ export function CrowdScanner() {
 
       <form onSubmit={scanDate} className="max-w-3xl mx-auto flex flex-col md:flex-row gap-3">
         <input
+          aria-label="Park visit date"
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}

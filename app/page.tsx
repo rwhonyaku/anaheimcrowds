@@ -3,8 +3,6 @@ import { CrowdScanner } from "@/components/CrowdScanner";
 import { AdSlot } from "@/components/AdSlot";
 import { EditorialImage } from "@/components/EditorialImage";
 import { RecentUpdateStrip } from "@/components/RecentUpdateStrip";
-import { SavedDateCompare } from "@/components/SavedDateCompare";
-import { TripWindowPlanner } from "@/components/TripWindowPlanner";
 import { UpcomingDates } from "@/components/UpcomingDates";
 import { anaheimToday, toISODate } from "@/lib/date-utils";
 import { getCrowdEstimate } from "@/lib/crowd-engine";
@@ -47,7 +45,7 @@ export default function HomePage() {
 
               <div className="space-y-5">
                 <h1 className="font-display text-5xl md:text-7xl text-slate-900 leading-[0.92]">
-                  Disneyland crowd calendar and date estimator
+                  Disneyland crowd calendar
                 </h1>
                 <p className="text-xl text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   Check Disneyland dates, compare expected crowd levels, and see which weeks are easier before
@@ -70,7 +68,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0 text-left">
+              <div className="hidden">
                 <div className="rounded-2xl border border-stone-200 bg-white/85 p-4 shadow-sm">
                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Crowd level</p>
                   <p className="mt-1 text-2xl font-black text-slate-900">1-10</p>
@@ -91,13 +89,14 @@ export default function HomePage() {
                 caption="Original AnaheimCrowds photo from Disneyland."
                 priority
                 imageClassName="aspect-[16/7] max-h-52 object-cover"
-                className="max-w-xl mx-auto lg:mx-0"
+                className="hidden lg:block max-w-xl mx-auto lg:mx-0"
               />
             </div>
 
             <div className="relative">
               <div className="rounded-[2.5rem] border border-stone-200 bg-white/95 p-5 md:p-7 shadow-2xl shadow-stone-900/15 backdrop-blur-sm">
                 <div className="grid gap-5">
+                  <CrowdScanner compact />
                   <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-5">
                     <div className="flex items-start justify-between gap-4">
                       <div>
@@ -136,7 +135,6 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <CrowdScanner />
                 </div>
               </div>
             </div>
@@ -144,14 +142,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      <RecentUpdateStrip />
-
       <UpcomingDates />
 
-      <section className="max-w-6xl mx-auto w-full px-4 grid gap-8 lg:grid-cols-2">
-        <TripWindowPlanner />
-        <SavedDateCompare />
+      <section className="max-w-6xl mx-auto w-full px-4">
+        <div className="flex flex-col gap-5 border-y border-stone-200 py-8 sm:flex-row sm:items-center sm:justify-between">
+          <div className="max-w-xl space-y-2">
+            <h2 className="font-display text-3xl text-slate-900">Planning more than one day?</h2>
+            <p className="text-slate-600">Compare your trip dates, save possible park days, and return to your plan in this browser.</p>
+          </div>
+          <Link href="/crowd-calendar#trip-planning" className="inline-flex items-center justify-center gap-2 rounded-lg bg-sky-800 px-6 py-3 font-bold text-white hover:bg-slate-900">
+            Plan your trip <MoveRight size={18} />
+          </Link>
+        </div>
       </section>
+
+      <RecentUpdateStrip />
 
       <AdSlot id="home-mid" label="Homepage Featured Ad" />
 

@@ -115,7 +115,7 @@ export default function CrowdCalendarPage() {
 
       <UpcomingDates />
 
-      <section className="grid gap-8 lg:grid-cols-2">
+      <section id="trip-planning" className="scroll-mt-32 grid gap-8 lg:grid-cols-2">
         <TripWindowPlanner />
         <SavedDateCompare />
       </section>
